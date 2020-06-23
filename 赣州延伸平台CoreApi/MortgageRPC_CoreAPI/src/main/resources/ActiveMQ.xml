@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 查找最新的schemaLocation 访问 http://www.springframework.org/schema/ -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:amq="http://activemq.apache.org/schema/core"
+	xmlns:jms="http://www.springframework.org/schema/jms"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans   
+        http://www.springframework.org/schema/beans/spring-beans-4.0.xsd   
+        http://www.springframework.org/schema/context   
+        http://www.springframework.org/schema/context/spring-context-4.0.xsd
+        http://www.springframework.org/schema/jms
+        http://www.springframework.org/schema/jms/spring-jms-4.0.xsd
+        http://activemq.apache.org/schema/core
+        http://activemq.apache.org/schema/core/activemq-core-5.8.0.xsd">
+
+	<!-- 配置JMS连接工厂 -->
+	<bean id="connectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
+		<property name="brokerURL" value="failover:(tcp://17.128.25.181:61616)" />
+		<!--  <property name="brokerURL" value="failover:(tcp://17.128.25.181:61616)" />-->
+		<property name="userName" value="admin" />
+		<property name="password" value="admin" />
+	</bean>
+
+	<!-- 定义消息队列（Queue） -->
+	<bean id="queueDestination" class="org.apache.activemq.command.ActiveMQQueue">
+		<!-- 设置消息队列的名字 -->
+		<constructor-arg>
+			<value>DJSendQueue</value>
+		</constructor-arg>
+	</bean>
+
+	<!-- 配置JMS模板（Queue），Spring提供的JMS工具类，它发送、接收消息。 -->
+	<bean id="jmsTemplate" class="org.springframework.jms.core.JmsTemplate">
+		<property name="connectionFactory" ref="connectionFactory" />
+		<property name="defaultDestination" ref="queueDestination" />
+		<property name="receiveTimeout" value="10000" />
+	</bean>
+
+	<!--queue消息生产者 -->
+	<bean id="producerService"
+		class="com.supermap.realestate.registration.service.Sender.MQSender">
+		<property name="jmsTemplate" ref="jmsTemplate"></property>
+	</bean>
+
+	<!--sftp,xml上传sftp的配置 -->
+	<bean id="sftp"
+		class="com.supermap.realestate.registration.service.Sender.SFTP">
+		<property name="ip" value="17.128.25.181"></property>
+		<!-- <property name="ip" value="17.128.25.181"></property> -->
+		<property name="port" value="22"></property>
+		<property name="userName" value="admin"></property>
+		<property name="password" value="1"></property>
+	</bean>
+	
+	<!-- 数据上报sftp -->
+	<bean id="dataReport" class="com.supermap.realestate.registration.service.Sender.dataReport">
+		<property name="ip" value="localhost"></property>
+		<property name="port" value="22"></property>
+		<property name="userName" value="510502"></property>
+		<property name="password" value="yuiop90876"></property>
+	</bean>
+</beans>

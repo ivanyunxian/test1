@@ -1,0 +1,716 @@
+2020-05-01 16:58:38.366 [main] INFO  org.jeecg.JeecgApplication:50 - Starting JeecgApplication on ivan-pc with PID 12524 (started by ThinkPad in E:\work\源码\赣州延伸平台\赣州延伸平台RPC\MortgageRPC\code\supermap-boot-master\supermap-boot\supermap-boot-module-system)
+2020-05-01 16:58:38.399 [main] DEBUG org.jeecg.JeecgApplication:53 - Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2020-05-01 16:58:38.410 [main] INFO  org.jeecg.JeecgApplication:679 - The following profiles are active: prod
+2020-05-01 16:58:44.202 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-01 16:58:44.205 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-01 16:58:44.342 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 124ms. Found 0 repository interfaces.
+2020-05-01 16:58:44.392 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-01 16:58:44.396 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-01 16:58:44.485 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 69ms. Found 0 repository interfaces.
+2020-05-01 16:58:45.537 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'shiroConfig' of type [org.jeecg.config.ShiroConfig$$EnhancerBySpringCGLIB$$80a117fe] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 16:58:45.744 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'shiroRealm' of type [org.jeecg.modules.shiro.authc.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 16:58:46.333 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 16:58:46.356 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'asyncTaskConfig' of type [org.jeecg.common.util.AsyncTaskConfig$$EnhancerBySpringCGLIB$$7e34f09d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 16:58:46.421 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 16:58:46.538 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$609bae68] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 16:58:46.867 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 16:58:46.879 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$ca2a1f39] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 16:58:46.900 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 16:58:46.907 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 16:58:46.946 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 16:58:46.962 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration$$EnhancerBySpringCGLIB$$75b56cb2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 16:58:47.348 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 16:58:47.557 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 16:58:47.586 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'redisConfig' of type [org.jeecg.config.RedisConfig$$EnhancerBySpringCGLIB$$cb6f9f48] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 16:58:47.655 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration' of type [org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration$$EnhancerBySpringCGLIB$$73b48c18] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 16:58:47.667 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'eventBus' of type [org.apache.shiro.event.support.DefaultEventBus] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-01 16:58:48.388 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:90 - Tomcat initialized with port(s): 8080 (http)
+2020-05-01 16:58:48.415 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-01 16:58:48.431 [main] INFO  org.apache.catalina.core.StandardService:173 - Starting service [Tomcat]
+2020-05-01 16:58:48.431 [main] INFO  org.apache.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-05-01 16:58:48.448 [main] INFO  org.apache.catalina.core.AprLifecycleListener:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_171\jre\bin;C:/Program Files/Java/jre1.8.0_171/bin/server;C:/Program Files/Java/jre1.8.0_171/bin;C:/Program Files/Java/jre1.8.0_171/lib/amd64;G:\oracle\app\ThinkPad\product\11.2.0\dbhome_1\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\TortoiseSVN\bin;D:\maven\apache-maven-3.6.1-bin\apache-maven-3.6.1\bin;D:\software\nodejs\;D:\software\yarn\bin\;C:\Users\ThinkPad\AppData\Local\Microsoft\WindowsApps;D:\software\nodejs\node_global;C:\Users\ThinkPad\AppData\Local\Yarn\bin;D:\software\eclipse\eclipse-jee-oxygen-R-win32-x86_64\eclipse;;.]
+2020-05-01 16:58:48.713 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mrpc]:173 - Initializing Spring embedded WebApplicationContext
+2020-05-01 16:58:48.715 [main] INFO  org.springframework.web.context.ContextLoader:296 - Root WebApplicationContext: initialization completed in 10088 ms
+2020-05-01 16:58:50.887 [main] INFO  org.mongodb.driver.cluster:71 - Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-05-01 16:58:51.918 [main] INFO  c.b.dynamic.datasource.DynamicDataSourceCreator:113 - 动态数据源-检测到druid存在,如配置中未指定type,druid会默认配置
+2020-05-01 16:58:51.943 [main] WARN  com.alibaba.druid.pool.DruidAbstractDataSource:1214 - oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+2020-05-01 16:58:52.982 [cluster-ClusterId{value='5eabe4ca0ffa0030ec1dc508', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.cluster:76 - Exception in monitor thread while connecting to server 127.0.0.1:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+2020-05-01 16:58:53.723 [main] INFO  com.alibaba.druid.pool.DruidDataSource:1003 - {dataSource-1,master} inited
+2020-05-01 16:58:53.725 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:203 - 初始共加载 1 个数据源
+2020-05-01 16:58:53.726 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:142 - 动态数据源-加载 master 成功
+2020-05-01 16:58:53.727 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:212 - 当前的默认数据源是单数据源，数据源名为 master
+2020-05-01 16:59:05.528 [main] INFO  org.quartz.impl.StdSchedulerFactory:1208 - Using default implementation for ThreadExecutor
+2020-05-01 16:59:05.564 [main] INFO  org.quartz.core.SchedulerSignalerImpl:61 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-05-01 16:59:05.565 [main] INFO  org.quartz.core.QuartzScheduler:229 - Quartz Scheduler v.2.3.0 created.
+2020-05-01 16:59:05.576 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:672 - Using db table-based data access locking (synchronization).
+2020-05-01 16:59:05.579 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:145 - JobStoreCMT initialized.
+2020-05-01 16:59:05.581 [main] INFO  org.quartz.core.QuartzScheduler:294 - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is not clustered.
+
+2020-05-01 16:59:05.582 [main] INFO  org.quartz.impl.StdSchedulerFactory:1362 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-05-01 16:59:05.583 [main] INFO  org.quartz.impl.StdSchedulerFactory:1366 - Quartz scheduler version: 2.3.0
+2020-05-01 16:59:05.584 [main] INFO  org.quartz.core.QuartzScheduler:2287 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@6d4b09c7
+2020-05-01 16:59:12.380 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver:59 - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-01 16:59:12.826 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping:69 - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-05-01 16:59:13.339 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-01 16:59:15.993 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:160 - Context refreshed
+2020-05-01 16:59:16.040 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:163 - Found 1 custom documentation plugin(s)
+2020-05-01 16:59:16.124 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner:41 - Scanning for api listing references
+2020-05-01 16:59:16.518 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: addUsingPOST_1
+2020-05-01 16:59:16.520 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteUsingDELETE_1
+2020-05-01 16:59:16.523 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteBatchUsingDELETE_1
+2020-05-01 16:59:16.526 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: editUsingPUT_1
+2020-05-01 16:59:16.528 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryByIdUsingGET_1
+2020-05-01 16:59:16.540 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryPageListUsingGET_1
+2020-05-01 16:59:16.560 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: addUsingPOST_2
+2020-05-01 16:59:16.563 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteUsingDELETE_2
+2020-05-01 16:59:16.566 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteBatchUsingDELETE_2
+2020-05-01 16:59:16.568 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: editUsingPUT_2
+2020-05-01 16:59:16.594 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryByIdUsingGET_2
+2020-05-01 16:59:16.606 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryPageListUsingGET_2
+2020-05-01 16:59:16.621 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: addUsingPOST_3
+2020-05-01 16:59:16.623 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteUsingDELETE_3
+2020-05-01 16:59:16.626 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteBatchUsingDELETE_3
+2020-05-01 16:59:16.628 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: editUsingPUT_3
+2020-05-01 16:59:16.639 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryByIdUsingGET_3
+2020-05-01 16:59:16.654 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryPageListUsingGET_3
+2020-05-01 16:59:16.677 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: addUsingPOST_4
+2020-05-01 16:59:16.681 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteBatchUsingDELETE_4
+2020-05-01 16:59:16.697 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: editUsingPUT_4
+2020-05-01 16:59:16.700 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryByIdUsingGET_4
+2020-05-01 16:59:16.714 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryPageListUsingGET_4
+2020-05-01 16:59:16.757 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: addUsingPOST_5
+2020-05-01 16:59:16.759 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteUsingDELETE_4
+2020-05-01 16:59:16.763 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteBatchUsingDELETE_5
+2020-05-01 16:59:16.766 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: editUsingPUT_5
+2020-05-01 16:59:16.770 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryByIdUsingGET_5
+2020-05-01 16:59:16.785 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryPageListUsingGET_5
+2020-05-01 16:59:16.816 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: addUsingPOST_6
+2020-05-01 16:59:16.818 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteUsingDELETE_5
+2020-05-01 16:59:16.820 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteBatchUsingDELETE_6
+2020-05-01 16:59:16.823 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: editUsingPUT_6
+2020-05-01 16:59:16.826 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryByIdUsingGET_6
+2020-05-01 16:59:16.839 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryPageListUsingGET_6
+2020-05-01 16:59:16.862 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: addUsingPOST_7
+2020-05-01 16:59:16.864 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteUsingDELETE_6
+2020-05-01 16:59:16.867 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteBatchUsingDELETE_7
+2020-05-01 16:59:16.884 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryByIdUsingGET_7
+2020-05-01 16:59:16.915 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: addUsingPOST_8
+2020-05-01 16:59:16.917 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteUsingDELETE_7
+2020-05-01 16:59:16.919 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteBatchUsingDELETE_8
+2020-05-01 16:59:16.920 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: editUsingPUT_7
+2020-05-01 16:59:16.923 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryByIdUsingGET_8
+2020-05-01 16:59:16.931 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryPageListUsingGET_7
+2020-05-01 16:59:16.936 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: applicationTokenUsingPOST_1
+2020-05-01 16:59:16.954 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: addUsingPOST_9
+2020-05-01 16:59:16.956 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteUsingDELETE_8
+2020-05-01 16:59:16.958 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteBatchUsingDELETE_9
+2020-05-01 16:59:16.960 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: editUsingPUT_8
+2020-05-01 16:59:16.964 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryByIdUsingGET_9
+2020-05-01 16:59:16.978 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryPageListUsingGET_8
+2020-05-01 16:59:16.992 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: addUsingPOST_10
+2020-05-01 16:59:16.994 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteUsingDELETE_9
+2020-05-01 16:59:16.997 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteBatchUsingDELETE_10
+2020-05-01 16:59:17.000 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: editUsingPUT_9
+2020-05-01 16:59:17.002 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryByIdUsingGET_10
+2020-05-01 16:59:17.016 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryPageListUsingGET_9
+2020-05-01 16:59:17.029 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: addUsingPOST_11
+2020-05-01 16:59:17.031 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteUsingDELETE_10
+2020-05-01 16:59:17.033 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteBatchUsingDELETE_11
+2020-05-01 16:59:17.034 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: editUsingPUT_10
+2020-05-01 16:59:17.036 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryByIdUsingGET_11
+2020-05-01 16:59:17.045 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryPageListUsingGET_10
+2020-05-01 16:59:17.056 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: addUsingPOST_12
+2020-05-01 16:59:17.058 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteUsingDELETE_11
+2020-05-01 16:59:17.060 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteBatchUsingDELETE_12
+2020-05-01 16:59:17.062 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: editUsingPUT_11
+2020-05-01 16:59:17.065 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryByIdUsingGET_12
+2020-05-01 16:59:17.075 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryPageListUsingGET_11
+2020-05-01 16:59:17.085 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: addUsingPOST_13
+2020-05-01 16:59:17.086 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteUsingGET_1
+2020-05-01 16:59:17.089 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteBatchUsingDELETE_13
+2020-05-01 16:59:17.090 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: editUsingPUT_12
+2020-05-01 16:59:17.092 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryByIdUsingGET_13
+2020-05-01 16:59:17.101 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryPageListUsingGET_12
+2020-05-01 16:59:17.112 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: addUsingPOST_14
+2020-05-01 16:59:17.113 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteUsingDELETE_12
+2020-05-01 16:59:17.116 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteBatchUsingDELETE_14
+2020-05-01 16:59:17.118 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: editUsingPUT_13
+2020-05-01 16:59:17.121 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryByIdUsingGET_14
+2020-05-01 16:59:17.130 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryPageListUsingGET_13
+2020-05-01 16:59:17.140 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: addUsingPOST_15
+2020-05-01 16:59:17.142 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteUsingDELETE_13
+2020-05-01 16:59:17.144 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteBatchUsingDELETE_15
+2020-05-01 16:59:17.147 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: editUsingPUT_14
+2020-05-01 16:59:17.149 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryByIdUsingGET_15
+2020-05-01 16:59:17.157 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryPageListUsingGET_14
+2020-05-01 16:59:17.178 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: addUsingPOST_16
+2020-05-01 16:59:17.182 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteUsingDELETE_14
+2020-05-01 16:59:17.185 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteBatchUsingDELETE_16
+2020-05-01 16:59:17.188 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: editUsingPUT_15
+2020-05-01 16:59:17.190 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryByIdUsingGET_16
+2020-05-01 16:59:17.206 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryPageListUsingGET_15
+2020-05-01 16:59:17.250 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: addUsingPOST_17
+2020-05-01 16:59:17.256 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteUsingGET_2
+2020-05-01 16:59:17.258 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteBatchUsingDELETE_17
+2020-05-01 16:59:17.260 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: editUsingPUT_16
+2020-05-01 16:59:17.274 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryByIdUsingGET_17
+2020-05-01 16:59:17.289 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryPageListUsingGET_16
+2020-05-01 16:59:17.293 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryPageProjectlistUsingGET_1
+2020-05-01 16:59:17.319 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: addUsingPOST_18
+2020-05-01 16:59:17.321 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteUsingDELETE_15
+2020-05-01 16:59:17.323 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteBatchUsingDELETE_18
+2020-05-01 16:59:17.325 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: editUsingPUT_17
+2020-05-01 16:59:17.328 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryByIdUsingGET_18
+2020-05-01 16:59:17.339 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryPageListUsingGET_17
+2020-05-01 16:59:17.342 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryPageProjectlistUsingGET_2
+2020-05-01 16:59:17.343 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: removehouseUsingGET_1
+2020-05-01 16:59:17.348 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: submitProjectUsingGET_1
+2020-05-01 16:59:17.370 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean:726 - Starting Quartz Scheduler now
+2020-05-01 16:59:17.595 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:866 - Freed 0 triggers from 'acquired' / 'blocked' state.
+2020-05-01 16:59:17.608 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:876 - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2020-05-01 16:59:17.608 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:889 - Recovery complete.
+2020-05-01 16:59:17.611 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:896 - Removed 0 'complete' triggers.
+2020-05-01 16:59:17.615 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:901 - Removed 0 stale fired job entries.
+2020-05-01 16:59:17.617 [main] INFO  org.quartz.core.QuartzScheduler:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-05-01 16:59:17.639 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+2020-05-01 16:59:17.682 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path '/mrpc'
+2020-05-01 16:59:17.685 [main] INFO  org.jeecg.JeecgApplication:59 - Started JeecgApplication in 40.197 seconds (JVM running for 41.503)
+2020-05-01 17:03:22.860 [http-nio-8080-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mrpc]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-01 17:03:22.860 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2020-05-01 17:03:22.892 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet:546 - Completed initialization in 31 ms
+2020-05-01 17:03:22.999 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：7ms
+2020-05-01 17:03:23.000 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:03:35.849 [http-nio-8080-exec-2] INFO  io.lettuce.core.EpollProvider:68 - Starting without optional epoll library
+2020-05-01 17:03:35.852 [http-nio-8080-exec-2] INFO  io.lettuce.core.KqueueProvider:70 - Starting without optional kqueue library
+2020-05-01 17:03:36.193 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:38 - ------sqlId------org.jeecg.modules.system.mapper.SysUserMapper.updateUserDepart
+2020-05-01 17:03:36.194 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:41 - ------sqlCommandType------UPDATE
+2020-05-01 17:03:36.195 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:115 - ------field.name------value
+2020-05-01 17:03:36.196 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:115 - ------field.name------hash
+2020-05-01 17:03:36.196 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:115 - ------field.name------serialVersionUID
+2020-05-01 17:03:36.196 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:115 - ------field.name------serialPersistentFields
+2020-05-01 17:03:36.196 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:115 - ------field.name------CASE_INSENSITIVE_ORDER
+2020-05-01 17:03:36.204 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:38 - ------sqlId------org.jeecg.modules.system.mapper.SysLogMapper.insert
+2020-05-01 17:03:36.204 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:41 - ------sqlCommandType------INSERT
+2020-05-01 17:03:36.204 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------serialVersionUID
+2020-05-01 17:03:36.205 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------id
+2020-05-01 17:03:36.205 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------createBy
+2020-05-01 17:03:36.205 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------createTime
+2020-05-01 17:03:36.205 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------updateBy
+2020-05-01 17:03:36.206 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------updateTime
+2020-05-01 17:03:36.206 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------costTime
+2020-05-01 17:03:36.206 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------ip
+2020-05-01 17:03:36.207 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------requestParam
+2020-05-01 17:03:36.207 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------requestType
+2020-05-01 17:03:36.207 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------requestUrl
+2020-05-01 17:03:36.208 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------method
+2020-05-01 17:03:36.208 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------username
+2020-05-01 17:03:36.208 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------userid
+2020-05-01 17:03:36.209 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------logContent
+2020-05-01 17:03:36.209 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------logType
+2020-05-01 17:03:36.210 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------operateType
+2020-05-01 17:03:36.210 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------responsedata
+2020-05-01 17:03:36.210 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------resultstate
+2020-05-01 17:03:36.371 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：731ms
+2020-05-01 17:03:36.372 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:03:36.415 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:03:36.500 [http-nio-8080-exec-3] INFO  o.j.m.system.controller.SysPermissionController:120 -  ------ 通过令牌获取用户拥有的访问菜单 ---- TOKEN ------ eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1ODgzMjU2MTUsInVzZXJuYW1lIjoiYWRtaW4ifQ.1PTs1d4dmReQIMDvT014NpU-SIkdqWUWaVTgal-zIZw
+2020-05-01 17:03:36.660 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：164ms
+2020-05-01 17:03:36.660 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:03:37.298 [http-nio-8080-exec-5] ERROR o.jeecg.common.system.controller.CommonController:119 - 预览图片失败E:\imageupload\files\20190729\u=3723784612,2573513060&fm=200&gp=0_1564366508017.png (系统找不到指定的路径。)
+2020-05-01 17:03:37.582 [http-nio-8080-exec-6] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:03:37.665 [http-nio-8080-exec-9] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:03:37.671 [http-nio-8080-exec-7] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:03:37.671 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:03:37.673 [http-nio-8080-exec-8] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:03:37.673 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:03:37.683 [http-nio-8080-exec-6] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：91ms
+2020-05-01 17:03:37.683 [http-nio-8080-exec-6] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:03:37.724 [http-nio-8080-exec-7] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：18ms
+2020-05-01 17:03:37.732 [http-nio-8080-exec-9] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：51ms
+2020-05-01 17:03:37.733 [http-nio-8080-exec-9] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:03:37.762 [http-nio-8080-exec-8] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：56ms
+2020-05-01 17:03:37.762 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：57ms
+2020-05-01 17:03:37.763 [http-nio-8080-exec-8] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时1ms
+2020-05-01 17:03:37.763 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:03:37.771 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：67ms
+2020-05-01 17:03:37.771 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:03:37.854 [http-nio-8080-exec-7] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时129ms
+2020-05-01 17:03:38.001 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:03:38.014 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：5ms
+2020-05-01 17:03:38.015 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:03:38.046 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:03:38.059 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：5ms
+2020-05-01 17:03:38.059 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:03:38.099 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:03:38.100 [http-nio-8080-exec-6] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:03:38.100 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:03:38.137 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：7ms
+2020-05-01 17:03:38.137 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：9ms
+2020-05-01 17:03:38.137 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:03:38.137 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:03:38.139 [http-nio-8080-exec-6] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：7ms
+2020-05-01 17:03:38.140 [http-nio-8080-exec-6] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:03:38.161 [http-nio-8080-exec-9] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:03:38.176 [http-nio-8080-exec-9] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：6ms
+2020-05-01 17:03:38.176 [http-nio-8080-exec-9] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:03:38.328 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:03:38.369 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：12ms
+2020-05-01 17:03:38.370 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:03:38.370 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:03:38.395 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：6ms
+2020-05-01 17:03:38.395 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:03:38.446 [http-nio-8080-exec-8] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:03:38.446 [http-nio-8080-exec-7] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:03:38.476 [http-nio-8080-exec-7] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：8ms
+2020-05-01 17:03:38.477 [http-nio-8080-exec-7] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时1ms
+2020-05-01 17:03:38.486 [http-nio-8080-exec-8] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：17ms
+2020-05-01 17:03:38.486 [http-nio-8080-exec-8] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:03:45.251 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:03:45.269 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：5ms
+2020-05-01 17:03:45.269 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:03:50.560 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:03:50.580 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:38 - ------sqlId------org.jeecg.modules.system.mapper.SysLogMapper.insert
+2020-05-01 17:03:50.581 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:41 - ------sqlCommandType------INSERT
+2020-05-01 17:03:50.581 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------serialVersionUID
+2020-05-01 17:03:50.582 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------id
+2020-05-01 17:03:50.582 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------createBy
+2020-05-01 17:03:50.582 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------createTime
+2020-05-01 17:03:50.583 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------updateBy
+2020-05-01 17:03:50.583 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------updateTime
+2020-05-01 17:03:50.584 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------costTime
+2020-05-01 17:03:50.585 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------ip
+2020-05-01 17:03:50.585 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------requestParam
+2020-05-01 17:03:50.586 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------requestType
+2020-05-01 17:03:50.586 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------requestUrl
+2020-05-01 17:03:50.586 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------method
+2020-05-01 17:03:50.587 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------username
+2020-05-01 17:03:50.587 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------userid
+2020-05-01 17:03:50.587 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------logContent
+2020-05-01 17:03:50.588 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------logType
+2020-05-01 17:03:50.588 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------operateType
+2020-05-01 17:03:50.589 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------responsedata
+2020-05-01 17:03:50.589 [http-nio-8080-exec-2] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------resultstate
+2020-05-01 17:03:50.596 [http-nio-8080-exec-2] INFO  o.jeecg.modules.system.controller.LoginController:106 -  用户名:  管理员,退出成功！ 
+2020-05-01 17:03:50.599 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：21ms
+2020-05-01 17:03:50.600 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:04:03.223 [http-nio-8080-exec-5] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:38 - ------sqlId------org.jeecg.modules.system.mapper.SysUserMapper.updateUserDepart
+2020-05-01 17:04:03.224 [http-nio-8080-exec-5] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:41 - ------sqlCommandType------UPDATE
+2020-05-01 17:04:03.224 [http-nio-8080-exec-5] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:115 - ------field.name------value
+2020-05-01 17:04:03.224 [http-nio-8080-exec-5] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:115 - ------field.name------hash
+2020-05-01 17:04:03.224 [http-nio-8080-exec-5] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:115 - ------field.name------serialVersionUID
+2020-05-01 17:04:03.225 [http-nio-8080-exec-5] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:115 - ------field.name------serialPersistentFields
+2020-05-01 17:04:03.225 [http-nio-8080-exec-5] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:115 - ------field.name------CASE_INSENSITIVE_ORDER
+2020-05-01 17:04:03.226 [http-nio-8080-exec-5] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:38 - ------sqlId------org.jeecg.modules.system.mapper.SysLogMapper.insert
+2020-05-01 17:04:03.227 [http-nio-8080-exec-5] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:41 - ------sqlCommandType------INSERT
+2020-05-01 17:04:03.227 [http-nio-8080-exec-5] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------serialVersionUID
+2020-05-01 17:04:03.227 [http-nio-8080-exec-5] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------id
+2020-05-01 17:04:03.228 [http-nio-8080-exec-5] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------createBy
+2020-05-01 17:04:03.228 [http-nio-8080-exec-5] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------createTime
+2020-05-01 17:04:03.228 [http-nio-8080-exec-5] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------updateBy
+2020-05-01 17:04:03.228 [http-nio-8080-exec-5] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------updateTime
+2020-05-01 17:04:03.229 [http-nio-8080-exec-5] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------costTime
+2020-05-01 17:04:03.229 [http-nio-8080-exec-5] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------ip
+2020-05-01 17:04:03.229 [http-nio-8080-exec-5] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------requestParam
+2020-05-01 17:04:03.229 [http-nio-8080-exec-5] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------requestType
+2020-05-01 17:04:03.229 [http-nio-8080-exec-5] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------requestUrl
+2020-05-01 17:04:03.230 [http-nio-8080-exec-5] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------method
+2020-05-01 17:04:03.230 [http-nio-8080-exec-5] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------username
+2020-05-01 17:04:03.230 [http-nio-8080-exec-5] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------userid
+2020-05-01 17:04:03.230 [http-nio-8080-exec-5] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------logContent
+2020-05-01 17:04:03.230 [http-nio-8080-exec-5] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------logType
+2020-05-01 17:04:03.230 [http-nio-8080-exec-5] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------operateType
+2020-05-01 17:04:03.231 [http-nio-8080-exec-5] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------responsedata
+2020-05-01 17:04:03.231 [http-nio-8080-exec-5] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------resultstate
+2020-05-01 17:04:03.233 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：17ms
+2020-05-01 17:04:03.233 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:04:03.470 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:04:03.476 [http-nio-8080-exec-3] INFO  o.j.m.system.controller.SysPermissionController:120 -  ------ 通过令牌获取用户拥有的访问菜单 ---- TOKEN ------ eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1ODgzMjU2NDMsInVzZXJuYW1lIjoiYWRtaW4xMiJ9.XKTo2oVpnTadLWa60wseUjctmYmEz5j_QgaxKEFes6U
+2020-05-01 17:04:03.490 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：14ms
+2020-05-01 17:04:03.491 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:04:04.133 [http-nio-8080-exec-6] ERROR o.jeecg.common.system.controller.CommonController:119 - 预览图片失败E:\imageupload\null (系统找不到指定的路径。)
+2020-05-01 17:04:04.199 [http-nio-8080-exec-9] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:04:04.238 [http-nio-8080-exec-9] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：30ms
+2020-05-01 17:04:04.239 [http-nio-8080-exec-9] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:04:04.507 [http-nio-8080-exec-7] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:04:04.506 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:04:04.507 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:04:04.508 [http-nio-8080-exec-8] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:04:04.508 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:04:04.521 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：6ms
+2020-05-01 17:04:04.527 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：10ms
+2020-05-01 17:04:04.527 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:04:04.527 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：12ms
+2020-05-01 17:04:04.528 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:04:04.531 [http-nio-8080-exec-8] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：10ms
+2020-05-01 17:04:04.531 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时10ms
+2020-05-01 17:04:04.531 [http-nio-8080-exec-8] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:04:04.534 [http-nio-8080-exec-7] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：7ms
+2020-05-01 17:04:04.534 [http-nio-8080-exec-7] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:04:04.548 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:04:04.560 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：4ms
+2020-05-01 17:04:04.560 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:04:04.836 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:04:04.836 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:04:04.841 [http-nio-8080-exec-6] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:04:04.841 [http-nio-8080-exec-9] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:04:04.847 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:04:04.848 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：3ms
+2020-05-01 17:04:04.848 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：3ms
+2020-05-01 17:04:04.849 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:04:04.849 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:04:04.853 [http-nio-8080-exec-6] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：4ms
+2020-05-01 17:04:04.853 [http-nio-8080-exec-9] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：4ms
+2020-05-01 17:04:04.854 [http-nio-8080-exec-9] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:04:04.854 [http-nio-8080-exec-6] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:04:04.861 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：5ms
+2020-05-01 17:04:04.861 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:04:04.865 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:04:04.876 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：4ms
+2020-05-01 17:04:04.876 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:04:05.156 [http-nio-8080-exec-8] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:04:05.156 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:04:05.162 [http-nio-8080-exec-7] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:04:05.170 [http-nio-8080-exec-8] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：6ms
+2020-05-01 17:04:05.171 [http-nio-8080-exec-8] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:04:05.173 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：9ms
+2020-05-01 17:04:05.173 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:04:05.178 [http-nio-8080-exec-7] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：6ms
+2020-05-01 17:04:05.179 [http-nio-8080-exec-7] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:04:09.926 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:04:09.926 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:04:09.980 [http-nio-8080-exec-3] DEBUG org.jeecg.common.system.query.QueryGenerator:185 - 排序规则>>列:createTime,排序方式:desc
+2020-05-01 17:04:09.982 [http-nio-8080-exec-3] DEBUG org.jeecg.common.system.query.QueryGenerator:74 - ---查询条件构造器初始化完成,耗时:33毫秒----
+2020-05-01 17:04:09.985 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：47ms
+2020-05-01 17:04:09.992 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时7ms
+2020-05-01 17:04:09.996 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：49ms
+2020-05-01 17:04:10.000 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : null
+2020-05-01 17:04:10.001 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ sex_dictText： null
+2020-05-01 17:04:10.001 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.system.aspect.DictAspect:292 -  字典 key : 1
+2020-05-01 17:04:10.024 [http-nio-8080-exec-3] INFO  o.j.modules.system.service.impl.SysDictServiceImpl:62 - 无缓存dictText的时候调用这里！
+2020-05-01 17:04:10.036 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : 正常
+2020-05-01 17:04:10.037 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ status_dictText： 正常
+2020-05-01 17:04:10.037 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : null
+2020-05-01 17:04:10.038 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ zjlx_dictText： null
+2020-05-01 17:04:10.038 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : null
+2020-05-01 17:04:10.038 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ divisionCode_dictText： null
+2020-05-01 17:04:10.039 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时43ms
+2020-05-01 17:04:11.724 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:04:11.747 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：17ms
+2020-05-01 17:04:11.749 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : null
+2020-05-01 17:04:11.750 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ sex_dictText： null
+2020-05-01 17:04:11.750 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.system.aspect.DictAspect:292 -  字典 key : 1
+2020-05-01 17:04:11.752 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : 正常
+2020-05-01 17:04:11.752 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ status_dictText： 正常
+2020-05-01 17:04:11.753 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : null
+2020-05-01 17:04:11.753 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ zjlx_dictText： null
+2020-05-01 17:04:11.753 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : null
+2020-05-01 17:04:11.753 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ divisionCode_dictText： null
+2020-05-01 17:04:11.754 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时7ms
+2020-05-01 17:04:12.568 [http-nio-8080-exec-9] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:04:12.576 [http-nio-8080-exec-9] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：2ms
+2020-05-01 17:04:12.576 [http-nio-8080-exec-9] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:04:12.820 [http-nio-8080-exec-6] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:04:12.828 [http-nio-8080-exec-6] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：2ms
+2020-05-01 17:04:12.828 [http-nio-8080-exec-6] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:04:15.066 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:04:15.091 [http-nio-8080-exec-1] DEBUG org.jeecg.common.system.query.QueryGenerator:185 - 排序规则>>列:null,排序方式:null
+2020-05-01 17:04:15.091 [http-nio-8080-exec-1] DEBUG org.jeecg.common.system.query.QueryGenerator:74 - ---查询条件构造器初始化完成,耗时:1毫秒----
+2020-05-01 17:04:15.104 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：19ms
+2020-05-01 17:04:15.106 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时2ms
+2020-05-01 17:04:15.158 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:38 - ------sqlId------org.jeecg.modules.system.mapper.SysLogMapper.insert
+2020-05-01 17:04:15.158 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:41 - ------sqlCommandType------INSERT
+2020-05-01 17:04:15.159 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------serialVersionUID
+2020-05-01 17:04:15.159 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------id
+2020-05-01 17:04:15.159 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------createBy
+2020-05-01 17:04:15.159 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------createTime
+2020-05-01 17:04:15.159 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------updateBy
+2020-05-01 17:04:15.160 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------updateTime
+2020-05-01 17:04:15.160 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------costTime
+2020-05-01 17:04:15.160 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------ip
+2020-05-01 17:04:15.160 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------requestParam
+2020-05-01 17:04:15.161 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------requestType
+2020-05-01 17:04:15.161 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------requestUrl
+2020-05-01 17:04:15.161 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------method
+2020-05-01 17:04:15.161 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------username
+2020-05-01 17:04:15.161 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------userid
+2020-05-01 17:04:15.162 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------logContent
+2020-05-01 17:04:15.162 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------logType
+2020-05-01 17:04:15.162 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------operateType
+2020-05-01 17:04:15.162 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------responsedata
+2020-05-01 17:04:15.162 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------resultstate
+2020-05-01 17:04:16.759 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:04:16.766 [http-nio-8080-exec-4] DEBUG org.jeecg.common.system.query.QueryGenerator:185 - 排序规则>>列:null,排序方式:null
+2020-05-01 17:04:16.766 [http-nio-8080-exec-4] DEBUG org.jeecg.common.system.query.QueryGenerator:74 - ---查询条件构造器初始化完成,耗时:1毫秒----
+2020-05-01 17:04:16.773 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：8ms
+2020-05-01 17:04:16.774 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : null
+2020-05-01 17:04:16.775 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ sex_dictText： null
+2020-05-01 17:04:16.775 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:292 -  字典 key : 2
+2020-05-01 17:04:16.777 [http-nio-8080-exec-4] INFO  o.j.modules.system.service.impl.SysDictServiceImpl:62 - 无缓存dictText的时候调用这里！
+2020-05-01 17:04:16.780 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : 冻结
+2020-05-01 17:04:16.780 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ status_dictText： 冻结
+2020-05-01 17:04:16.780 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:292 -  字典 key : 1
+2020-05-01 17:04:16.782 [http-nio-8080-exec-4] INFO  o.j.modules.system.service.impl.SysDictServiceImpl:62 - 无缓存dictText的时候调用这里！
+2020-05-01 17:04:16.785 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : 身份证
+2020-05-01 17:04:16.785 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ zjlx_dictText： 身份证
+2020-05-01 17:04:16.785 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : null
+2020-05-01 17:04:16.785 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ divisionCode_dictText： null
+2020-05-01 17:04:16.786 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时13ms
+2020-05-01 17:04:18.468 [http-nio-8080-exec-8] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:04:18.475 [http-nio-8080-exec-8] DEBUG org.jeecg.common.system.query.QueryGenerator:185 - 排序规则>>列:null,排序方式:null
+2020-05-01 17:04:18.475 [http-nio-8080-exec-8] DEBUG org.jeecg.common.system.query.QueryGenerator:74 - ---查询条件构造器初始化完成,耗时:0毫秒----
+2020-05-01 17:04:18.481 [http-nio-8080-exec-8] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：6ms
+2020-05-01 17:04:18.485 [http-nio-8080-exec-8] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时4ms
+2020-05-01 17:04:18.485 [http-nio-8080-exec-8] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:38 - ------sqlId------org.jeecg.modules.system.mapper.SysLogMapper.insert
+2020-05-01 17:04:18.486 [http-nio-8080-exec-8] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:41 - ------sqlCommandType------INSERT
+2020-05-01 17:04:18.486 [http-nio-8080-exec-8] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------serialVersionUID
+2020-05-01 17:04:18.487 [http-nio-8080-exec-8] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------id
+2020-05-01 17:04:18.487 [http-nio-8080-exec-8] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------createBy
+2020-05-01 17:04:18.488 [http-nio-8080-exec-8] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------createTime
+2020-05-01 17:04:18.488 [http-nio-8080-exec-8] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------updateBy
+2020-05-01 17:04:18.489 [http-nio-8080-exec-8] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------updateTime
+2020-05-01 17:04:18.489 [http-nio-8080-exec-8] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------costTime
+2020-05-01 17:04:18.489 [http-nio-8080-exec-8] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------ip
+2020-05-01 17:04:18.490 [http-nio-8080-exec-8] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------requestParam
+2020-05-01 17:04:18.490 [http-nio-8080-exec-8] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------requestType
+2020-05-01 17:04:18.491 [http-nio-8080-exec-8] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------requestUrl
+2020-05-01 17:04:18.491 [http-nio-8080-exec-8] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------method
+2020-05-01 17:04:18.492 [http-nio-8080-exec-8] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------username
+2020-05-01 17:04:18.493 [http-nio-8080-exec-8] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------userid
+2020-05-01 17:04:18.494 [http-nio-8080-exec-8] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------logContent
+2020-05-01 17:04:18.494 [http-nio-8080-exec-8] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------logType
+2020-05-01 17:04:18.494 [http-nio-8080-exec-8] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------operateType
+2020-05-01 17:04:18.495 [http-nio-8080-exec-8] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------responsedata
+2020-05-01 17:04:18.495 [http-nio-8080-exec-8] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------resultstate
+2020-05-01 17:04:23.004 [http-nio-8080-exec-7] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:04:23.013 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：10ms
+2020-05-01 17:04:23.016 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.system.aspect.DictAspect:198 -  字典Val : null
+2020-05-01 17:04:23.016 [http-nio-8080-exec-7] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：6ms
+2020-05-01 17:04:23.016 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.system.aspect.DictAspect:199 -  __翻译字典字段__ sex_dictText： null
+2020-05-01 17:04:23.017 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.system.aspect.DictAspect:292 -  字典 key : 2
+2020-05-01 17:04:23.018 [http-nio-8080-exec-7] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时2ms
+2020-05-01 17:04:23.020 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.system.aspect.DictAspect:198 -  字典Val : 冻结
+2020-05-01 17:04:23.020 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:38 - ------sqlId------org.jeecg.modules.system.mapper.SysLogMapper.insert
+2020-05-01 17:04:23.020 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.system.aspect.DictAspect:199 -  __翻译字典字段__ status_dictText： 冻结
+2020-05-01 17:04:23.021 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:41 - ------sqlCommandType------INSERT
+2020-05-01 17:04:23.021 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.system.aspect.DictAspect:292 -  字典 key : 1
+2020-05-01 17:04:23.021 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------serialVersionUID
+2020-05-01 17:04:23.021 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------id
+2020-05-01 17:04:23.022 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------createBy
+2020-05-01 17:04:23.022 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------createTime
+2020-05-01 17:04:23.023 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.system.aspect.DictAspect:198 -  字典Val : 身份证
+2020-05-01 17:04:23.023 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------updateBy
+2020-05-01 17:04:23.023 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.system.aspect.DictAspect:199 -  __翻译字典字段__ zjlx_dictText： 身份证
+2020-05-01 17:04:23.023 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------updateTime
+2020-05-01 17:04:23.023 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.system.aspect.DictAspect:198 -  字典Val : null
+2020-05-01 17:04:23.023 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------costTime
+2020-05-01 17:04:23.023 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.system.aspect.DictAspect:199 -  __翻译字典字段__ divisionCode_dictText： null
+2020-05-01 17:04:23.023 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------ip
+2020-05-01 17:04:23.024 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时10ms
+2020-05-01 17:04:23.024 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------requestParam
+2020-05-01 17:04:23.024 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------requestType
+2020-05-01 17:04:23.024 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------requestUrl
+2020-05-01 17:04:23.025 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------method
+2020-05-01 17:04:23.025 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------username
+2020-05-01 17:04:23.025 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------userid
+2020-05-01 17:04:23.026 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------logContent
+2020-05-01 17:04:23.026 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------logType
+2020-05-01 17:04:23.027 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------operateType
+2020-05-01 17:04:23.027 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------responsedata
+2020-05-01 17:04:23.027 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------resultstate
+2020-05-01 17:04:23.256 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：2ms
+2020-05-01 17:04:23.258 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.system.aspect.DictAspect:198 -  字典Val : null
+2020-05-01 17:04:23.258 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.system.aspect.DictAspect:199 -  __翻译字典字段__ sex_dictText： null
+2020-05-01 17:04:23.258 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.system.aspect.DictAspect:292 -  字典 key : 2
+2020-05-01 17:04:23.259 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.system.aspect.DictAspect:198 -  字典Val : 冻结
+2020-05-01 17:04:23.259 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.system.aspect.DictAspect:199 -  __翻译字典字段__ status_dictText： 冻结
+2020-05-01 17:04:23.260 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.system.aspect.DictAspect:292 -  字典 key : 1
+2020-05-01 17:04:23.260 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.system.aspect.DictAspect:198 -  字典Val : 身份证
+2020-05-01 17:04:23.261 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.system.aspect.DictAspect:199 -  __翻译字典字段__ zjlx_dictText： 身份证
+2020-05-01 17:04:23.261 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.system.aspect.DictAspect:198 -  字典Val : null
+2020-05-01 17:04:23.261 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.system.aspect.DictAspect:199 -  __翻译字典字段__ divisionCode_dictText： null
+2020-05-01 17:04:23.261 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时5ms
+2020-05-01 17:04:25.935 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:04:25.941 [http-nio-8080-exec-3] DEBUG org.jeecg.common.system.query.QueryGenerator:185 - 排序规则>>列:null,排序方式:null
+2020-05-01 17:04:25.941 [http-nio-8080-exec-3] DEBUG org.jeecg.common.system.query.QueryGenerator:74 - ---查询条件构造器初始化完成,耗时:1毫秒----
+2020-05-01 17:04:25.947 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：7ms
+2020-05-01 17:04:25.949 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时2ms
+2020-05-01 17:04:25.949 [http-nio-8080-exec-3] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:38 - ------sqlId------org.jeecg.modules.system.mapper.SysLogMapper.insert
+2020-05-01 17:04:25.949 [http-nio-8080-exec-3] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:41 - ------sqlCommandType------INSERT
+2020-05-01 17:04:25.950 [http-nio-8080-exec-3] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------serialVersionUID
+2020-05-01 17:04:25.950 [http-nio-8080-exec-3] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------id
+2020-05-01 17:04:25.950 [http-nio-8080-exec-3] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------createBy
+2020-05-01 17:04:25.950 [http-nio-8080-exec-3] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------createTime
+2020-05-01 17:04:25.951 [http-nio-8080-exec-3] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------updateBy
+2020-05-01 17:04:25.951 [http-nio-8080-exec-3] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------updateTime
+2020-05-01 17:04:25.951 [http-nio-8080-exec-3] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------costTime
+2020-05-01 17:04:25.952 [http-nio-8080-exec-3] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------ip
+2020-05-01 17:04:25.952 [http-nio-8080-exec-3] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------requestParam
+2020-05-01 17:04:25.953 [http-nio-8080-exec-3] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------requestType
+2020-05-01 17:04:25.953 [http-nio-8080-exec-3] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------requestUrl
+2020-05-01 17:04:25.953 [http-nio-8080-exec-3] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------method
+2020-05-01 17:04:25.953 [http-nio-8080-exec-3] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------username
+2020-05-01 17:04:25.954 [http-nio-8080-exec-3] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------userid
+2020-05-01 17:04:25.954 [http-nio-8080-exec-3] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------logContent
+2020-05-01 17:04:25.954 [http-nio-8080-exec-3] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------logType
+2020-05-01 17:04:25.954 [http-nio-8080-exec-3] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------operateType
+2020-05-01 17:04:25.955 [http-nio-8080-exec-3] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------responsedata
+2020-05-01 17:04:25.955 [http-nio-8080-exec-3] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------resultstate
+2020-05-01 17:04:29.194 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:04:29.219 [http-nio-8080-exec-5] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:38 - ------sqlId------org.jeecg.modules.system.mapper.SysAnnouncementSendMapper.update
+2020-05-01 17:04:29.219 [http-nio-8080-exec-5] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:41 - ------sqlCommandType------UPDATE
+2020-05-01 17:04:29.219 [http-nio-8080-exec-5] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:115 - ------field.name------serialVersionUID
+2020-05-01 17:04:29.220 [http-nio-8080-exec-5] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:115 - ------field.name------id
+2020-05-01 17:04:29.220 [http-nio-8080-exec-5] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:115 - ------field.name------anntId
+2020-05-01 17:04:29.220 [http-nio-8080-exec-5] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:115 - ------field.name------userId
+2020-05-01 17:04:29.220 [http-nio-8080-exec-5] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:115 - ------field.name------readFlag
+2020-05-01 17:04:29.220 [http-nio-8080-exec-5] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:115 - ------field.name------readTime
+2020-05-01 17:04:29.221 [http-nio-8080-exec-5] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:115 - ------field.name------createBy
+2020-05-01 17:04:29.221 [http-nio-8080-exec-5] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:115 - ------field.name------createTime
+2020-05-01 17:04:29.221 [http-nio-8080-exec-5] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:115 - ------field.name------updateBy
+2020-05-01 17:04:29.221 [http-nio-8080-exec-5] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:115 - ------field.name------updateTime
+2020-05-01 17:04:29.229 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：19ms
+2020-05-01 17:04:29.229 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:04:29.439 [http-nio-8080-exec-9] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:04:29.454 [http-nio-8080-exec-9] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：10ms
+2020-05-01 17:04:29.454 [http-nio-8080-exec-9] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:04:35.522 [http-nio-8080-exec-6] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:04:35.529 [http-nio-8080-exec-6] INFO  o.j.m.system.controller.SysPermissionController:120 -  ------ 通过令牌获取用户拥有的访问菜单 ---- TOKEN ------ eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1ODgzMjU2NDMsInVzZXJuYW1lIjoiYWRtaW4xMiJ9.XKTo2oVpnTadLWa60wseUjctmYmEz5j_QgaxKEFes6U
+2020-05-01 17:04:35.543 [http-nio-8080-exec-6] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：14ms
+2020-05-01 17:04:35.543 [http-nio-8080-exec-6] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:04:35.927 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:38 - ------sqlId------org.jeecg.modules.system.mapper.SysLogMapper.insert
+2020-05-01 17:04:35.928 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:41 - ------sqlCommandType------INSERT
+2020-05-01 17:04:35.928 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------serialVersionUID
+2020-05-01 17:04:35.928 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------id
+2020-05-01 17:04:35.928 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------createBy
+2020-05-01 17:04:35.928 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------createTime
+2020-05-01 17:04:35.929 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------updateBy
+2020-05-01 17:04:35.929 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------updateTime
+2020-05-01 17:04:35.929 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------costTime
+2020-05-01 17:04:35.929 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------ip
+2020-05-01 17:04:35.929 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------requestParam
+2020-05-01 17:04:35.929 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------requestType
+2020-05-01 17:04:35.930 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------requestUrl
+2020-05-01 17:04:35.930 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------method
+2020-05-01 17:04:35.931 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------username
+2020-05-01 17:04:35.931 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------userid
+2020-05-01 17:04:35.931 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------logContent
+2020-05-01 17:04:35.931 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------logType
+2020-05-01 17:04:35.932 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------operateType
+2020-05-01 17:04:35.932 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------responsedata
+2020-05-01 17:04:35.932 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------resultstate
+2020-05-01 17:05:05.240 [http-nio-8080-exec-8] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2020-05-01 17:05:05.254 [http-nio-8080-exec-8] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：9ms
+2020-05-01 17:05:05.254 [http-nio-8080-exec-8] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:05:07.369 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：18ms
+2020-05-01 17:05:07.369 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:05:07.672 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:38 - ------sqlId------org.jeecg.modules.mapper.Wfi_materclassMapper.insert
+2020-05-01 17:05:07.672 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:41 - ------sqlCommandType------INSERT
+2020-05-01 17:05:07.673 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------id
+2020-05-01 17:05:07.673 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------prolsh
+2020-05-01 17:05:07.673 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------matedesc
+2020-05-01 17:05:07.673 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------fileindex
+2020-05-01 17:05:07.674 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------name
+2020-05-01 17:05:07.674 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------procodeid
+2020-05-01 17:05:07.674 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------required
+2020-05-01 17:05:07.674 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------ecert
+2020-05-01 17:05:07.674 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------ecertCode
+2020-05-01 17:05:07.675 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------divisionCode
+2020-05-01 17:05:07.675 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------count
+2020-05-01 17:05:07.675 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------materdataindex
+2020-05-01 17:05:07.682 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:38 - ------sqlId------org.jeecg.modules.mapper.Wfi_materclassMapper.insert
+2020-05-01 17:05:07.682 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:41 - ------sqlCommandType------INSERT
+2020-05-01 17:05:07.683 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------id
+2020-05-01 17:05:07.683 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------prolsh
+2020-05-01 17:05:07.683 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------matedesc
+2020-05-01 17:05:07.683 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------fileindex
+2020-05-01 17:05:07.683 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------name
+2020-05-01 17:05:07.683 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------procodeid
+2020-05-01 17:05:07.684 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------required
+2020-05-01 17:05:07.684 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------ecert
+2020-05-01 17:05:07.684 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------ecertCode
+2020-05-01 17:05:07.684 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------divisionCode
+2020-05-01 17:05:07.684 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------count
+2020-05-01 17:05:07.685 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------materdataindex
+2020-05-01 17:05:07.689 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:38 - ------sqlId------org.jeecg.modules.mapper.Wfi_materclassMapper.insert
+2020-05-01 17:05:07.689 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:41 - ------sqlCommandType------INSERT
+2020-05-01 17:05:07.689 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------id
+2020-05-01 17:05:07.689 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------prolsh
+2020-05-01 17:05:07.689 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------matedesc
+2020-05-01 17:05:07.690 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------fileindex
+2020-05-01 17:05:07.690 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------name
+2020-05-01 17:05:07.690 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------procodeid
+2020-05-01 17:05:07.690 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------required
+2020-05-01 17:05:07.690 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------ecert
+2020-05-01 17:05:07.691 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------ecertCode
+2020-05-01 17:05:07.691 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------divisionCode
+2020-05-01 17:05:07.691 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------count
+2020-05-01 17:05:07.691 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------materdataindex
+2020-05-01 17:05:07.693 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:38 - ------sqlId------org.jeecg.modules.mapper.Wfi_materclassMapper.insert
+2020-05-01 17:05:07.693 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:41 - ------sqlCommandType------INSERT
+2020-05-01 17:05:07.693 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------id
+2020-05-01 17:05:07.694 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------prolsh
+2020-05-01 17:05:07.694 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------matedesc
+2020-05-01 17:05:07.694 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------fileindex
+2020-05-01 17:05:07.694 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------name
+2020-05-01 17:05:07.694 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------procodeid
+2020-05-01 17:05:07.695 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------required
+2020-05-01 17:05:07.695 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------ecert
+2020-05-01 17:05:07.695 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------ecertCode
+2020-05-01 17:05:07.695 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------divisionCode
+2020-05-01 17:05:07.695 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------count
+2020-05-01 17:05:07.696 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------materdataindex
+2020-05-01 17:05:07.698 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:38 - ------sqlId------org.jeecg.modules.mapper.Wfi_materclassMapper.insert
+2020-05-01 17:05:07.698 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:41 - ------sqlCommandType------INSERT
+2020-05-01 17:05:07.698 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------id
+2020-05-01 17:05:07.699 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------prolsh
+2020-05-01 17:05:07.699 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------matedesc
+2020-05-01 17:05:07.699 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------fileindex
+2020-05-01 17:05:07.699 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------name
+2020-05-01 17:05:07.699 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------procodeid
+2020-05-01 17:05:07.700 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------required
+2020-05-01 17:05:07.700 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------ecert
+2020-05-01 17:05:07.700 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------ecertCode
+2020-05-01 17:05:07.700 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------divisionCode
+2020-05-01 17:05:07.700 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------count
+2020-05-01 17:05:07.701 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------materdataindex
+2020-05-01 17:05:07.705 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:38 - ------sqlId------org.jeecg.modules.mapper.Wfi_materclassMapper.insert
+2020-05-01 17:05:07.705 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:41 - ------sqlCommandType------INSERT
+2020-05-01 17:05:07.705 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------id
+2020-05-01 17:05:07.706 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------prolsh
+2020-05-01 17:05:07.706 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------matedesc
+2020-05-01 17:05:07.706 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------fileindex
+2020-05-01 17:05:07.706 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------name
+2020-05-01 17:05:07.706 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------procodeid
+2020-05-01 17:05:07.707 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------required
+2020-05-01 17:05:07.707 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------ecert
+2020-05-01 17:05:07.707 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------ecertCode
+2020-05-01 17:05:07.707 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------divisionCode
+2020-05-01 17:05:07.707 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------count
+2020-05-01 17:05:07.707 [http-nio-8080-exec-7] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------materdataindex
+2020-05-01 17:05:07.710 [http-nio-8080-exec-7] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：52ms
+2020-05-01 17:05:07.710 [http-nio-8080-exec-7] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2020-05-01 17:05:08.055 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：9ms
+2020-05-01 17:05:08.059 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时4ms

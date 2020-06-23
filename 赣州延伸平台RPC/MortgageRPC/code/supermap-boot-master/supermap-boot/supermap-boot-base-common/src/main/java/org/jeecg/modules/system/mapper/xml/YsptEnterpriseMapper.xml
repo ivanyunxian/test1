@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.jeecg.modules.system.mapper.YsptEnterpriseMapper">
+	
+	<select id="getEnterpriseByName" resultType="org.jeecg.modules.system.entity.YsptEnterprise">
+		select * from  yspt_enterprise  where enterprise_name = #{enterprisename} and del_flag = '0'
+	</select>
+	
+	<select id="getEnterpriseByPhone" resultType="org.jeecg.modules.system.entity.YsptEnterprise">
+		select * from  yspt_enterprise  where phone = #{phone} and del_flag = '0'
+	</select>
+	
+	<select id="projectlist" parameterType="java.util.HashMap" resultType="java.util.HashMap">
+        SELECT
+        PRO.*,
+         CASE
+         WHEN STATUS = 0 THEN
+          '未提交'
+         WHEN STATUS = 1 THEN
+          '通过'
+         WHEN STATUS = 10 THEN
+          '未提交'
+         WHEN STATUS = 20 THEN
+          '驳回'
+       END AS STATUS_TEXT
+        FROM BDC_MRPC.YSPT_ENTERPRISE PRO
+        WHERE 1 = 1
+        <if test="param.enterpriseName !=null ">
+           AND PRO.ENTERPRISE_NAME LIKE '%${param.enterpriseName}%'
+       	</if>
+        <choose>
+        <when test="param.bhYzm == null">
+            and 1=0
+        </when>
+        <otherwise>
+            AND PRO.BH_YZM = '${param.bhYzm}'
+        </otherwise>
+        </choose>
+        ORDER BY PRO.CREATE_TIME DESC
+
+    </select>
+	
+</mapper>

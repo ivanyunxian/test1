@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+			http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+			http://www.springframework.org/schema/context
+			http://www.springframework.org/schema/context/spring-context-4.1.xsd
+ 			http://www.springframework.org/schema/aop    
+         	http://www.springframework.org/schema/aop/spring-aop-4.1.xsd
+         	http://www.springframework.org/schema/task
+         	http://www.springframework.org/schema/task/spring-task-4.1.xsd">
+	<!-- 启用rabbitmq配置 -->
+	 <import resource="spring-rabbitmq.xml"/> 
+	<!-- 加载配置文件 -->
+	<context:property-placeholder location="classpath:config.properties,classpath:rabbitmq.properties" />
+	<!-- 扫描service自动注入为bean -->
+	<context:component-scan base-package="com.supermap.resources" />
+	<context:component-scan base-package="com.supermap.**.service.**" />
+	<context:component-scan base-package="com.supermap.**.dao.**" />
+	<context:component-scan base-package="com.supermap.realestate.registration.tools.**" />
+	<context:component-scan base-package="com.supermap.realestate.registration.web.**" />
+	<context:component-scan base-package="com.supermap.wisdombusiness.core.**" />
+    <context:component-scan base-package="com.supermap.realestate.registration.dataExchange.JHK.Imp.**" />
+    <context:component-scan base-package="com.supermap.wisdombusiness.workflow.util.**" />
+    <context:component-scan base-package="com.supermap.realestate_gx.registration.common.**" />
+	<context:component-scan base-package="com.supermap.intelligent.rabbitmq.**" />
+	<!-- 扫描aop切面 -->
+	<context:component-scan
+		base-package="com.supermap.realestate.registration.constraint.**" />
+			<context:component-scan
+		base-package="com.supermap.realestate.registration.check.**" />
+
+	<aop:aspectj-autoproxy proxy-target-class="true" />
+
+	<bean id="springContext" class="com.supermap.wisdombusiness.core.SuperSpringContext"></bean>
+
+	<!-- 2015年10月31日刘树峰新增，不用注解去配置了，目录下存在多个证书服务实现类，具体使用哪个根据各地的config.properties去区分 -->
+	<bean id="zsService" class="${zsservicename}" scope="prototype"></bean>
+	
+	<bean id="appContext" class="com.supermap.wisdombusiness.synchroinline.util.applicationContext"></bean>
+
+
+	<!-- spring thread pool executor -->
+	<bean id="taskExecutor" class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
+		<!-- 线程池维护线程的最少数量 -->
+		<property name="corePoolSize" value="5" />
+		<!-- 允许的空闲时间 -->
+		<property name="keepAliveSeconds" value="200" />
+		<!-- 线程池维护线程的最大数量 -->
+		<property name="maxPoolSize" value="10" />
+		<!-- 缓存队列 -->
+		<property name="queueCapacity" value="50" />
+		<!-- 对拒绝task的处理策略 -->
+		<property name="rejectedExecutionHandler">
+			<bean class="java.util.concurrent.ThreadPoolExecutor$CallerRunsPolicy" />
+		</property>
+	</bean>
+
+
+
+  <!-- <import resource="spring-task.xml"/> -->
+	<!-- 盘符容量判断定时 
+	  */10 * * * * ?  秒
+	  0 */1 * * * ?   分
+	  0 0 */1 * * ?   时
+	-->
+   <!-- <task:scheduled-tasks>
+        <task:scheduled ref="UploadDiskTask" method="UploadDiskTaskRun" cron="*/10 * * * * ?" />
+    </task:scheduled-tasks>
+    <bean id="UploadDiskTask" class="com.supermap.realestate.registration.util.UploadDiskTask"/>   -->
+</beans>

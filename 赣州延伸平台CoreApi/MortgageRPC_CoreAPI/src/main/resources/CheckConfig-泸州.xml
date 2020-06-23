@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="GBK"?>
+<CheckConfig>
+  <checkitems>
+    <CheckItem id="1111111" itemname="必须选择单元">
+      <sqlexpr> FROM BDCK.BDCS_DJDY_GZ WHERE XMBH=:XMBH</sqlexpr>
+      <resultexpr>&gt;0</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>项目不包含任何不动产单元</errorinfo>
+      <questioninfo>项目不包含任何不动产单元</questioninfo>
+      <creator>system</creator>
+      <description>项目不包含任何不动产单元</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="0480aaa0272e4209baf68fc87559a0a5" itemname="权利必须有权利人">
+      <sqlexpr>FROM BDCK.BDCS_QL_GZ QL LEFT JOIN BDCK.BDCS_QLR_GZ QLR ON QL.QLID=QLR.QLID WHERE QLR.QLRID IS NULL AND QL.XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>必需确定权利人</errorinfo>
+      <questioninfo>必需确定权利人</questioninfo>
+      <creator>system</creator>
+      <description>必需确定权利人</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="2f58455f548b4e8c9e9ab25259bf7b82" itemname="权利人必须填写共有方式">
+      <sqlexpr>FROM BDCK.BDCS_QLR_GZ WHERE GYFS IS NULL AND XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>请填写权利人的共有方式</errorinfo>
+      <questioninfo>请填写权利人共有方式</questioninfo>
+      <creator>system</creator>
+      <description>权利人必须填写共有方式</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="ed6cda4646544eec89586ac7b98a1c82" itemname="权利人证件号不能为空">
+      <sqlexpr>FROM BDCK.BDCS_QLR_GZ WHERE ZJH IS NULL AND XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>权利人证件号不能为空</errorinfo>
+      <questioninfo>权利人证件号不能为空</questioninfo>
+      <creator>system</creator>
+      <description>权利人证件号不能为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="3cd352155a984d46b0c61b69f2ebff0b" itemname="权利人证件类型不能为空">
+      <sqlexpr>FROM BDCK.BDCS_QLR_GZ WHERE ZJZL IS NULL AND XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>权利人证件类型不能为空</errorinfo>
+      <questioninfo>权利人证件类型不能为空</questioninfo>
+      <creator>system</creator>
+      <description>权利人证件类型不能为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="fc0a6fee64d8459aba3fd2f587aaac7f" itemname="权利起始时间不能为空">
+      <sqlexpr>FROM BDCK.BDCS_QL_GZ q inner join BDCK.bdcs_djdy_gz d on q.djdyid=d.djdyid inner join BDCK.bdcs_h_gz h on h.bdcdyid=d.bdcdyid WHERE Q.QLqSSJ IS NULL AND Q.XMBH=:XMBH and h.qlxz&lt;&gt;&apos;101&apos;</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>权利起始时间不能为空</errorinfo>
+      <questioninfo>权利起始时间不能为空</questioninfo>
+      <creator></creator>
+      <description>权利起始时间不能为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="7c166379b5ae4c9baea0e8fa5cadf2d3" itemname="权利结束时间不能为空">
+      <sqlexpr>FROM BDCK.BDCS_QL_GZ q inner join BDCK.bdcs_djdy_gz d on q.djdyid=d.djdyid inner join BDCK.bdcs_h_gz h on h.bdcdyid=d.bdcdyid WHERE Q.QLjSSJ IS NULL AND Q.XMBH=:XMBH and h.qlxz&lt;&gt;&apos;101&apos;</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>权利结束时间不能为空</errorinfo>
+      <questioninfo>权利结束时间不能为空</questioninfo>
+      <creator>system</creator>
+      <description>权利结束时间不能为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="539f373355454c9f92a3b909701b3d03" itemname="权利人名称不能为空">
+      <sqlexpr>FROM BDCK.BDCS_QLR_GZ WHERE QLRMC IS NULL AND XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>权利人名称不能为空</errorinfo>
+      <questioninfo>权利人名称不能为空</questioninfo>
+      <creator>system</creator>
+      <description>权利人名称不能为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="34bfa8ce6edb4deab3693afb1cfb5527" itemname="权证号不能为空">
+      <sqlexpr>FROM BDCK.BDCS_QL_GZ WHERE BDCQZH IS NULL AND XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>请先获取不动产权证号</errorinfo>
+      <questioninfo></questioninfo>
+      <creator></creator>
+      <description>权证号不能为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="ffeb30bda9744061a53ed0a38e3c3fb5" itemname="一般抵押被担保债权数额不能为空">
+      <sqlexpr>FROM BDCK.BDCS_QL_GZ QL LEFT JOIN BDCK.BDCS_FSQL_GZ FSQL ON QL.QLID=FSQL.QLID WHERE QLLX=&apos;23&apos; AND QL.DJLX=&apos;100&apos; AND FSQL.DYFS=&apos;1&apos; AND FSQL.BDBZZQSE IS NULL AND QL.XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>一般抵押被担保债权数额不能为空</errorinfo>
+      <questioninfo>一般抵押被担保债权数额不能为空</questioninfo>
+      <creator>system</creator>
+      <description>一般抵押被担保债权数额不能为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="bf78a532403e48d9a31928d50eda79f4" itemname="最高额抵押最高债权数额不能为空">
+      <sqlexpr>FROM BDCK.BDCS_QL_GZ QL LEFT JOIN BDCK.BDCS_FSQL_GZ FSQL ON QL.QLID=FSQL.QLID WHERE QLLX=&apos;23&apos; AND QL.DJLX=&apos;100&apos; AND FSQL.DYFS=&apos;2&apos; AND FSQL.ZGZQSE IS NULL AND QL.XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>最高额抵押最高债权数额不能为空</errorinfo>
+      <questioninfo>最高额抵押最高债权数额不能为空</questioninfo>
+      <creator>system</creator>
+      <description>最高额抵押最高债权数额不能为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="e907637e9d3c4da1ad84748f763e9877" itemname="项目还没有登簿不能转出">
+      <sqlexpr>FROM BDCK.BDCS_XMXX WHERE XMBH=:XMBH AND SFDB=&apos;0&apos;</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>项目还没有登簿不能转出</errorinfo>
+      <questioninfo>项目还没有登簿不能转出</questioninfo>
+      <creator>system</creator>
+      <description>项目还没有登簿不能转出</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="fe3a1f85d8ed40ec963d72880ecc77d1" itemname="坐落不能为空（宗地）">
+      <sqlexpr>from bdck.bdcs_shyqzd_gz WHERE ZL is null and XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>不动产单元坐落不能为空</errorinfo>
+      <questioninfo>不动产单元坐落不能为空</questioninfo>
+      <creator>system</creator>
+      <description>不动产单元坐落不能为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="297f3867ff464f6a93f85ad65a327510" itemname="坐落不能为空（户）">
+      <sqlexpr>from bdck.bdcs_h_gz WHERE ZL is null and XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>2</checklevel>
+      <errorinfo>不动产单元坐落不能为空</errorinfo>
+      <questioninfo>不动产单元坐落不能为空</questioninfo>
+      <creator>system</creator>
+      <description>不动产单元坐落不能为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="d3a9914beb594e5681c7cbaf1cda0f44" itemname="权利类型不能为空">
+      <sqlexpr>FROM BDCK.BDCS_QL_GZ WHERE QLLX IS NULL AND XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>不动产单元权利类型不能为空</errorinfo>
+      <questioninfo>不动产单元权利类型不能为空</questioninfo>
+      <creator>system</creator>
+      <description>不动产单元权利类型不能为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="727aaacc1cf44e3dbcfda27ea88a1337" itemname="权利性质不能为空（现状）">
+      <sqlexpr>from bdck.bdcs_shyqzd_xz where qlxz is null and bdcdyid in (select zdbdcdyid from bdck.bdcs_h_xz where bdcdyid in (select bdcdyid from bdck.bdcs_djdy_gz where XMBH=:XMBH))</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>不动产单元权利性质不能为空</errorinfo>
+      <questioninfo>不动产单元权利性质不能为空</questioninfo>
+      <creator>system</creator>
+      <description>不动产单元权利性质不能为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="e32fbecb15134b03861aade58ffee0b1" itemname="权利性质不能为空(工作)">
+      <sqlexpr>from bdck.bdcs_shyqzd_xz where qlxz is null and bdcdyid in (select zdbdcdyid from bdck.bdcs_h_gz where bdcdyid in (select bdcdyid from bdck.bdcs_djdy_gz where XMBH=:XMBH))</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>不动产单元权利性质不能为空</errorinfo>
+      <questioninfo>不动产单元权利性质不能为空</questioninfo>
+      <creator>system</creator>
+      <description>不动产单元权利性质不能为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="9eb11afa6345489fa99dde823589e622" itemname="权利性质不能为空(宗地)">
+      <sqlexpr>FROM BDCK.BDCS_SHYQZD_GZ WHERE QLXZ IS NULL AND XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>不动产单元权利性质不能为空</errorinfo>
+      <questioninfo>不动产单元权利性质不能为空</questioninfo>
+      <creator>system</creator>
+      <description>不动产单元权利性质不能为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="999e4aebc55445aeb82ea440201e9b76" itemname="土地用途不能为空（工作）">
+      <sqlexpr>from bdck.bdcs_shyqzd_xz where yt is null and bdcdyid in (select zdbdcdyid from bdck.bdcs_h_xz where bdcdyid in (select bdcdyid from bdck.bdcs_djdy_gz where XMBH=:XMBH))</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>宗地土地用途不能为空</errorinfo>
+      <questioninfo>宗地土地用途不能为空</questioninfo>
+      <creator>system</creator>
+      <description>宗地土地用途不能为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="1efe139b5b9e4476967f305b9d4222c2" itemname="土地用途不能为空（现状）">
+      <sqlexpr>from bdck.bdcs_shyqzd_xz where yt is null and bdcdyid in (select zdbdcdyid from bdck.bdcs_h_gz where bdcdyid in (select bdcdyid from bdck.bdcs_djdy_gz where XMBH=:XMBH))</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>宗地用途不能为空</errorinfo>
+      <questioninfo>宗地用途不能为空</questioninfo>
+      <creator>system</creator>
+      <description>宗地用途不能为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="21ed34baa32e48a292d49e17736985f7" itemname="土地用途不能为空（宗地）">
+      <sqlexpr>FROM BDCK.BDCS_SHYQZD_GZ WHERE YT IS NULL AND XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>土地用途不能为空</errorinfo>
+      <questioninfo>土地用途不能为空</questioninfo>
+      <creator>system</creator>
+      <description>土地用途不能为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="45b28dd084d745ac8d36022e6f9e4219" itemname="不动产单元面积不能为空（工作）">
+      <sqlexpr>FROM BDCK.BDCS_H_GZ WHERE (SCJZMJ&lt;=0 OR SCJZMJ is null) AND XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>不动产单元面积不能为空</errorinfo>
+      <questioninfo>不动产单元面积不能为空</questioninfo>
+      <creator>system</creator>
+      <description>不动产单元面积不能为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="64d723cf091c470881489f0a78e48af3" itemname="不动产单元面积不能为空（现状）">
+      <sqlexpr>FROM BDCK.BDCS_H_XZ WHERE (SCJZMJ&lt;=0 OR SCJZMJ is null) AND XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>不动产单元面积不能为空</errorinfo>
+      <questioninfo>不动产单元面积不能为空</questioninfo>
+      <creator>system</creator>
+      <description>不动产单元面积不能为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="d1a759afb450498e83fde2651bb7cd48" itemname="宗地面积不能为空">
+      <sqlexpr>FROM BDCK.BDCS_SHYQZD_GZ WHERE (ZDMJ&lt;=0 or ZDMJ IS NULL) AND XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>宗地面积不能为空</errorinfo>
+      <questioninfo>宗地面积不能为空</questioninfo>
+      <creator>system</creator>
+      <description>宗地面积不能为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="f6102258c0104f8295b238ddfc336afb" itemname="登簿后不能驳回(驳回控制专用)">
+      <sqlexpr>FROM BDCK.BDCS_XMXX WHERE XMBH=:XMBH AND SFDB=&apos;1&apos;</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>项目已登簿，不可以驳回</errorinfo>
+      <questioninfo>项目已登簿，不可以驳回</questioninfo>
+      <creator>system</creator>
+      <description>项目已登簿，不可以驳回</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="f610225kjfla9213233fc336a324121" itemname="无证书编号，无法转出">
+      <sqlexpr>FROM BDCK.BDCS_ZS_GZ WHERE XMBH=:XMBH AND ZSBH IS NULL OR ZSBH=&apos; &apos;</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>未保存证书编号，无法转出</errorinfo>
+      <questioninfo>未保存证书编号，无法转出</questioninfo>
+      <creator>system</creator>
+      <description>未保存证书编号，无法转出</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="138dfcc00f2644d8b3a4270df0ca1087" itemname="限制类-查封-现状现房-宗地">
+      <sqlexpr>FROM ?BDCK.BDCS_H_XZ H LEFT JOIN ?BDCK.BDCS_DJDY_XZ DJDY ON DJDY.BDCDYID=H.ZDBDCDYID LEFT JOIN BDCK.BDCS_QL_XZ QL ON QL.DJDYID=DJDY.DJDYID WHERE QL.DJLX=&apos;800&apos; AND H.BDCDYID IN (SELECT BDCDYID FROM BDCK.BDCS_DJDY_GZ WHERE XMBH=:XMBH)</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>房屋所在宗地已经被查封或正在办理查封</errorinfo>
+      <questioninfo>房屋所在宗地已经被查封或正在办理查封</questioninfo>
+      <creator>system</creator>
+      <description>房屋所在宗地已经被查封或正在办理查封</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="dd908cfc1d874f74b5af05e86145923d" itemname="限制类-查封-宗地">
+      <sqlexpr>FROM ?BDCK.BDCS_H_XZ H LEFT JOIN BDCK.BDCS_DJDY_XZ DJDY ON DJDY.BDCDYID=H.BDCDYID LEFT JOIN BDCK.BDCS_QL_XZ QL ON QL.DJDYID=DJDY.DJDYID WHERE QL.DJLX=&apos;800&apos; AND QL.QLID IS NOT NULL AND H.ZDBDCDYID IN (SELECT BDCDYID FROM BDCK.BDCS_DJDY_GZ WHERE XMBH=:XMBH)</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>宗地上的房屋已经被查封</errorinfo>
+      <questioninfo>宗地上的房屋已经被查封</questioninfo>
+      <creator>system</creator>
+      <description>宗地上的房屋已经被查封</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="a888e1f6970c4999813e81d1c4e68da0" itemname="限制类-查封-现状现房">
+      <sqlexpr>FROM DUAL</sqlexpr>
+      <resultexpr>&gt;=0</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>现房关联的期房已被查封或者正在办理查封</errorinfo>
+      <questioninfo>现房关联的期房已被查封或者正在办理查封</questioninfo>
+      <creator>system</creator>
+      <description>现房关联的期房已被查封或者正在办理查封</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="a480c8a7de244e9fbaf05bad82a8c1d3" itemname="限制类-查封-现状期房">
+      <sqlexpr>FROM DUAL</sqlexpr>
+      <resultexpr>&gt;=0</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>期房关联的现房已被查封或正在办理查封</errorinfo>
+      <questioninfo>期房关联的现房已被查封或正在办理查封</questioninfo>
+      <creator>system</creator>
+      <description>期房关联的现房已被查封或正在办理查封</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="7062eb89aaf449b2b5627c971f925934" itemname="限制类-查封-通用">
+      <sqlexpr>FROM DUAL</sqlexpr>
+      <resultexpr>&gt;=0</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>单元已被查封或正在办理查封</errorinfo>
+      <questioninfo>单元已被查封或正在办理查封</questioninfo>
+      <creator>system</creator>
+      <description>单元已被查封或正在办理查封</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="1c8d2a8895d6428b846c9240c7f4b6e6" itemname="项目必须归档">
+      <sqlexpr>FROM BDCK.BDCS_DJGD WHERE XMBH=:XMBH</sqlexpr>
+      <resultexpr>&gt;0</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>项目没有归档不能办结</errorinfo>
+      <questioninfo>项目没有归档不能办结</questioninfo>
+      <creator>system</creator>
+      <description>项目必须归档</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="c5ce1ff4096540dea7111453f9e3e74f" itemname="持证方式为共同持证并且有多个权利人的情况下必须设置持证人">
+      <sqlexpr>FROM (SELECT QL.QLID AS QLID,COUNT(QLR.QLRID) AS QLRGS,SUM(TO_NUMBER(QLR.ISCZR)) AS CZRGS FROM BDCK.BDCS_QL_GZ QL LEFT JOIN BDCK.BDCS_QLR_GZ QLR ON QL.QLID=QLR.QLID AND QL.QLLX&lt;&gt;&apos;23&apos; WHERE QL.XMBH=:XMBH AND QL.CZFS=&apos;01&apos; AND QL.QLID IS NOT NULL GROUP BY QL.QLID ) WHERE QLRGS&gt;1 AND (CZRGS IS NULL OR CZRGS&lt;1)</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>持证方式为共同持证并且有多个权利人的情况下必须设置持证人</errorinfo>
+      <questioninfo>持证方式为共同持证并且有多个权利人的情况下必须设置持证人</questioninfo>
+      <creator>system</creator>
+      <description>持证方式为共同持证并且有多个权利人的情况下必须设置持证人</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="06471b8d33d7400fb8dd2a7c144132a8" itemname="现房-非首次登记-房屋表里的&quot;土地权利性质&quot;字段不能为空（泸州）。">
+      <sqlexpr>FROM BDCK.BDCS_H_GZ H LEFT JOIN BDCK.BDCS_DJDY_GZ DJDY ON DJDY.BDCDYID=H.BDCDYID WHERE H.QLXZ IS NULL AND DJDY.XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>房屋表里的&quot;土地权利性质&quot;字段不能为空</errorinfo>
+      <questioninfo>房屋表里的&quot;土地权利性质&quot;字段不能为空</questioninfo>
+      <creator></creator>
+      <description>房屋表里的&quot;土地权利性质&quot;字段不能为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="17643f68719945248c9f2997c08df148" itemname="现房-非首次登记-房屋表里的&quot;房屋土地用途&quot;字段不能为空（泸州）。">
+      <sqlexpr>FROM BDCK.BDCS_H_GZ H LEFT JOIN BDCK.BDCS_DJDY_GZ DJDY ON DJDY.BDCDYID=H.BDCDYID WHERE H.FWTDYT IS NULL AND DJDY.XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>房屋表里的&quot;房屋土地用途&quot;字段不能为空</errorinfo>
+      <questioninfo>房屋表里的&quot;房屋土地用途&quot;字段不能为空</questioninfo>
+      <creator></creator>
+      <description>房屋表里的&quot;房屋土地用途&quot;字段不能为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="345d7ba8ef8a4571b6940079d7bee530" itemname="现房-非首次登记-房屋规划用途不为空">
+      <sqlexpr>FROM BDCK.BDCS_H_XZ H LEFT JOIN BDCK.BDCS_DJDY_GZ DJDY ON DJDY.BDCDYID=H.BDCDYID WHERE H.GHYT is null AND DJDY.XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>房屋规划用途不为空</errorinfo>
+      <questioninfo>房屋规划用途不为空</questioninfo>
+      <creator></creator>
+      <description>房屋规划用途不为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="2192864d308d42dcb131e250d183795a" itemname="现房-首次登记-房屋表里的&quot;土地权利性质&quot;字段不能为空">
+      <sqlexpr>FROM BDCK.BDCS_H_GZ H WHERE H.QLXZ IS NULL AND H.XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>房屋表里的&quot;土地权利性质&quot;字段不能为空</errorinfo>
+      <questioninfo>房屋表里的&quot;土地权利性质&quot;字段不能为空</questioninfo>
+      <creator></creator>
+      <description>房屋表里的&quot;土地权利性质&quot;字段不能为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="06fc5db7cf724e80a3ef207a9c49c54c" itemname="现房-首次登记-房屋表里的&quot;房屋土地用途&quot;字段不能为空">
+      <sqlexpr>FROM BDCK.BDCS_H_GZ H WHERE H.FWTDYT IS NULL AND H.XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>房屋表里的&quot;房屋土地用途&quot;字段不能为空</errorinfo>
+      <questioninfo>房屋表里的&quot;房屋土地用途&quot;字段不能为空</questioninfo>
+      <creator></creator>
+      <description>房屋表里的&quot;房屋土地用途&quot;字段不能为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="28bc22c0b26144cc8afa69aa82a0894a" itemname="现房-首次登记-房屋规划用途不为空">
+      <sqlexpr>FROM BDCK.BDCS_H_GZ H WHERE H.GHYT IS NULL AND H.XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>房屋规划用途不为空</errorinfo>
+      <questioninfo>房屋规划用途不为空</questioninfo>
+      <creator></creator>
+      <description>房屋规划用途不为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="553a0cd1a064487bbeb943c7e7a84618" itemname="只有一个权利人，共有方式必须是单独所有">
+      <sqlexpr>FROM BDCK.BDCS_QLR_GZ WHERE (GYFS IS NULL OR GYFS&lt;&gt;&apos;0&apos;) AND QLID IN (SELECT QLR.QLID FROM BDCK.BDCS_QLR_GZ QLR LEFT JOIN BDCK.BDCS_QL_GZ QL ON QL.QLID=QLR.QLID AND QL.QLLX&lt;&gt;&apos;23&apos; WHERE QL.QLID IS NOT NULL AND QLR.XMBH=:XMBH GROUP BY QLR.QLID HAVING COUNT(QLR.QLID)=1 )</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>2</checklevel>
+      <errorinfo>只有一个权利人，共有方式必须是单独所有</errorinfo>
+      <questioninfo>只有一个权利人，共有方式必须是单独所有，是否提交。</questioninfo>
+      <creator></creator>
+      <description>只有一个权利人，共有方式必须是单独所有</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="0f99002ea71c477391a414bd2324ea1c" itemname="多个权利人共有方式不能为单独所有">
+      <sqlexpr>FROM BDCK.BDCS_QLR_GZ WHERE GYFS=&apos;0&apos; AND QLID IN(SELECT QLR.QLID FROM BDCK.BDCS_QLR_GZ QLR LEFT JOIN BDCK.BDCS_QL_GZ QL ON QL.QLID=QLR.QLID AND QL.QLLX&lt;&gt;&apos;23&apos; WHERE QLR.XMBH=:XMBH AND QL.QLID IS NOT NULL GROUP BY QLR.QLID HAVING COUNT(QLR.QLID)&gt;1)</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>多个权利人共有方式不能为单独所有</errorinfo>
+      <questioninfo>多个权利人共有方式不能为单独所有</questioninfo>
+      <creator></creator>
+      <description>多个权利人共有方式不能为单独所有</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="fdaa5163158b46fd9b6a827aff000c35" itemname="多个权利人共有方式必须一致">
+      <sqlexpr>FROM ( SELECT COUNT(*) FROM BDCK.BDCS_QLR_GZ QLR LEFT JOIN BDCK.BDCS_QL_GZ QL ON QL.QLID=QLR.QLID AND QL.QLLX&lt;&gt;&apos;23&apos; WHERE QL.QLID IS NOT NULL AND QLR.XMBH=:XMBH GROUP BY QLR.QLID HAVING COUNT(DISTINCT GYFS)&gt;1 )</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>多个权利人共有方式必须一致</errorinfo>
+      <questioninfo>多个权利人共有方式必须一致</questioninfo>
+      <creator></creator>
+      <description>多个权利人共有方式必须一致</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="b5f9285cd2a6439e880f8b589920401d" itemname="按份共有权利比例不能为空">
+      <sqlexpr>FROM BDCK.BDCS_QLR_GZ QLR LEFT JOIN BDCK.BDCS_QL_GZ QL ON QL.QLID=QLR.QLID AND QL.QLLX&lt;&gt;&apos;23&apos; WHERE QL.QLID IS NOT NULL AND QLR.GYFS=&apos;2&apos; AND QLR.QLBL IS NULL AND QLR.XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>按份共有权利比例不能为空</errorinfo>
+      <questioninfo>按份共有权利比例不能为空</questioninfo>
+      <creator></creator>
+      <description>按份共有权利比例不能为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="5b06e486716947a687020f644da6bdfa" itemname="权利人共有方式不为空">
+      <sqlexpr>FROM BDCK.BDCS_QLR_GZ QLR LEFT JOIN BDCK.BDCS_QL_GZ QL ON QL.QLLX&lt;&gt;&apos;23&apos; AND QL.QLID=QLR.QLID WHERE QLR.GYFS IS NULL AND QL.QLID IS NOT NULL AND QLR.XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>权利人共有方式不为空</errorinfo>
+      <questioninfo>权利人共有方式不为空</questioninfo>
+      <creator></creator>
+      <description>权利人共有方式不为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="cd4e7e8e2b4143b9be6f0396ef7637b3" itemname="债务履行时间都不能为空">
+      <sqlexpr>FROM BDCK.BDCS_QL_GZ WHERE XMBH=:XMBH AND (QLQSSJ IS NULL OR QLJSSJ IS NULL) AND QLLX=&apos;23&apos;</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>债务履行时间都不能为空</errorinfo>
+      <questioninfo>债务履行时间都不能为空</questioninfo>
+      <creator></creator>
+      <description>债务履行时间都不能为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="6962185e2f2649b392d046bd1dfda4b5" itemname="期房-使用权宗地用途对应的起止时间不为空">
+      <sqlexpr>FROM BDCK.BDCS_SHYQZD_XZ ZD LEFT JOIN bdck.BDCS_H_XZY H on ZD.BDCDYID = H.ZDBDCDYID LEFT JOIN bdck.BDCS_DJDY_GZ DJDY ON h.BDCDYID= DJDY.BDCDYID LEFT JOIN BDCK.BDCS_TDYT_XZ YT ON YT.BDCDYID=ZD.BDCDYID WHERE DJDY.XMBH=:XMBH AND (YT.QSRQ IS NULL OR YT.ZZRQ IS NULL)</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>使用权宗地用途对应的起止时间不为空</errorinfo>
+      <questioninfo>使用权宗地用途对应的起止时间不为空</questioninfo>
+      <creator></creator>
+      <description>使用权宗地用途对应的起止时间不为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="af76dbc43659423eb1dc1e9bef46395f" itemname="期房-使用权宗地的权利性质不能为空">
+      <sqlexpr>FROM BDCK.BDCS_SHYQZD_XZ ZD LEFT JOIN BDCK.BDCS_H_XZY H on ZD.BDCDYID = H.ZDBDCDYID LEFT JOIN BDCK.BDCS_DJDY_GZ DJDY ON H.BDCDYID= DJDY.BDCDYID WHERE ZD.QLXZ IS NULL AND DJDY.XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>使用权宗地的权利性质不能为空</errorinfo>
+      <questioninfo>使用权宗地的权利性质不能为空</questioninfo>
+      <creator></creator>
+      <description>使用权宗地的权利性质不能为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="2d7399cfd77d4a2195b9a08e769909be" itemname="期房-使用权宗地面积不能为空">
+      <sqlexpr>FROM BDCK.BDCS_SHYQZD_XZ ZD LEFT JOIN bdck.BDCS_H_XZY H on ZD.BDCDYID = H.ZDBDCDYID LEFT JOIN bdck.BDCS_DJDY_GZ DJDY ON h.BDCDYID= DJDY.BDCDYID WHERE ZD.ZDMJ IS NULL AND DJDY.XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>使用权宗地面积不能为空</errorinfo>
+      <questioninfo>使用权宗地面积不能为空</questioninfo>
+      <creator></creator>
+      <description>使用权宗地面积不能为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="34c71babacf84f749fe4f717b49476b9" itemname="期房-房屋名义层不能为空。">
+      <sqlexpr>FROM BDCK.BDCS_H_XZY H WHERE 1&lt;0 and H.XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>房屋名义层不能为空。</errorinfo>
+      <questioninfo>房屋名义层不能为空。</questioninfo>
+      <creator></creator>
+      <description>房屋名义层不能为空。</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="5b5ca6bf40ed446bbfb1455f0e8ebbcf" itemname="期房-房屋性质不为空">
+      <sqlexpr>FROM BDCK.BDCS_H_XZY H LEFT JOIN BDCK.BDCS_DJDY_GZ DJDY ON DJDY.BDCDYID=H.BDCDYID WHERE H.FWXZ is null AND DJDY.XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>房屋性质不为空</errorinfo>
+      <questioninfo>房屋性质不为空</questioninfo>
+      <creator></creator>
+      <description>房屋性质不为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="49c757f4ec944ca0b703c018b20542b9" itemname="期房-房屋结构不能为空">
+      <sqlexpr>FROM BDCK.BDCS_H_XZY H LEFT JOIN BDCK.BDCS_DJDY_GZ DJDY ON DJDY.BDCDYID=H.BDCDYID WHERE H.FWJG is null AND DJDY.XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>房屋结构不能为空</errorinfo>
+      <questioninfo>房屋结构不能为空</questioninfo>
+      <creator></creator>
+      <description>房屋结构不能为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="68c046b12db14c66bb01acd69dc8205b" itemname="期房-房屋规划用途不为空">
+      <sqlexpr>FROM BDCK.BDCS_H_XZY H LEFT JOIN BDCK.BDCS_DJDY_GZ DJDY ON DJDY.BDCDYID=H.BDCDYID WHERE H.GHYT is null AND DJDY.XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>房屋规划用途不为空</errorinfo>
+      <questioninfo>房屋规划用途不为空</questioninfo>
+      <creator></creator>
+      <description>房屋规划用途不为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="22336ae9b35f421a8349641490d20acf" itemname="期房-房屋预测建筑面积不能为空">
+      <sqlexpr>FROM BDCK.BDCS_H_XZY H LEFT JOIN BDCK.BDCS_DJDY_GZ DJDY ON DJDY.BDCDYID=H.BDCDYID WHERE H.YCJZMJ is null AND DJDY.XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>房屋预测建筑面积不能为空</errorinfo>
+      <questioninfo>房屋预测建筑面积不能为空</questioninfo>
+      <creator></creator>
+      <description>房屋预测建筑面积不能为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="15cbeffc411448cbba634b4b7ff369a1" itemname="期房-所在层不能为空">
+      <sqlexpr>FROM BDCK.BDCS_H_XZY H LEFT JOIN BDCK.BDCS_DJDY_GZ DJDY ON DJDY.BDCDYID=H.BDCDYID WHERE H.SZC is null AND DJDY.XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>所在层不能为空</errorinfo>
+      <questioninfo>所在层不能为空</questioninfo>
+      <creator></creator>
+      <description>所在层不能为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="e1eecf5ac6c944168b95e057722ede52" itemname="现房-非首次登记-房屋关联的使用权宗地的权利性质不能为空">
+      <sqlexpr>FROM BDCK.BDCS_SHYQZD_XZ ZD LEFT JOIN BDCK.BDCS_H_XZ H on ZD.BDCDYID = H.ZDBDCDYID LEFT JOIN BDCK.BDCS_DJDY_GZ DJDY ON H.BDCDYID= DJDY.BDCDYID WHERE ZD.QLXZ IS NULL AND DJDY.XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>房屋关联的使用权宗地的权利性质不能为空</errorinfo>
+      <questioninfo>房屋关联的使用权宗地的权利性质不能为空</questioninfo>
+      <creator></creator>
+      <description>房屋关联的使用权宗地的权利性质不能为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="f2619a087f934614b3bb55c91a4b3040" itemname="现房-非首次登记-房屋实测建筑面积不能为空">
+      <sqlexpr>FROM BDCK.BDCS_H_XZ H LEFT JOIN BDCK.BDCS_DJDY_GZ DJDY ON DJDY.BDCDYID=H.BDCDYID WHERE H.SCJZMJ is null AND DJDY.XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>房屋实测建筑面积不能为空</errorinfo>
+      <questioninfo>房屋实测建筑面积不能为空</questioninfo>
+      <creator></creator>
+      <description>房屋实测建筑面积不能为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="106a01c8651a46d89310e9a3b09094a7" itemname="现房-非首次登记-房屋性质不为空">
+      <sqlexpr>FROM bdck.BDCS_H_XZ H LEFT JOIN BDCK.BDCS_DJDY_GZ DJDY ON DJDY.BDCDYID=H.BDCDYID WHERE H.FWXZ is null AND DJDY.XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>房屋性质不为空</errorinfo>
+      <questioninfo>房屋性质不为空</questioninfo>
+      <creator></creator>
+      <description>房屋性质不为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="e1385ed307f5414e8181568defd53364" itemname="现房-非首次登记-房屋面积不能为空。">
+      <sqlexpr>FROM BDCK.BDCS_H_XZ H LEFT JOIN BDCK.BDCS_DJDY_GZ DJDY ON DJDY.BDCDYID=H.BDCDYID WHERE H.SCJZMJ IS NULL AND DJDY.XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>房屋面积不能为空。</errorinfo>
+      <questioninfo>房屋面积不能为空。</questioninfo>
+      <creator></creator>
+      <description>房屋面积不能为空。</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="b0de78856ee04d1fbc8998b9ceac8dde" itemname="现房-首次登记-房屋性质不为空">
+      <sqlexpr>FROM BDCK.BDCS_H_GZ H WHERE H.FWXZ IS NULL AND H.XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>房屋性质不为空</errorinfo>
+      <questioninfo>房屋性质不为空</questioninfo>
+      <creator></creator>
+      <description>房屋性质不为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="dac77c4bb16c47558a1f492833358121" itemname="现房-首次登记-房屋所在层不能为空">
+      <sqlexpr>FROM BDCK.BDCS_H_GZ H WHERE H.SZC IS NULL AND H.XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>房屋所在层不能为空</errorinfo>
+      <questioninfo>房屋所在层不能为空</questioninfo>
+      <creator></creator>
+      <description>房屋所在层不能为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="da57b80decfb4234b5304f35a8fcf2db" itemname="现房-首次登记-房屋面积不能为空。">
+      <sqlexpr>FROM BDCK.BDCS_H_GZ H WHERE H.SCJZMJ IS NULL AND H.XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>房屋面积不能为空。</errorinfo>
+      <questioninfo>房屋面积不能为空。</questioninfo>
+      <creator></creator>
+      <description>房屋面积不能为空。</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="741e046cbe554c3d814a97e07b4c11ae" itemname="一般抵押被担保债券数额不能为空">
+      <sqlexpr>FROM BDCK.BDCS_QL_GZ QL LEFT JOIN BDCK.BDCS_FSQL_GZ FSQL ON QL.QLID=FSQL.QLID WHERE QL.QLLX=&apos;23&apos; AND DYFS=&apos;1&apos; AND BDBZZQSE IS NULL AND QL.XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>一般抵押被担保债券数额不能为空</errorinfo>
+      <questioninfo>一般抵押被担保债券数额不能为空</questioninfo>
+      <creator></creator>
+      <description>一般抵押被担保债券数额不能为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="75de1d6199094399ae2e09460b17a711" itemname="最高额抵押最高债权数额不能为空">
+      <sqlexpr>FROM BDCK.BDCS_QL_GZ QL LEFT JOIN BDCK.BDCS_FSQL_GZ FSQL ON QL.QLID=FSQL.QLID WHERE QL.QLLX=&apos;23&apos; AND DYFS=&apos;2&apos; AND ZGZQSE IS NULL AND QL.XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>最高额抵押最高债权数额不能为空</errorinfo>
+      <questioninfo>最高额抵押最高债权数额不能为空</questioninfo>
+      <creator></creator>
+      <description>最高额抵押最高债权数额不能为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="62a09ede376e4017bad94ef46ff1a646" itemname="非首次登记-房屋竣工时间为空">
+      <sqlexpr>FROM BDCK.BDCS_H_XZ H LEFT JOIN BDCK.BDCS_DJDY_GZ DJDY ON DJDY.BDCDYID=H.BDCDYID WHERE H.JGSJ is null AND DJDY.XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>2</checklevel>
+      <errorinfo>房屋竣工时间为空</errorinfo>
+      <questioninfo>房屋竣工时间为空</questioninfo>
+      <creator></creator>
+      <description>房屋竣工时间为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="ab7bdc964f654eb5b21d1318e8bcaf09" itemname="首次登记-房屋竣工时间为空">
+      <sqlexpr>FROM BDCK.BDCS_H_GZ H WHERE H.JGSJ IS NULL AND H.XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>2</checklevel>
+      <errorinfo>房屋竣工时间为空</errorinfo>
+      <questioninfo>房屋竣工时间为空</questioninfo>
+      <creator></creator>
+      <description>房屋竣工时间为空</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="125db6d6142a4d95b03c39b63e1d8793" itemname="该单元已被抵押">
+      <sqlexpr>FROM BDCK.BDCS_DJDY_GZ DJDY LEFT JOIN BDCK.BDCS_QL_XZ QL ON QL.DJDYID=DJDY.DJDYID WHERE QL.QLLX=&apos;23&apos; AND QL.QLID IS NOT NULL AND DJDY.XMBH=:XMBH</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>2</checklevel>
+      <errorinfo>该单元已被抵押</errorinfo>
+      <questioninfo>该单元已被抵押</questioninfo>
+      <creator></creator>
+      <description>该单元已被抵押</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="ed9c4013a78a4178b5249bc105d842fc" itemname="该项目未归档，请归档后再办结">
+      <sqlexpr>FROM BDCK.BDCS_XMXX A WHERE A.XMBH NOT IN(SELECT B.XMBH FROM BDC_DAK.DAS_BDC B) AND A.XMBH=:XMBH?</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>该项目未归档，请归档后再办结</errorinfo>
+      <questioninfo>该项目未归档，请归档后再办结</questioninfo>
+      <creator>cy</creator>
+      <description></description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="2a3b49fd391145478317a671f1aa0568" itemname="房屋所在宗地已被抵押(现房）">
+      <sqlexpr>FROM BDCK.BDCS_SHYQZD_XZ ZD LEFT JOIN BDCK.BDCS_DJDY_XZ DJDY ON ZD.BDCDYID=DJDY.BDCDYID LEFT JOIN BDCK.BDCS_QL_XZ QL ON QL.DJDYID=DJDY.DJDYID LEFT JOIN BDCK.BDCS_H_XZY H ON H.ZDBDCDYID=ZD.BDCDYID WHERE QL.QLLX=&apos;23&apos; AND H.BDCDYID=:BDCDYID</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>2</checklevel>
+      <errorinfo>房屋所在宗地已被抵押</errorinfo>
+      <questioninfo>房屋所在宗地已被抵押</questioninfo>
+      <creator>cy</creator>
+      <description>房屋所在宗地已被抵押(现房）</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="2e6611599ca545de85f1a6c0bc447c24" itemname="房屋所在宗地已被抵押（期房）">
+      <sqlexpr>FROM BDCK.BDCS_SHYQZD_XZ ZD LEFT JOIN BDCK.BDCS_DJDY_XZ DJDY ON ZD.BDCDYID=DJDY.BDCDYID LEFT JOIN BDCK.BDCS_QL_XZ QL ON QL.DJDYID=DJDY.DJDYID LEFT JOIN BDCK.BDCS_H_XZY H ON H.ZDBDCDYID=ZD.BDCDYID WHERE QL.QLLX=&apos;23&apos; AND H.BDCDYID=:BDCDYID</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>2</checklevel>
+      <errorinfo>房屋所在宗地已被抵押</errorinfo>
+      <questioninfo>房屋所在宗地已被抵押</questioninfo>
+      <creator>cy</creator>
+      <description>房屋所在宗地已被抵押</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="9d3d3cb56f944de3aa99530476c26aee" itemname="所选单元不属于同一宗地">
+      <sqlexpr>FROM (SELECT DISTINCT(DY.ZDBDCDYID) FROM BDCK.BDCS_DJDY_GZ DJDY LEFT JOIN BDCK.BDCS_H_XZ DY ON DJDY.BDCDYID=DY.BDCDYID WHERE DJDY.XMBH=:XMBH)</sqlexpr>
+      <resultexpr>&lt;2</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>所选单元不属于同一宗地</errorinfo>
+      <questioninfo>所选单元不属于同一宗地</questioninfo>
+      <creator>雷家俊</creator>
+      <description>所选单元不属于同一宗地</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="c02709b47ff3472fb6e22558a14b4e0f" itemname="所选单元不属于同一宗地(期房)">
+      <sqlexpr>FROM (SELECT DISTINCT(DY.ZDBDCDYID) FROM BDCK.BDCS_DJDY_GZ DJDY LEFT JOIN BDCK.BDCS_H_XZY DY ON DJDY.BDCDYID=DY.BDCDYID WHERE DJDY.XMBH=:XMBH)</sqlexpr>
+      <resultexpr>&lt;2</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>所选单元不属于同一宗地</errorinfo>
+      <questioninfo>所选单元不属于同一宗地</questioninfo>
+      <creator>雷家俊</creator>
+      <description>所选单元不属于同一宗地</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="f6d8c33dc4bf40518a3662bbc720d5cb" itemname="登簿尚未成功,请重新登簿">
+      <sqlexpr>FROM BDCK.BDCS_QL_ls WHERE XMBH=:XMBH</sqlexpr>
+      <resultexpr>&gt;0</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>登簿尚未成功,请重新登簿</errorinfo>
+      <questioninfo>登簿尚未成功,请重新登簿</questioninfo>
+      <creator>雷家俊</creator>
+      <description>登簿尚未成功,请重新登簿</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="2e818630f79b48ab8d3eae873e6cd1ca" itemname="未保存证书编号，无法转出">
+      <sqlexpr>FROM BDCK.BDCS_ZS_GZ WHERE XMBH=:XMBH AND ZSBH IS NOT NULL</sqlexpr>
+      <resultexpr>&gt;0</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>未保存证书编号，无法转出</errorinfo>
+      <questioninfo>未保存证书编号，无法转出</questioninfo>
+      <creator>CY</creator>
+      <description>未保存证书编号，无法转出</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+    <CheckItem id="b280a90b500a4eacbc6df21fb82bdace" itemname="该开发商限制办理业务">
+      <sqlexpr>FROM BDCK.BDCS_SQR WHERE  XMBH=:XMBH AND (SQRXM LIKE &apos;%金麟%&apos; OR SQRXM LIKE &apos;%兴川运业%&apos; OR SQRXM LIKE &apos;%恒大南城%&apos; OR SQRXM LIKE &apos;%川南大市场%&apos; OR SQRXM LIKE &apos;%立鑫%&apos;)</sqlexpr>
+      <resultexpr>&lt;1</resultexpr>
+      <checklevel>1</checklevel>
+      <errorinfo>该开发商限制办理业务</errorinfo>
+      <questioninfo>该开发商限制办理业务</questioninfo>
+      <creator>雷家俊</creator>
+      <description>该开发商限制办理业务</description>
+      <sortvalue>0</sortvalue>
+    </CheckItem>
+  </checkitems>
+  <checkgroups>
+    <checkgroup>
+      <groupname>首次登记 土地</groupname>
+      <groupid>CSDJ_DIY_FW_CHECK</groupid>
+      <workflowcodes>200040101</workflowcodes>
+      <items>
+        <string>1111111</string>
+        <string>0480aaa0272e4209baf68fc87559a0a5</string>
+        <string>d3a9914beb594e5681c7cbaf1cda0f44</string>
+        <string>fe3a1f85d8ed40ec963d72880ecc77d1</string>
+        <string>d1a759afb450498e83fde2651bb7cd48</string>
+      </items>
+      <description></description>
+    </checkgroup>
+    <checkgroup>
+      <groupname>房屋转移登记登簿检查</groupname>
+      <groupid>0c14a33fdab143469cc5680c632dc37a</groupid>
+      <workflowcodes>200040101</workflowcodes>
+      <items>
+        <string>1111111</string>
+        <string>0480aaa0272e4209baf68fc87559a0a5</string>
+        <string>2f58455f548b4e8c9e9ab25259bf7b82</string>
+        <string>ed6cda4646544eec89586ac7b98a1c82</string>
+        <string>3cd352155a984d46b0c61b69f2ebff0b</string>
+        <string>fc0a6fee64d8459aba3fd2f587aaac7f</string>
+        <string>539f373355454c9f92a3b909701b3d03</string>
+        <string>34bfa8ce6edb4deab3693afb1cfb5527</string>
+        <string>7c166379b5ae4c9baea0e8fa5cadf2d3</string>
+      </items>
+      <description></description>
+    </checkgroup>
+    <checkgroup>
+      <groupname>房屋抵押权初始登记登簿检查</groupname>
+      <groupid>463ebdd5ca3a4515a936cedbeeb3f77f</groupid>
+      <workflowcodes>100230204,100230203,100230204,100230205,100230206,100230207,100230208,100230201,100230210,100230211,100230212,100230213,100230214,100232001,100230202,100230209,100235001</workflowcodes>
+      <items>
+        <string>1111111</string>
+        <string>0480aaa0272e4209baf68fc87559a0a5</string>
+        <string>34bfa8ce6edb4deab3693afb1cfb5527</string>
+        <string>ffeb30bda9744061a53ed0a38e3c3fb5</string>
+        <string>bf78a532403e48d9a31928d50eda79f4</string>
+      </items>
+      <description></description>
+    </checkgroup>
+    <checkgroup>
+      <groupname>该单元已被抵押</groupname>
+      <groupid>e2104798f4884a8e96fe5d64382822d1</groupid>
+      <workflowcodes></workflowcodes>
+      <items>
+        <string>125db6d6142a4d95b03c39b63e1d8793</string>
+      </items>
+      <description></description>
+    </checkgroup>
+  </checkgroups>
+</CheckConfig>

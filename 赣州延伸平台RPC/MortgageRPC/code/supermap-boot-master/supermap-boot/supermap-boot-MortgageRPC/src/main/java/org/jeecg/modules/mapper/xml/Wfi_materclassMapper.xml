@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.jeecg.modules.mapper.Wfi_materclassMapper">
+
+    <select id="getMaterlist" parameterType="String"  resultType="org.jeecg.modules.mortgagerpc.entity.Wfi_materclass">
+	   SELECT
+	    T.id,
+	    T.prolsh,
+	    T.matedesc,
+	    T.fileindex,
+	    T.name,
+	    T.ecert,
+	    T.ecert_code,
+	    T.procodeid,
+	    T.required,
+	    T.division_code,
+	    nvl(S.count,0) count
+	   FROM BDC_MRPC.WFI_MATERCLASS T
+	   LEFT JOIN (
+        SELECT B.MATERINST_ID,COUNT(1) COUNT
+        FROM  BDC_MRPC.WFI_MATERDATA B
+        WHERE B.PROLSH=#{prolsh}
+        GROUP BY MATERINST_ID
+        ) S
+        ON T.ID=S.MATERINST_ID WHERE  T.PROLSH=#{prolsh} ORDER BY T.FILEINDEX
+
+	</select>
+	
+	<select id="getIdsByRyMaterclass"  resultType="java.lang.String">
+	 	SELECT MATERCLASS.ID
+		  	FROM WFI_MATERCLASS MATERCLASS
+		  LEFT JOIN YSPT_ENTERPRISE ENTER
+		    ON ENTER.ID = MATERCLASS.PROLSH
+		 WHERE MATERCLASS.PROCODEID IS NULL
+		   AND ENTER.ID IS NULL
+
+	</select>
+
+
+</mapper>

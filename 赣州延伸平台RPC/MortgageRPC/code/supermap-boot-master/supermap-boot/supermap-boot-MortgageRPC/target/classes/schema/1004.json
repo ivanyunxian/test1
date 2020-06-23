@@ -1,0 +1,38 @@
+{
+  "type": "object",
+  "properties": {
+    "requestcode": {
+      "type": "string"
+    },
+    "requestseq": {
+      "type": "string"
+    },
+    "data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "xzqdm": {
+            "type": "string"
+          },
+          "jgdm": {
+            "type": "string"
+          },
+          "ywlsh": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "xzqdm",
+          "jgdm",
+          "ywlsh"
+        ]
+      }
+    }
+  },
+  "required": [
+    "data",
+    "requestcode",
+    "requestseq"
+  ]
+}

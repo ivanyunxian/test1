@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="GBK"?>
+
+<!-- 配置对应HandlerMapping.xml中的 workflows，其中name 需和workflows的name相同。
+selectorname、unitpagejsp、rightspagejsp、bookpagejsp 对应 workflows中的页面。
+hiddenids 指的是该页面下隐藏的ID，如有多个ID用#分开（因为#符号在中文和英文下都是相同的）。
+disabledids 指的是在该页面下禁用控件ID,如有多个ID用#分开。
+ wuz-->
+<workflows>
+  <Workflow name="default">
+			<!--选择器页面控件ID集合 如SQRLB#TXDZ#id_button_read_card-->
+			<selectorname>
+			 <hiddenids></hiddenids>
+			 <disabledids></disabledids>
+			 <abledids></abledids>
+			</selectorname>
+			<!--单元信息页面控件ID集合-->
+			<unitpagejsp>
+			<hiddenids></hiddenids>
+			<disabledids></disabledids>
+			 <abledids></abledids>
+			</unitpagejsp>
+			<!--权利信息页面控件ID集合-->
+			<rightspagejsp>
+			<hiddenids></hiddenids>
+			<disabledids></disabledids>
+			 <abledids></abledids>
+			</rightspagejsp>
+			<!--登记簿预览页面控件ID集合-->
+			<bookpagejsp>
+			<hiddenids></hiddenids>
+			<disabledids></disabledids>
+			 <abledids></abledids>
+			</bookpagejsp>
+		</Workflow>
+		  <Workflow name="CF002">
+			<!--选择器页面控件ID集合 如                        SQRLB#TXDZ#id_button_read_card-->
+			<selectorname>
+			 <hiddenids></hiddenids>
+			 <disabledids></disabledids>
+			 <abledids></abledids>
+			</selectorname>
+			<!--单元信息页面控件ID集合-->
+			<unitpagejsp>
+			<hiddenids></hiddenids>
+			<disabledids></disabledids>
+			 <abledids></abledids>
+			</unitpagejsp>
+			<!--权利信息页面控件ID集合-->
+			<rightspagejsp>
+			<hiddenids></hiddenids>
+			<disabledids></disabledids>
+			 <abledids>lhsx#cflx</abledids>
+			</rightspagejsp>
+			<!--登记簿预览页面控件ID集合-->
+			<bookpagejsp>
+			<hiddenids></hiddenids>
+			<disabledids></disabledids>
+			 <abledids></abledids>
+			</bookpagejsp>
+		</Workflow>
+                 <Workflow name="CF008">
+			<!--选择器页面控件ID集合 如                        SQRLB#TXDZ#id_button_read_card-->
+			<selectorname>
+			 <hiddenids></hiddenids>
+			 <disabledids></disabledids>
+			 <abledids></abledids>
+			</selectorname>
+			<!--单元信息页面控件ID集合-->
+			<unitpagejsp>
+			<hiddenids></hiddenids>
+			<disabledids></disabledids>
+			 <abledids></abledids>
+			</unitpagejsp>
+			<!--权利信息页面控件ID集合-->
+			<rightspagejsp>
+			<hiddenids></hiddenids>
+			<disabledids></disabledids>
+			 <abledids>lhsx#cflx</abledids>
+			</rightspagejsp>
+			<!--登记簿预览页面控件ID集合-->
+			<bookpagejsp>
+			<hiddenids></hiddenids>
+			<disabledids></disabledids>
+			 <abledids></abledids>
+			</bookpagejsp>
+		</Workflow>
+                   <Workflow name="CF001">
+			<!--选择器页面控件ID集合 如                                                SQRLB#TXDZ#id_button_read_card-->
+			<selectorname>
+			 <hiddenids></hiddenids>
+			 <disabledids></disabledids>
+			 <abledids></abledids>
+			</selectorname>
+			<!--单元信息页面控件ID集合-->
+			<unitpagejsp>
+			<hiddenids></hiddenids>
+			<disabledids></disabledids>
+			 <abledids></abledids>
+			</unitpagejsp>
+			<!--权利信息页面控件ID集合-->
+			<rightspagejsp>
+			<hiddenids></hiddenids>
+			<disabledids></disabledids>
+			 <abledids>lhsx#cflx</abledids>
+			</rightspagejsp>
+			<!--登记簿预览页面控件ID集合-->
+			<bookpagejsp>
+			<hiddenids></hiddenids>
+			<disabledids></disabledids>
+			 <abledids></abledids>
+			</bookpagejsp>
+		</Workflow>
+                 <Workflow name="CF003">
+			<!--选择器页面控件ID集合 如                                                SQRLB#TXDZ#id_button_read_card-->
+			<selectorname>
+			 <hiddenids></hiddenids>
+			 <disabledids></disabledids>
+			 <abledids></abledids>
+			</selectorname>
+			<!--单元信息页面控件ID集合-->
+			<unitpagejsp>
+			<hiddenids></hiddenids>
+			<disabledids></disabledids>
+			 <abledids></abledids>
+			</unitpagejsp>
+			<!--权利信息页面控件ID集合-->
+			<rightspagejsp>
+			<hiddenids></hiddenids>
+			<disabledids></disabledids>
+			 <abledids>lhsx#cflx</abledids>
+			</rightspagejsp>
+			<!--登记簿预览页面控件ID集合-->
+			<bookpagejsp>
+			<hiddenids></hiddenids>
+			<disabledids></disabledids>
+			 <abledids></abledids>
+			</bookpagejsp>
+		</Workflow>
+ </workflows>

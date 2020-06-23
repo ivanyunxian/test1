@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+			http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+			http://www.springframework.org/schema/context
+			http://www.springframework.org/schema/context/spring-context-4.1.xsd
+			http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+ 			http://www.springframework.org/schema/aop    
+         	http://www.springframework.org/schema/aop/spring-aop-4.1.xsd">
+
+
+	<bean id="sessionDAO"
+		class="org.apache.shiro.session.mgt.eis.MemorySessionDAO"></bean>
+	<bean id="sessionIdCookie"
+		class="org.apache.shiro.web.servlet.SimpleCookie">
+		<constructor-arg name="name" value="SHRIOSESSIONID" />
+	</bean>
+	<!-- 项目自定义的Realm -->
+	<bean id="casRealm"
+		class="com.supermap.realestate.realm.SuperShiroCasRealm">
+		<property name="defaultRoles" value="ROLE_USER" />
+		<property name="defaultPermissions" value="user:create,user:update" />
+		<property name="roleAttributeNames" value="roles" />
+		<property name="permissionAttributeNames" value="permissions" />
+		<property name="casServerUrlPrefix" value="${ssosite}/" />
+		<property name="casService" value="${cursite}/cas" />
+	</bean>
+
+	<bean id="sessionManager"
+		class="org.apache.shiro.web.session.mgt.DefaultWebSessionManager">
+		<property name="sessionDAO" ref="sessionDAO"></property>
+		<property name="globalSessionTimeout" value="1800000" />
+		<property name="deleteInvalidSessions" value="true" />
+		<property name="sessionValidationSchedulerEnabled"
+			value="true" />
+		<property name="sessionValidationInterval" value="1800000" />
+		<property name="sessionIdCookie" ref="sessionIdCookie" />
+	</bean>
+
+	<!-- 配置shiro 缓存的一个管理器 -->
+	<bean id="shiroCacheManager"
+		class="org.apache.shiro.cache.MemoryConstrainedCacheManager"></bean>
+
+	<!-- CAS单点登录 -->
+	<bean id="securityManager"
+		class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+		<property name="realm" ref="casRealm" />
+		<property name="cacheManager" ref="shiroCacheManager" />
+		<!--<property name="subjectFactory" ref="casSubjectFactory"/> -->
+		<!--shiro session管理器 -->
+		<property name="sessionManager" ref="sessionManager"></property>
+	</bean>
+
+	<bean id="casFilter" class="org.apache.shiro.cas.CasFilter">
+		<property name="failureUrl" value="/casFailure.jsp" />
+	</bean>
+
+	<bean id="logout"
+		class="org.apache.shiro.web.filter.authc.LogoutFilter">
+		<property name="redirectUrl"
+			value="${ssosite}/logout?service=${cursite}" />
+	</bean>
+
+	<!-- Shiro Filter -->
+	<bean id="shiroFilter"
+		class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+		<property name="securityManager" ref="securityManager" />
+		<!-- CAS单点登录 -->
+		<property name="loginUrl"
+			value="${ssosite}/login?service=${cursite}/cas" />
+		<property name="successUrl" value="/" />
+		<property name="unauthorizedUrl" value="/error" />
+		<property name="filters">
+			<util:map>
+				<entry key="cas" value-ref="casFilter" />
+				<entry key="logout" value-ref="logout" />
+			</util:map>
+		</property>
+		<property name="filterChainDefinitions">
+			<value>
+				<!--对资源(js脚本、css样式文件、图片等的访问不需要进行登录验证) -->
+				/app/authorization/**=anon <!--登录界面 -->
+				/**/cas = cas
+				/**/logout = logout
+				/resources/**=anon
+				/app/project_da/**=anon
+				/app/bdc/archives/**=anon
+				/app/externalworkflow/**=anon
+				/app/project/deletexmxxbyprjid/**=anon
+				/app/project/updatexmxxsfbjbyprjid/**=anon
+				/app/query/housestatus/**=anon
+				/app/book/**=anon
+				/app/receivedata/**=anon
+				/app/framework/login/index/**=anon
+				/app/Jump/registerPage/**=anon
+				/app/framework/login/user/check/**=anon
+				/app/frame/getprojectinfo/** = anon
+				/app/mj/**= anon
+				/app/EnterPriserun/checkUserPassport/**= anon
+				/app/EnterPriserun/checkCode/**= anon
+				/app/Employeerun/checkEmployee_Code/**= anon
+				/app/EnterPriserun/register/**= anon
+				/app/riteZsk/**= anon
+				/app/frame_da/getprojectinfo/**== anon
+				/app/frame_da/hasacceptmater/**== anon
+				/app/arrange/**== anon
+				/app/smsmanager/sendsms/=anon
+				<!--一体机调用证书接口-->
+				/app/zs/**/zsxxCreatePDF=anon
+				/app/zs/**/zsInfo=anon
+				<!--办结项目-->
+				/app/operation/**=anon
+				<!-- 外网 -->
+				/app/outnet/**= anon
+				<!-- 除了对资源的访问，其他都需要进行登录验证 -->
+				/**=authc
+			</value>
+		</property>
+		<!-- authc -->
+	</bean>
+</beans>

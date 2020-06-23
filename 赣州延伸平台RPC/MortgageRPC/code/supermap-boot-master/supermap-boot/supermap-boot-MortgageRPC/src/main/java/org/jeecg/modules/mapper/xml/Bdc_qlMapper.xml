@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.jeecg.modules.mapper.Bdc_qlMapper">
+
+    <select id="getQlBydyid" resultType="org.jeecg.modules.mortgagerpc.entity.Bdc_ql">
+		SELECT * FROM
+		BDC_MRPC.BDC_QL QL
+		WHERE QL.QLID IN
+		  (SELECT DISTINCT QLID
+		   FROM BDC_MRPC.BDC_QLDY QLDY
+		   WHERE QLDY.PROLSH=#{prolsh} AND QLDY.DYID=#{dyid}
+		   )
+	</select>
+
+
+</mapper>

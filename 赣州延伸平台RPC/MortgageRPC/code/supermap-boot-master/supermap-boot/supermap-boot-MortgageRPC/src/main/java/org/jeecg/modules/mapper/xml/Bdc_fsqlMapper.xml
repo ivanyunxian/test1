@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.jeecg.modules.mapper.Bdc_fsqlMapper">
+    <!-- 根据流水号和单元ID获取附属权利 -->
+    <select id="getFsqlBydyid" resultType="org.jeecg.modules.mortgagerpc.entity.Bdc_fsql">
+        SELECT * FROM
+        BDC_MRPC.BDC_FSQL FSQL
+        WHERE FSQL.FSQLID IN
+        (SELECT DISTINCT FSQLID
+        FROM BDC_MRPC.BDC_QLDY QLDY
+        WHERE QLDY.PROLSH=#{prolsh} AND QLDY.DYID=#{dyid}
+        )
+    </select>
+</mapper>

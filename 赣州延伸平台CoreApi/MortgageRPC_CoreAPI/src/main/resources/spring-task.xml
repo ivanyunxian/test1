@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:task="http://www.springframework.org/schema/task"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+			http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+			http://www.springframework.org/schema/context
+			http://www.springframework.org/schema/context/spring-context-4.1.xsd
+ 			http://www.springframework.org/schema/aop    
+         	http://www.springframework.org/schema/aop/spring-aop-4.1.xsd
+         	http://www.springframework.org/schema/task
+         	http://www.springframework.org/schema/task/spring-task-4.1.xsd">
+
+
+    <task:executor id="executor" pool-size="5" />
+    <task:scheduler id="scheduler" pool-size="5" />
+    <task:annotation-driven executor="executor" scheduler="scheduler" />
+    <bean id="reporttask" class="com.supermap.realestate.registration.util.ReportResponseTask"></bean>
+    <bean id="receivestatus" class="com.supermap.realestate.registration.util.ReceiveStatusTask"></bean>
+    <bean id="loginstatus" class="com.supermap.wisdombusiness.framework.service.task.LoginStatusTask"></bean>
+    <!-- <bean id="synchroinline" class="com.supermap.wisdombusiness.synchroinline.task.SynchroPreMDataTask" /> -->
+    <task:scheduled-tasks>
+        <task:scheduled ref="reporttask" method="ReportReponse" initial-delay="10000" fixed-delay="60000" />
+        <task:scheduled ref="reporttask" method="LogReport" cron="0 42 18 * * ?" />
+        <!-- <task:scheduled ref="receivestatus" method="ReceiveStatus" initial-delay="100000" fixed-rate="300000" />-->
+        <!-- 同步进度信息，用于通过业务号查询办理进度 -->
+        <!-- <task:scheduled ref="synchroinline" method="synchroProcessSchedule" cron="0/60 * * * * ?"/> -->
+        <!-- 同步公告信息 -->
+        <!-- <task:scheduled ref="synchroinline" method="synchroNotice" cron="0/60 * * * * ?"/> -->
+        <!-- 同步证书信息 -->
+        <!-- <task:scheduled ref="synchroinline" method="synchroCertificateInfo" cron="0/60 * * * * ?" /> -->
+        <!-- 同步被销毁的信息（包括注销的证书、证明信息，被删除项目的进度信息） -->
+        <!-- <task:scheduled ref="synchroinline" method="synchroDestroyedInfo" cron="0/60 * * * * ?" /> -->
+        <!-- 同步办理进度通知信息到外网（实现给权利人发送办理进度短信通知，注：鹰潭不需要此项，另外不需要此功能的不要取消注释，以免短信发送出去造成不必要的麻烦。） -->
+        <!--<task:scheduled ref="synchroinline" method="synchroDx_qlr" cron="0/60 * * * * ?"/>-->
+        <!-- 定时更新所有用户的登录状态-->
+        <!--<task:scheduled ref="loginstatus" method="ResetStatus" cron="0 0 1 * * ?" />-->
+    </task:scheduled-tasks>
+
+</beans>

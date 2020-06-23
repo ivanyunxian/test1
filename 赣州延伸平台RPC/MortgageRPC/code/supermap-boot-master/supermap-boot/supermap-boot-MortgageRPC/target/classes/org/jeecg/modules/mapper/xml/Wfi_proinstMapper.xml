@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.jeecg.modules.mapper.Wfi_proinstMapper">
+
+    <!-- 在办箱 -->
+    <select id="projectlist" parameterType="java.util.HashMap" resultType="java.util.HashMap">
+        SELECT
+        PRO.PROLSH,
+        PRO.PROJECT_NAME,
+        PRO.PRODEF_NAME,
+        PRO.ACCEPTOR,
+        PRO.PRODEF_ID,
+        PRO.REMARKS,
+        TO_CHAR(PRO.CREAT_DATE, 'YYYY-MM-DD HH24:MI:SS') as CREAT_DATE,
+        PRO.SHZT AS SHZT_ISTRANS
+        FROM BDC_MRPC.WFI_PROINST PRO
+        WHERE 1 = 1
+        <if test="param.prolsh !=null ">
+            AND PRO.PROLSH LIKE '%${param.prolsh}%'
+        </if>
+        <if test="param.projectName !=null ">
+            AND PRO.PROJECT_NAME LIKE '%${param.projectName}%'
+        </if>
+        AND PRO.USER_ID = '${param.userid}'
+        <!---1：未提交，0：待审核，11：审核驳回，-11：提交失败，20：初审通过，30：已登簿-->
+        <if test="param.shzt == 11 ">
+            AND PRO.SHZT IN (11, -11)
+        </if>
+        <if test="param.shzt == null ">
+            AND PRO.SHZT = -1
+        </if>
+
+        ORDER BY PRO.CREAT_DATE DESC
+
+    </select>
+
+    <select id="querypromaxid" statementType="CALLABLE" parameterType="java.util.Map">
+        {
+            call PROC_GETMAXID(
+                #{param.iYear,mode=IN,jdbcType=INTEGER},
+                #{param.sDisCode,mode=IN,jdbcType=VARCHAR},
+                #{param.sBH,mode=IN,jdbcType=VARCHAR},
+                #{param.M_BHTYPE,mode=IN,jdbcType=VARCHAR},
+                #{param.lsh,jdbcType=VARCHAR,mode=OUT,javaType=string}
+            )
+        }
+    </select>
+
+    <select id="getSysuser" resultType="org.jeecg.modules.system.entity.SysUser">
+		select * from  sys_user  where id = #{userid} and del_flag = '0'
+	</select>
+
+    <!-- 已办箱 -->
+    <select id="projectlistendbox" parameterType="java.util.HashMap" resultType="java.util.HashMap">
+        SELECT
+        PRO.PROLSH,
+        PRO.PROJECT_NAME,
+        PRO.PRODEF_NAME,
+        PRO.ACCEPTOR,
+        TO_CHAR(PRO.CREAT_DATE, 'YYYY-MM-DD HH24:MI:SS') as CREAT_DATE,
+        PRO.SHZT AS SHZT_ISTRANS
+        FROM BDC_MRPC.WFI_PROINST PRO
+        WHERE 1 = 1
+        <if test="param.prolsh !=null ">
+            AND PRO.PROLSH LIKE '%${param.prolsh}%'
+        </if>
+        <if test="param.projectName !=null ">
+            AND PRO.PROJECT_NAME LIKE '%${param.projectName}%'
+        </if>
+        AND PRO.USER_ID = '${param.userid}'
+        <!-- -1：未提交，0：待审核，11：审核驳回，-11：提交失败，20：初审通过，30：已登簿-->
+        AND PRO.SHZT IN (0, 20, 30)
+        ORDER BY PRO.CREAT_DATE DESC
+
+    </select>
+
+
+
+    <select id="getUserDepart" parameterType="java.lang.String" resultType="java.util.HashMap">
+
+        SELECT T.DEPART_NAME NAME,
+        T.DEPT_ZJLX ZJLX,
+        T.DEPT_ZJH ZJH,
+        T.MOBILE LXDH,
+        T.ADDRESS TXDZ,
+        T.FDDBR FDDBR,
+        T.FDDBRZJLX FDDBRZJLX,
+        T.FDDBRZJHM FDDBRZJHM
+        FROM BDC_MRPC.SYS_DEPART T
+         WHERE T.ID = #{departid}
+
+    </select>
+
+</mapper>

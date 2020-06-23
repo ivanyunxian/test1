@@ -1,0 +1,39 @@
+{
+  "type" : "object",
+  "properties" : {
+    "requestcode" : {
+      "type" : "string"
+    },
+    "requestseq" : {
+      "type" : "string"
+    },
+    "data" : {
+      "type" : "object",
+      "properties" : {
+        "username" : {
+          "type" : "string"
+        },
+        "appcode" : {
+          "type" : "string"
+        },
+        "jgdm" : {
+          "type" : "string"
+        },
+        "xzqdm" : {
+          "type" : "string"
+        }
+      },
+      "required" : [
+        "username",
+        "appcode",
+        "jgdm",
+        "xzqdm"
+      ]
+    }
+  },
+  "required" : [
+    "data",
+    "requestcode",
+    "requestseq"
+  ]
+}

@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!--鹰潭市共享附件对接附件目录  -->	
+<root>
+	<!--抵押登記 -->
+	<DYDJ>
+	<!--抵押登记目錄 和图片like条件-->
+		
+		<contents>担保合同</contents>
+		<likeCondition>担保合同</likeCondition>
+		<contents>销售不动产发票</contents>
+		<likeCondition></likeCondition>
+		<contents>维修基金发票</contents>
+		<likeCondition>维修基金发票</likeCondition>
+		<contents>抵押合同</contents>
+		<likeCondition>抵押合同</likeCondition>
+		<contents>完税证明</contents>
+		<likeCondition></likeCondition>
+		<contents>申请人身份证明</contents>
+		<likeCondition>身份证、营业执照、婚姻证明</likeCondition>
+		<contents>不动产登记申请书</contents>
+		<likeCondition></likeCondition>
+		<contents>购房合同</contents>
+		<likeCondition>购房合同</likeCondition>
+		<contents>交易申请表</contents>
+		<likeCondition>交易申请</likeCondition>
+		<contents>买卖合同</contents>
+		<likeCondition>买卖合同</likeCondition>
+		<contents>借款合同</contents>
+		<likeCondition>借款合同</likeCondition>
+		<contents>不动产询问笔录</contents>
+		<likeCondition>询问表</likeCondition>
+		<contents>不动产权证书</contents>
+		<likeCondition>房屋所有权、不动产权证</likeCondition>
+		<contents>土地出让金发票</contents>
+		<likeCondition></likeCondition>
+		<contents>告知单</contents>
+		<likeCondition></likeCondition>
+	</DYDJ>
+	
+	
+	<!--转移登记-->
+	<ZYDJ>
+	<!--转移登记目錄 和图片like条件-->
+		
+		<contents>担保合同</contents>
+		<likeCondition>担保合同</likeCondition>
+		<contents>销售不动产发票</contents>
+		<likeCondition></likeCondition>
+		<contents>维修基金发票</contents>
+		<likeCondition></likeCondition>
+		<contents>抵押合同</contents>
+		<likeCondition></likeCondition>
+		<contents>完税证明</contents>
+		<likeCondition></likeCondition>
+		<contents>申请人身份证明</contents>
+		<likeCondition>身份证、婚姻证明</likeCondition>
+		<contents>不动产登记申请书</contents>
+		<likeCondition></likeCondition>
+		<contents>购房合同</contents>
+		<likeCondition>购房合同</likeCondition>
+		<contents>交易申请表</contents>
+		<likeCondition>交易申请</likeCondition>
+		<contents>买卖合同</contents>
+		<likeCondition>买卖合同</likeCondition>
+		<contents>借款合同</contents>
+		<likeCondition>借款合同</likeCondition>
+		<contents>不动产询问笔录</contents>
+		<likeCondition>询问</likeCondition>
+		<contents>不动产权证书</contents>
+		<likeCondition>房屋所有权、不动产权证</likeCondition>
+		<contents>土地出让金发票</contents>
+		<likeCondition></likeCondition>
+		<contents>告知单</contents>
+		<likeCondition></likeCondition>
+	</ZYDJ>
+	
+	
+	
+	
+	<!--预告登记（预购商品房预告+预抵押）-->
+	<YGDJDY>
+	<!--预告登记目錄 和图片like条件-->
+		
+		<contents>申请人身份证明 </contents>
+		<likeCondition>身份证</likeCondition>
+		<contents>一次性付款证明</contents>
+		<likeCondition>一次性付款</likeCondition>
+		<contents>申请表</contents>
+		<likeCondition></likeCondition>
+		<contents>婚姻证明</contents>
+		<likeCondition>婚姻证明</likeCondition>
+		<contents>购房合同</contents>
+		<likeCondition>预售合同</likeCondition>
+		<contents>抵押合同-主债权合同</contents>
+		<likeCondition>抵押合同</likeCondition>
+		<contents>首付款证明</contents>
+		<likeCondition>其他必要材料</likeCondition>
+		<contents>交易约定</contents>
+		<likeCondition>交易约定</likeCondition>
+		<contents>备案交易申请书</contents>
+		<likeCondition>交易申请书</likeCondition>
+		<contents>告知单</contents>	
+		<likeCondition></likeCondition>	
+	</YGDJDY>	
+	
+	<!--首次登记专用-->
+	<SCDJ>
+	<!--首次登记目錄和图片like条件 -->
+		
+		<contents>土地房屋权属登记申请书</contents>
+		<likeCondition></likeCondition>
+		<contents>申请人身份证明（申请人系单位的，授权委托书和法定代表人身份证明收原件营业执照、组织机构代码证、法定代表人任职文件复印件）</contents>
+		<likeCondition>购房人有效身份证、买方身份证、个人有效身份证明、身份证、有效身份证件</likeCondition>
+		<contents>建设工程规划许可证</contents>
+		<likeCondition></likeCondition>
+		<contents>建设工程竣工验收备案书</contents>
+		<likeCondition>竣工验收</likeCondition>
+		<contents>不动产权证（土地来源的批准文件及证明材料）</contents>	
+		<likeCondition>不动产权证</likeCondition>
+		<contents>经核准的房地产坐落证明</contents>	
+		<likeCondition>坐落证明</likeCondition>
+		<contents>土地房屋测绘报告、竣工平面图</contents>	
+		<likeCondition>测绘报告</likeCondition>
+		<contents>属房地产开发项目的应提交《商品房预售（预租）许可证》（正本、副本）；属集资建房或经济适用房的应提交有权部门的批准文件；属联建项目的应提交联建及房屋分配协议</contents>	
+		<likeCondition></likeCondition>
+		<contents>国土、房管部门的验收意见书</contents>	
+		<likeCondition></likeCondition>
+		<contents>物管用房移交证明及维修基金缴纳证明</contents>	
+		<likeCondition>物业用房，维修基金收讫证明</likeCondition>
+		<contents>楼盘表</contents>	
+		<likeCondition></likeCondition>
+		<contents>权籍调查表（相关的宗地图、房产平面图）</contents>	
+		<likeCondition></likeCondition>
+		<contents>其它必要材料</contents>	
+		<likeCondition></likeCondition>
+		<contents>建设工程施工许可证</contents>	
+		<likeCondition>建设工程施工许可证</likeCondition>
+		<contents>不动产登记申请书</contents>	
+		<likeCondition></likeCondition>
+		<contents>不动产登记申请表</contents>	
+		<likeCondition></likeCondition>
+		<contents>申请人身份证明</contents>	
+		<likeCondition>购房人有效身份证、买方身份证、个人有效身份证明、身份证、有效身份证件</likeCondition>
+		<contents>建设用地规划许可证</contents>	
+		<likeCondition>建设用地规划许可证</likeCondition>
+		<contents>权属来源及相关证明材料</contents>	
+		<likeCondition></likeCondition>
+		<contents>原不动产证书</contents>	
+		<likeCondition>不动产权证书</likeCondition>
+		<contents>建设工程质量验收相关资料</contents>	
+		<likeCondition>竣工验收</likeCondition>
+		<contents>婚姻证明</contents>	
+		<likeCondition>婚姻证明</likeCondition>
+		<contents>拆迁证明</contents>	
+		<likeCondition>拆迁协议</likeCondition>
+		<contents>告知单</contents>	
+		<likeCondition></likeCondition>
+		<contents>申请表</contents>	
+		<likeCondition></likeCondition>
+		<contents>维修基金</contents>	
+		<likeCondition>维修基金收讫证明</likeCondition>
+		<contents>图纸</contents>	
+		<likeCondition>图纸</likeCondition>
+		<contents>完税发票</contents>	
+		<likeCondition></likeCondition>
+		<contents>土地核验资料</contents>	
+		<likeCondition></likeCondition>
+		<contents>白蚁防治合同</contents>	
+		<likeCondition>白蚁预防合同、白蚁防治合同</likeCondition>
+		<contents>不动产权属证书</contents>	
+		<likeCondition>国有土地使用权证</likeCondition>
+		<contents>有人防工程的，提供人防工程验收资料</contents>	
+		<likeCondition>人防验收</likeCondition>
+		<contents>建设工程规划许可证，附总平面布置图</contents>	
+		<likeCondition></likeCondition>
+		<contents>规划验收资料</contents>	
+		<likeCondition>竣工验收</likeCondition>
+		<contents>立项批文</contents>	
+		<likeCondition>立项批文、立项批复</likeCondition>
+		<contents>建筑工程施工许可证</contents>	
+		<likeCondition>施工许可证</likeCondition>
+		<contents>建设用地规划许可证、附规划红线图</contents>	
+		<likeCondition>建设用地规划许可证</likeCondition>
+		<contents>营业执照</contents>	
+		<likeCondition>营业执照</likeCondition>
+		<contents>土地证</contents>	
+		<likeCondition>土地证、土地使用权证</likeCondition>
+		<contents>房屋建筑工程和市政基础设施工程竣工验收备案表</contents>	
+		<likeCondition>竣工验收</likeCondition>
+		<contents>物业用房移交资料</contents>	
+		<likeCondition>物业用房</likeCondition>
+		<contents>法人身份证</contents>	
+		<likeCondition>法人身份证</likeCondition>
+		<contents>测绘表</contents>	
+		<likeCondition>测绘报告</likeCondition>
+		<contents>楼盘照片</contents>	
+		<likeCondition>照片</likeCondition>
+		<contents>总平面图</contents>	
+		<likeCondition>总评规划图</likeCondition>
+		<contents>人防验收资料</contents>	
+		<likeCondition>人防验收</likeCondition>
+		<contents>社区用房移交资料</contents>	
+		<likeCondition>社区用房</likeCondition>
+		<contents>授权委托书</contents>	
+		<likeCondition>委托书</likeCondition>
+		<contents>测绘报告</contents>	
+		<likeCondition>测绘报告</likeCondition>
+		<contents>组织机构代码证</contents>	
+		<likeCondition>机构代码</likeCondition>
+		<contents>开发企业资质证书</contents>	
+		<likeCondition>资质证书</likeCondition>
+		<contents>委托人身份证</contents>	
+		<likeCondition>委托人身份证</likeCondition>
+		<contents>报件跟单表</contents>	
+		<likeCondition>跟单表</likeCondition>
+		<contents>建筑工程质量验收相关资料</contents>	
+		<likeCondition>竣工验收</likeCondition>
+		<contents>房屋竣工验收资料</contents>	
+		<likeCondition>竣工验收</likeCondition>
+		<contents>有批准权的人民政府批准建设用地的文件等土地权属来源证明</contents>	
+		<likeCondition></likeCondition>
+		<contents>其他证明材料</contents>	
+		<likeCondition></likeCondition>
+		<contents>其他必要资料</contents>	
+		<likeCondition></likeCondition>
+		<contents>建设工程符合城乡规划的证明</contents>	
+		<likeCondition></likeCondition>
+		<contents>权籍调查表</contents>	
+		<likeCondition>地籍调查</likeCondition>
+	</SCDJ>	
+	
+	
+	<!--预告登记（预购商品房，不动产转移预告）   注意   暂时不用-->
+	<YGDJZY>
+	<!--预告登记目錄和图片like条件 -->
+		
+		<contents>申请人身份证明</contents>
+		<likeCondition></likeCondition>
+		<contents>一次性付款证明</contents>
+		<likeCondition></likeCondition>
+		<contents>申请表</contents>
+		<likeCondition></likeCondition>
+		<contents>婚姻证明</contents>
+		<likeCondition></likeCondition>
+		<contents>购房合同</contents>	
+		<likeCondition></likeCondition>	
+	</YGDJZY>	
+</root>	

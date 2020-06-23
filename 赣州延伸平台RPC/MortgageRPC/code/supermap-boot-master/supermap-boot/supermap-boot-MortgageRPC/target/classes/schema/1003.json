@@ -1,0 +1,57 @@
+{
+  "type": "object",
+  "properties": {
+    "requestcode": {
+      "type": "string"
+    },
+    "requestseq": {
+      "type": "string"
+    },
+    "data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "bdcqzh": {
+            "type": "string"
+          },
+          "xzqdm": {
+            "type": "string"
+          },
+          "jgdm": {
+            "type": "string"
+          },
+          "qlr": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "qlrmc": {
+                  "type": "string"
+                },
+                "zjhm": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "qlrmc",
+                "zjhm"
+              ]
+            }
+          }
+        },
+        "required": [
+          "bdcqzh",
+          "xzqdm",
+          "jgdm",
+          "qlr"
+        ]
+      }
+    }
+  },
+  "required": [
+    "data",
+    "requestcode",
+    "requestseq"
+  ]
+}

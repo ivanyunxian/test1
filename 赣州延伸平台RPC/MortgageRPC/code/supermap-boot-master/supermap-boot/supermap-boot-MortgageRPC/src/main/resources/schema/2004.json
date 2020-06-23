@@ -1,0 +1,295 @@
+{
+  "type": "object",
+  "properties": {
+    "requestcode": {
+      "type": "string"
+    },
+    "requestseq": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "ywlsh": {
+          "type": "string"
+        },
+        "dyhth": {
+          "type": "string"
+        },
+        "sbrymc": {
+          "type": "string"
+        },
+        "sbryzjh": {
+          "type": "string"
+        },
+        "sbrylxdh": {
+          "type": "string"
+        },
+        "sbjgmc": {
+          "type": "string"
+        },
+        "sbjgzjh": {
+          "type": "string"
+        },
+        "xzqdm": {
+          "type": "string"
+        },
+        "jgdm": {
+          "type": "string"
+        },
+        "qlrlist": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "qlrmc": {
+                "type": "string"
+              },
+              "qlrzjh": {
+                "type": "string"
+              },
+              "qlrzjzl": {
+                "type": "string"
+              },
+              "qlrlxdh": {
+                "type": "string"
+              },
+              "dlrmc": {
+                "type": "string"
+              },
+              "dlrzjh": {
+                "type": "string"
+              },
+              "dlrzjzl": {
+                "type": "string"
+              },
+              "dlrlxdh": {
+                "type": "string"
+              },
+              "frmc": {
+                "type": "string"
+              },
+              "frzjh": {
+                "type": "string"
+              },
+              "frzjzl": {
+                "type": "string"
+              },
+              "frlxdh": {
+                "type": "string"
+              },
+              "gyfs": {
+                "type": "string"
+              },
+              "qlbl": {
+                "type": "string"
+              },
+              "qlrlx": {
+                "type": "string"
+              },
+              "sxh": {
+                "type": "integer"
+              },
+              "bdcqzh": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "qlrmc",
+              "qlrzjh",
+              "qlrzjzl",
+              "gyfs",
+              "qlrlx"
+            ]
+          }
+        },
+        "ywrlist" : {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "ywrmc": {
+                "type": "string"
+              },
+              "ywrzjh": {
+                "type": "string"
+              },
+              "ywrzjzl": {
+                "type": "string"
+              },
+              "ywrlxdh": {
+                "type": "string"
+              },
+              "dlrmc": {
+                "type": "string"
+              },
+              "dlrzjh": {
+                "type": "string"
+              },
+              "dlrzjzl": {
+                "type": "string"
+              },
+              "dlrlxdh": {
+                "type": "string"
+              },
+              "frmc": {
+                "type": "string"
+              },
+              "frzjh": {
+                "type": "string"
+              },
+              "frzjzl": {
+                "type": "string"
+              },
+              "frlxdh": {
+                "type": "string"
+              },
+              "gyfs": {
+                "type": "string"
+              },
+              "qlbl": {
+                "type": "string"
+              },
+              "qlrlx": {
+                "type": "string"
+              },
+              "sxh": {
+                "type": "integer"
+              },
+              "bdcqzh": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "ywrmc",
+              "ywrzjh",
+              "ywrzjzl",
+              "gyfs",
+              "qlrlx"
+            ]
+          }
+        },
+        "ql": {
+          "type": "object",
+          "properties": {
+            "zqse": {
+              "type": "number"
+            },
+            "zxdjyy": {
+              "type": "string"
+            },
+            "dyfs": {
+              "type": "string"
+            },
+            "dyqlqssj": {
+              "type": "string"
+            },
+            "dyqljssj": {
+              "type": "string"
+            },
+            "fj": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "zxdjyy"
+          ]
+        },
+        "dylist": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "bdcdyh": {
+                "type": "string"
+              },
+              "zl": {
+                "type": "string"
+              },
+              "dgzqse": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "bdcdyh",
+              "zl",
+              "dgzqse"
+            ]
+          }
+        },
+        "materclass": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "material_name": {
+                "type": "string"
+              },
+              "material_count": {
+                "type": "integer"
+              },
+              "material_desc": {
+                "type": "string"
+              },
+              "materdata": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "file_id": {
+                      "type": "string"
+                    },
+                    "file_name": {
+                      "type": "string"
+                    },
+                    "file_postfix": {
+                      "type": "string"
+                    },
+                    "file_index": {
+                      "type": "integer"
+                    },
+                    "file_url": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "file_id",
+                    "file_name",
+                    "file_postfix",
+                    "file_url",
+                    "file_index"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "material_name",
+              "material_count",
+              "materdata"
+            ]
+          }
+        }
+      },
+      "required": [
+        "xzqdm",
+        "jgdm",
+        "ywlsh",
+        "sbrymc",
+        "sbryzjh",
+        "sbrylxdh",
+        "sbjgmc",
+        "sbjgzjh",
+        "ywrlist",
+        "qlrlist",
+        "ql",
+        "dylist",
+        "materclass"
+      ]
+    }
+  },
+  "required": [
+    "data",
+    "requestcode",
+    "requestseq"
+  ]
+}

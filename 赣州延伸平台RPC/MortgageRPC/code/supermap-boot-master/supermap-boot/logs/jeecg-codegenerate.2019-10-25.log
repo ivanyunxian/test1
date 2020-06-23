@@ -1,0 +1,1757 @@
+2019-10-25 11:08:34.920 [main] INFO  org.jeecg.JeecgApplication:50 - Starting JeecgApplication on ivan-pc with PID 12620 (started by Administrator in F:\赣州\抵押平台相关代码和库\MortgageRPC\code\supermap-boot-master\supermap-boot\supermap-boot-module-system)
+2019-10-25 11:08:34.936 [main] DEBUG org.jeecg.JeecgApplication:53 - Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-10-25 11:08:34.936 [main] INFO  org.jeecg.JeecgApplication:679 - The following profiles are active: prod
+2019-10-25 11:08:39.544 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-25 11:08:39.559 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-25 11:08:39.637 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 78ms. Found 0 repository interfaces.
+2019-10-25 11:08:39.652 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-25 11:08:39.652 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-25 11:08:39.715 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 47ms. Found 0 repository interfaces.
+2019-10-25 11:08:40.324 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'shiroConfig' of type [org.jeecg.config.ShiroConfig$$EnhancerBySpringCGLIB$$a02bd418] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-25 11:08:40.496 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'shiroRealm' of type [org.jeecg.modules.shiro.authc.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-25 11:08:41.433 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-25 11:08:41.439 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'asyncTaskConfig' of type [org.jeecg.common.util.AsyncTaskConfig$$EnhancerBySpringCGLIB$$9dbfacb7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-25 11:08:41.502 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-25 11:08:41.595 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$80266a82] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-25 11:08:41.861 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-25 11:08:41.876 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$e9b4db53] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-25 11:08:41.876 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-25 11:08:41.892 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-25 11:08:41.923 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-25 11:08:41.939 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration$$EnhancerBySpringCGLIB$$954028cc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-25 11:08:42.189 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-25 11:08:42.361 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-25 11:08:42.376 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'redisConfig' of type [org.jeecg.config.RedisConfig$$EnhancerBySpringCGLIB$$eafa5b62] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-25 11:08:42.439 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration' of type [org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration$$EnhancerBySpringCGLIB$$933f4832] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-25 11:08:42.447 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'eventBus' of type [org.apache.shiro.event.support.DefaultEventBus] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-25 11:08:43.072 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:90 - Tomcat initialized with port(s): 8080 (http)
+2019-10-25 11:08:43.103 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2019-10-25 11:08:43.119 [main] INFO  org.apache.catalina.core.StandardService:173 - Starting service [Tomcat]
+2019-10-25 11:08:43.119 [main] INFO  org.apache.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-10-25 11:08:43.134 [main] INFO  org.apache.catalina.core.AprLifecycleListener:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_181\jre\bin;C:/Program Files/Java/jre1.8.0_181/bin/server;C:/Program Files/Java/jre1.8.0_181/bin;C:/Program Files/Java/jre1.8.0_181/lib/amd64;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;G:\software\PyCharm37\Scripts\;G:\software\PyCharm37\;G:\app\Administrator\product\11.2.0\dbhome_1\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\nodejs\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\software\apache-maven-3.6.1-bin\apache-maven-3.6.1\bin\;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Yarn\bin\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;D:\software\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Roaming\npm;G:\software\PyCharm 2018.3.3\bin;;C:\Users\Administrator\AppData\Local\Yarn\bin;D:\work\eclipse-jee-oxygen-R-win32-x86_64\eclipse;;.]
+2019-10-25 11:08:43.322 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mrpc]:173 - Initializing Spring embedded WebApplicationContext
+2019-10-25 11:08:43.322 [main] INFO  org.springframework.web.context.ContextLoader:296 - Root WebApplicationContext: initialization completed in 8324 ms
+2019-10-25 11:08:44.507 [main] INFO  org.mongodb.driver.cluster:71 - Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-10-25 11:08:45.109 [main] INFO  c.b.dynamic.datasource.DynamicDataSourceCreator:113 - 动态数据源-检测到druid存在,如配置中未指定type,druid会默认配置
+2019-10-25 11:08:45.124 [main] WARN  com.alibaba.druid.pool.DruidAbstractDataSource:1214 - oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+2019-10-25 11:08:46.624 [cluster-ClusterId{value='5db2673c7ecbe1314c0673c5', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.cluster:76 - Exception in monitor thread while connecting to server 127.0.0.1:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+2019-10-25 11:08:46.692 [main] INFO  com.alibaba.druid.pool.DruidDataSource:1003 - {dataSource-1,master} inited
+2019-10-25 11:08:46.692 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:203 - 初始共加载 1 个数据源
+2019-10-25 11:08:46.692 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:142 - 动态数据源-加载 master 成功
+2019-10-25 11:08:46.692 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:212 - 当前的默认数据源是单数据源，数据源名为 master
+2019-10-25 11:08:52.221 [main] INFO  org.quartz.impl.StdSchedulerFactory:1208 - Using default implementation for ThreadExecutor
+2019-10-25 11:08:52.251 [main] INFO  org.quartz.core.SchedulerSignalerImpl:61 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-10-25 11:08:52.251 [main] INFO  org.quartz.core.QuartzScheduler:229 - Quartz Scheduler v.2.3.0 created.
+2019-10-25 11:08:52.251 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:672 - Using db table-based data access locking (synchronization).
+2019-10-25 11:08:52.267 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:145 - JobStoreCMT initialized.
+2019-10-25 11:08:52.267 [main] INFO  org.quartz.core.QuartzScheduler:294 - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is not clustered.
+
+2019-10-25 11:08:52.267 [main] INFO  org.quartz.impl.StdSchedulerFactory:1362 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-10-25 11:08:52.267 [main] INFO  org.quartz.impl.StdSchedulerFactory:1366 - Quartz scheduler version: 2.3.0
+2019-10-25 11:08:52.267 [main] INFO  org.quartz.core.QuartzScheduler:2287 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@b3c7c75
+2019-10-25 11:08:56.783 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver:59 - Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-10-25 11:08:57.005 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping:69 - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-10-25 11:08:57.395 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-25 11:08:58.535 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:160 - Context refreshed
+2019-10-25 11:08:58.577 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:163 - Found 1 custom documentation plugin(s)
+2019-10-25 11:08:58.717 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner:41 - Scanning for api listing references
+2019-10-25 11:08:59.061 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: addUsingPOST_1
+2019-10-25 11:08:59.061 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteUsingDELETE_1
+2019-10-25 11:08:59.061 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteBatchUsingDELETE_1
+2019-10-25 11:08:59.077 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: editUsingPUT_1
+2019-10-25 11:08:59.077 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryByIdUsingGET_1
+2019-10-25 11:08:59.077 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryPageListUsingGET_1
+2019-10-25 11:08:59.092 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: addUsingPOST_2
+2019-10-25 11:08:59.108 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteUsingDELETE_2
+2019-10-25 11:08:59.108 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteBatchUsingDELETE_2
+2019-10-25 11:08:59.108 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: editUsingPUT_2
+2019-10-25 11:08:59.139 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryByIdUsingGET_2
+2019-10-25 11:08:59.155 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryPageListUsingGET_2
+2019-10-25 11:08:59.170 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: addUsingPOST_3
+2019-10-25 11:08:59.170 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteBatchUsingDELETE_3
+2019-10-25 11:08:59.186 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: editUsingPUT_3
+2019-10-25 11:08:59.186 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryByIdUsingGET_3
+2019-10-25 11:08:59.202 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryPageListUsingGET_3
+2019-10-25 11:08:59.233 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: addUsingPOST_4
+2019-10-25 11:08:59.233 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteUsingDELETE_3
+2019-10-25 11:08:59.233 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteBatchUsingDELETE_4
+2019-10-25 11:08:59.249 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: editUsingPUT_4
+2019-10-25 11:08:59.249 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryByIdUsingGET_4
+2019-10-25 11:08:59.249 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryPageListUsingGET_4
+2019-10-25 11:08:59.280 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: addUsingPOST_5
+2019-10-25 11:08:59.280 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteUsingDELETE_4
+2019-10-25 11:08:59.280 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteBatchUsingDELETE_5
+2019-10-25 11:08:59.280 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: editUsingPUT_5
+2019-10-25 11:08:59.295 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryByIdUsingGET_5
+2019-10-25 11:08:59.295 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryPageListUsingGET_5
+2019-10-25 11:08:59.327 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: addUsingPOST_6
+2019-10-25 11:08:59.327 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteUsingDELETE_5
+2019-10-25 11:08:59.327 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteBatchUsingDELETE_6
+2019-10-25 11:08:59.342 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryByIdUsingGET_6
+2019-10-25 11:08:59.358 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: applicationTokenUsingPOST_1
+2019-10-25 11:08:59.374 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: addUsingPOST_7
+2019-10-25 11:08:59.374 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteUsingDELETE_6
+2019-10-25 11:08:59.374 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteBatchUsingDELETE_7
+2019-10-25 11:08:59.374 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: editUsingPUT_6
+2019-10-25 11:08:59.374 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryByIdUsingGET_7
+2019-10-25 11:08:59.389 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryPageListUsingGET_6
+2019-10-25 11:08:59.405 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: addUsingPOST_8
+2019-10-25 11:08:59.405 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteUsingDELETE_7
+2019-10-25 11:08:59.405 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteBatchUsingDELETE_8
+2019-10-25 11:08:59.405 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: editUsingPUT_7
+2019-10-25 11:08:59.405 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryByIdUsingGET_8
+2019-10-25 11:08:59.420 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryPageListUsingGET_7
+2019-10-25 11:08:59.420 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: addUsingPOST_9
+2019-10-25 11:08:59.436 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteUsingDELETE_8
+2019-10-25 11:08:59.436 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteBatchUsingDELETE_9
+2019-10-25 11:08:59.436 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: editUsingPUT_8
+2019-10-25 11:08:59.436 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryByIdUsingGET_9
+2019-10-25 11:08:59.436 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryPageListUsingGET_8
+2019-10-25 11:08:59.452 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: addUsingPOST_10
+2019-10-25 11:08:59.452 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteUsingDELETE_9
+2019-10-25 11:08:59.452 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteBatchUsingDELETE_10
+2019-10-25 11:08:59.452 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: editUsingPUT_9
+2019-10-25 11:08:59.467 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryByIdUsingGET_10
+2019-10-25 11:08:59.467 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryPageListUsingGET_9
+2019-10-25 11:08:59.483 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: addUsingPOST_11
+2019-10-25 11:08:59.483 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteUsingGET_1
+2019-10-25 11:08:59.483 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteBatchUsingDELETE_11
+2019-10-25 11:08:59.483 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: editUsingPUT_10
+2019-10-25 11:08:59.483 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryByIdUsingGET_11
+2019-10-25 11:08:59.498 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryPageListUsingGET_10
+2019-10-25 11:08:59.514 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: addUsingPOST_12
+2019-10-25 11:08:59.514 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteUsingDELETE_10
+2019-10-25 11:08:59.514 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteBatchUsingDELETE_12
+2019-10-25 11:08:59.514 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: editUsingPUT_11
+2019-10-25 11:08:59.514 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryByIdUsingGET_12
+2019-10-25 11:08:59.530 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryPageListUsingGET_11
+2019-10-25 11:08:59.530 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: addUsingPOST_13
+2019-10-25 11:08:59.530 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteUsingDELETE_11
+2019-10-25 11:08:59.548 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteBatchUsingDELETE_13
+2019-10-25 11:08:59.548 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: editUsingPUT_12
+2019-10-25 11:08:59.548 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryByIdUsingGET_13
+2019-10-25 11:08:59.548 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryPageListUsingGET_12
+2019-10-25 11:08:59.563 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: addUsingPOST_14
+2019-10-25 11:08:59.563 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteUsingDELETE_12
+2019-10-25 11:08:59.563 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteBatchUsingDELETE_14
+2019-10-25 11:08:59.563 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: editUsingPUT_13
+2019-10-25 11:08:59.579 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryByIdUsingGET_14
+2019-10-25 11:08:59.579 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryPageListUsingGET_13
+2019-10-25 11:08:59.657 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: addUsingPOST_15
+2019-10-25 11:08:59.657 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteUsingGET_2
+2019-10-25 11:08:59.657 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteBatchUsingDELETE_15
+2019-10-25 11:08:59.673 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: editUsingPUT_14
+2019-10-25 11:08:59.673 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryByIdUsingGET_15
+2019-10-25 11:08:59.688 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryPageListUsingGET_14
+2019-10-25 11:08:59.688 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryPageProjectlistUsingGET_1
+2019-10-25 11:08:59.704 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: addUsingPOST_16
+2019-10-25 11:08:59.704 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteUsingDELETE_13
+2019-10-25 11:08:59.704 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteBatchUsingDELETE_16
+2019-10-25 11:08:59.704 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: editUsingPUT_15
+2019-10-25 11:08:59.719 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryByIdUsingGET_16
+2019-10-25 11:08:59.719 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryPageListUsingGET_15
+2019-10-25 11:08:59.735 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean:726 - Starting Quartz Scheduler now
+2019-10-25 11:09:00.172 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:866 - Freed 0 triggers from 'acquired' / 'blocked' state.
+2019-10-25 11:09:00.251 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:876 - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2019-10-25 11:09:00.251 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:889 - Recovery complete.
+2019-10-25 11:09:00.251 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:896 - Removed 0 'complete' triggers.
+2019-10-25 11:09:00.266 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:901 - Removed 0 stale fired job entries.
+2019-10-25 11:09:00.266 [main] INFO  org.quartz.core.QuartzScheduler:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-10-25 11:09:00.306 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+2019-10-25 11:09:00.362 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path '/mrpc'
+2019-10-25 11:09:00.367 [main] INFO  org.jeecg.JeecgApplication:59 - Started JeecgApplication in 26.12 seconds (JVM running for 27.619)
+2019-10-25 11:09:10.464 [http-nio-8080-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mrpc]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-25 11:09:10.464 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-10-25 11:09:10.496 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet:546 - Completed initialization in 32 ms
+2019-10-25 11:09:13.018 [http-nio-8080-exec-1] INFO  io.lettuce.core.EpollProvider:68 - Starting without optional epoll library
+2019-10-25 11:09:13.028 [http-nio-8080-exec-1] INFO  io.lettuce.core.KqueueProvider:70 - Starting without optional kqueue library
+2019-10-25 11:09:14.488 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:38 - ------sqlId------org.jeecg.modules.system.mapper.SysUserMapper.updateUserDepart
+2019-10-25 11:09:14.489 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:41 - ------sqlCommandType------UPDATE
+2019-10-25 11:09:14.539 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:115 - ------field.name------value
+2019-10-25 11:09:14.540 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:115 - ------field.name------hash
+2019-10-25 11:09:14.541 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:115 - ------field.name------serialVersionUID
+2019-10-25 11:09:14.542 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:115 - ------field.name------serialPersistentFields
+2019-10-25 11:09:14.543 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:115 - ------field.name------CASE_INSENSITIVE_ORDER
+2019-10-25 11:09:14.587 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:38 - ------sqlId------org.jeecg.modules.system.mapper.SysLogMapper.insert
+2019-10-25 11:09:14.588 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:41 - ------sqlCommandType------INSERT
+2019-10-25 11:09:14.588 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------serialVersionUID
+2019-10-25 11:09:14.589 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------id
+2019-10-25 11:09:14.589 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------createBy
+2019-10-25 11:09:14.589 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------createTime
+2019-10-25 11:09:14.590 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------updateBy
+2019-10-25 11:09:14.590 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------updateTime
+2019-10-25 11:09:14.591 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------costTime
+2019-10-25 11:09:14.591 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------ip
+2019-10-25 11:09:14.591 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------requestParam
+2019-10-25 11:09:14.592 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------requestType
+2019-10-25 11:09:14.592 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------requestUrl
+2019-10-25 11:09:14.592 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------method
+2019-10-25 11:09:14.592 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------username
+2019-10-25 11:09:14.593 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------userid
+2019-10-25 11:09:14.593 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------logContent
+2019-10-25 11:09:14.593 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------logType
+2019-10-25 11:09:14.593 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------operateType
+2019-10-25 11:09:14.594 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------responsedata
+2019-10-25 11:09:14.594 [http-nio-8080-exec-1] DEBUG org.jeecg.config.mybatis.MybatisInterceptor:49 - ------field.name------resultstate
+2019-10-25 11:09:15.087 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：4338ms
+2019-10-25 11:09:15.087 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:09:15.208 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:09:15.336 [http-nio-8080-exec-2] INFO  o.j.m.system.controller.SysPermissionController:120 -  ------ 通过令牌获取用户拥有的访问菜单 ---- TOKEN ------ eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzE5NzQ3NTEsInVzZXJuYW1lIjoiYWRtaW4ifQ.vK0C6eUuSxUWywTx72FmXV5scOhqNpBZXmcdkTuxWL8
+2019-10-25 11:09:15.715 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：386ms
+2019-10-25 11:09:15.715 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:09:16.303 [http-nio-8080-exec-3] ERROR o.jeecg.common.system.controller.CommonController:119 - 预览图片失败E:\imageupload\files\20190729\u=3723784612,2573513060&fm=200&gp=0_1564366508017.png (系统找不到指定的路径。)
+2019-10-25 11:09:16.396 [http-nio-8080-exec-9] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:09:16.396 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:09:16.399 [http-nio-8080-exec-7] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:09:16.396 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:09:16.401 [http-nio-8080-exec-6] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:09:16.402 [http-nio-8080-exec-8] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:09:16.404 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:09:16.404 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:09:16.406 [http-nio-8080-exec-12] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:09:16.409 [http-nio-8080-exec-11] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:09:16.415 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:09:16.423 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:09:16.884 [http-nio-8080-exec-12] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：409ms
+2019-10-25 11:09:16.885 [http-nio-8080-exec-12] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:09:16.894 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：409ms
+2019-10-25 11:09:16.895 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:09:16.909 [http-nio-8080-exec-8] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：434ms
+2019-10-25 11:09:16.909 [http-nio-8080-exec-8] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:09:16.939 [http-nio-8080-exec-12] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:09:16.940 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:09:16.940 [http-nio-8080-exec-8] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:09:16.950 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：468ms
+2019-10-25 11:09:16.951 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:09:16.958 [http-nio-8080-exec-7] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：482ms
+2019-10-25 11:09:16.958 [http-nio-8080-exec-7] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:09:16.959 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:09:16.964 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：479ms
+2019-10-25 11:09:16.965 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:09:17.003 [http-nio-8080-exec-9] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：522ms
+2019-10-25 11:09:17.004 [http-nio-8080-exec-9] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时1ms
+2019-10-25 11:09:17.011 [http-nio-8080-exec-11] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：526ms
+2019-10-25 11:09:17.012 [http-nio-8080-exec-11] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:09:17.056 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：572ms
+2019-10-25 11:09:17.057 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时1ms
+2019-10-25 11:09:17.060 [http-nio-8080-exec-12] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：36ms
+2019-10-25 11:09:17.061 [http-nio-8080-exec-12] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:09:17.120 [http-nio-8080-exec-8] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：68ms
+2019-10-25 11:09:17.121 [http-nio-8080-exec-8] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:09:17.137 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：80ms
+2019-10-25 11:09:17.138 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:09:17.152 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：117ms
+2019-10-25 11:09:17.152 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:09:17.257 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：776ms
+2019-10-25 11:09:17.258 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:09:17.417 [http-nio-8080-exec-6] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：942ms
+2019-10-25 11:09:17.422 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：945ms
+2019-10-25 11:09:17.423 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时1ms
+2019-10-25 11:09:17.533 [http-nio-8080-exec-6] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时115ms
+2019-10-25 11:09:41.631 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:09:41.631 [http-nio-8080-exec-9] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:09:41.633 [http-nio-8080-exec-11] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:09:41.634 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:09:41.641 [http-nio-8080-exec-12] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:09:41.642 [http-nio-8080-exec-8] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:09:41.643 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:09:41.726 [http-nio-8080-exec-2] INFO  o.j.modules.system.controller.SysDictController:128 -  dictCode : sex
+2019-10-25 11:09:41.726 [http-nio-8080-exec-9] INFO  o.j.modules.system.controller.SysDictController:128 -  dictCode : sys_user,realname,id
+2019-10-25 11:09:41.727 [http-nio-8080-exec-11] INFO  o.j.modules.system.controller.SysDictController:128 -  dictCode : sys_user,realname,id,username!='admin' order by create_time
+2019-10-25 11:09:41.781 [http-nio-8080-exec-2] INFO  o.j.modules.system.service.impl.SysDictServiceImpl:48 - 无缓存dictCache的时候调用这里！
+2019-10-25 11:09:41.781 [http-nio-8080-exec-11] INFO  o.j.modules.system.service.impl.SysDictServiceImpl:83 - 无缓存dictTableList的时候调用这里！
+2019-10-25 11:09:41.781 [http-nio-8080-exec-9] INFO  o.j.modules.system.service.impl.SysDictServiceImpl:77 - 无缓存dictTableList的时候调用这里！
+2019-10-25 11:09:41.993 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：328ms
+2019-10-25 11:09:41.994 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:09:42.313 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：649ms
+2019-10-25 11:09:42.327 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时13ms
+2019-10-25 11:09:42.333 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:09:42.355 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：10ms
+2019-10-25 11:09:42.372 [http-nio-8080-exec-12] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：680ms
+2019-10-25 11:09:42.373 [http-nio-8080-exec-12] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:09:42.387 [http-nio-8080-exec-2] INFO  o.j.modules.system.controller.SysDictController:169 - Result(success=true, message=操作成功！, code=0, result=[DictModel(value=1, text=男), DictModel(value=2, text=女)], timestamp=1571972981727)
+2019-10-25 11:09:42.387 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：671ms
+2019-10-25 11:09:42.389 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时33ms
+2019-10-25 11:09:42.389 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时1ms
+2019-10-25 11:09:42.509 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:09:42.517 [http-nio-8080-exec-8] DEBUG org.jeecg.common.system.query.QueryGenerator:185 - 排序规则>>列:createTime,排序方式:desc
+2019-10-25 11:09:42.518 [http-nio-8080-exec-8] DEBUG org.jeecg.common.system.query.QueryGenerator:74 - ---查询条件构造器初始化完成,耗时:80毫秒----
+2019-10-25 11:09:42.531 [http-nio-8080-exec-4] DEBUG org.jeecg.common.system.query.QueryGenerator:185 - 排序规则>>列:createTime,排序方式:desc
+2019-10-25 11:09:42.532 [http-nio-8080-exec-4] DEBUG org.jeecg.common.system.query.QueryGenerator:74 - ---查询条件构造器初始化完成,耗时:4毫秒----
+2019-10-25 11:09:42.591 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：63ms
+2019-10-25 11:09:42.595 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:292 -  字典 key : 1
+2019-10-25 11:09:42.602 [http-nio-8080-exec-4] INFO  o.j.modules.system.service.impl.SysDictServiceImpl:62 - 无缓存dictText的时候调用这里！
+2019-10-25 11:09:42.614 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : 男
+2019-10-25 11:09:42.615 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ sex_dictText： 男
+2019-10-25 11:09:42.620 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:292 -  字典 key : 1
+2019-10-25 11:09:42.631 [http-nio-8080-exec-4] INFO  o.j.modules.system.service.impl.SysDictServiceImpl:62 - 无缓存dictText的时候调用这里！
+2019-10-25 11:09:42.650 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : 正常
+2019-10-25 11:09:42.651 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ status_dictText： 正常
+2019-10-25 11:09:42.655 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:292 -  字典 key : 1
+2019-10-25 11:09:42.660 [http-nio-8080-exec-4] INFO  o.j.modules.system.service.impl.SysDictServiceImpl:62 - 无缓存dictText的时候调用这里！
+2019-10-25 11:09:42.681 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : 身份证
+2019-10-25 11:09:42.681 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ zjlx_dictText： 身份证
+2019-10-25 11:09:42.682 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:292 -  字典 key : 451202
+2019-10-25 11:09:42.694 [http-nio-8080-exec-4] INFO  o.j.modules.system.service.impl.SysDictServiceImpl:62 - 无缓存dictText的时候调用这里！
+2019-10-25 11:09:42.747 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : 
+2019-10-25 11:09:42.747 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ divisionCode_dictText： 
+2019-10-25 11:09:42.754 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : null
+2019-10-25 11:09:42.755 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ sex_dictText： null
+2019-10-25 11:09:42.758 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:292 -  字典 key : 1
+2019-10-25 11:09:42.765 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : 正常
+2019-10-25 11:09:42.765 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ status_dictText： 正常
+2019-10-25 11:09:42.766 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : null
+2019-10-25 11:09:42.767 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ zjlx_dictText： null
+2019-10-25 11:09:42.767 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:292 -  字典 key : 451202
+2019-10-25 11:09:42.773 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : 
+2019-10-25 11:09:42.775 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ divisionCode_dictText： 
+2019-10-25 11:09:42.780 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : null
+2019-10-25 11:09:42.781 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ sex_dictText： null
+2019-10-25 11:09:42.781 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:292 -  字典 key : 1
+2019-10-25 11:09:42.790 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : 正常
+2019-10-25 11:09:42.791 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ status_dictText： 正常
+2019-10-25 11:09:42.793 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:292 -  字典 key : 1
+2019-10-25 11:09:42.799 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : 身份证
+2019-10-25 11:09:42.800 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ zjlx_dictText： 身份证
+2019-10-25 11:09:42.801 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:292 -  字典 key : 451202
+2019-10-25 11:09:42.809 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : 
+2019-10-25 11:09:42.810 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ divisionCode_dictText： 
+2019-10-25 11:09:42.814 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : null
+2019-10-25 11:09:42.815 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ sex_dictText： null
+2019-10-25 11:09:42.815 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:292 -  字典 key : 1
+2019-10-25 11:09:42.832 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : 正常
+2019-10-25 11:09:42.839 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ status_dictText： 正常
+2019-10-25 11:09:42.843 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : null
+2019-10-25 11:09:42.844 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ zjlx_dictText： null
+2019-10-25 11:09:42.852 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:292 -  字典 key : 451202
+2019-10-25 11:09:42.860 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : 
+2019-10-25 11:09:42.861 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ divisionCode_dictText： 
+2019-10-25 11:09:42.867 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : null
+2019-10-25 11:09:42.868 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ sex_dictText： null
+2019-10-25 11:09:42.870 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:292 -  字典 key : 1
+2019-10-25 11:09:42.878 [http-nio-8080-exec-9] ERROR druid.sql.Statement:149 - {conn-10004, pstmt-20044} execute error. select realname as 'text',id as 'value' from sys_user
+java.sql.SQLSyntaxErrorException: ORA-00923: 未找到要求的 FROM 关键字
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:445)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:879)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:450)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:192)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:207)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:884)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1167)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1289)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3584)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3685)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1376)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:627)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497)
+	at sun.reflect.GeneratedMethodAccessor207.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy298.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at sun.reflect.GeneratedMethodAccessor212.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy296.query(Unknown Source)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doQuery(MybatisSimpleExecutor.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at sun.reflect.GeneratedMethodAccessor201.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy295.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.GeneratedMethodAccessor248.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy151.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForMany(MybatisMapperMethod.java:158)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:76)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:62)
+	at com.sun.proxy.$Proxy175.queryTableDictItemsByCode(Unknown Source)
+	at org.jeecg.modules.system.service.impl.SysDictServiceImpl.queryTableDictItemsByCode(SysDictServiceImpl.java:78)
+	at org.jeecg.modules.system.service.impl.SysDictServiceImpl$$FastClassBySpringCGLIB$$b9b72399.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at org.jeecg.modules.system.service.impl.SysDictServiceImpl$$EnhancerBySpringCGLIB$$8837a57b.queryTableDictItemsByCode(<generated>)
+	at org.jeecg.modules.system.service.impl.SysDictServiceImpl$$FastClassBySpringCGLIB$$b9b72399.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at org.jeecg.modules.system.service.impl.SysDictServiceImpl$$EnhancerBySpringCGLIB$$4df3269f.queryTableDictItemsByCode(<generated>)
+	at org.jeecg.modules.system.controller.SysDictController.getDictItems(SysDictController.java:149)
+	at org.jeecg.modules.system.controller.SysDictController$$FastClassBySpringCGLIB$$6132bc9b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at org.jeecg.modules.system.aspect.DictAspect.doAround(DictAspect.java:55)
+	at sun.reflect.GeneratedMethodAccessor253.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at org.jeecg.modules.system.controller.SysDictController$$EnhancerBySpringCGLIB$$73f8f560.getDictItems(<generated>)
+	at org.jeecg.modules.system.controller.SysDictController$$FastClassBySpringCGLIB$$6132bc9b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at org.jeecg.modules.system.controller.SysDictController$$EnhancerBySpringCGLIB$$b0505586.getDictItems(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.github.xiaoymin.swaggerbootstrapui.filter.SecurityBasicAuthFilter.doFilter(SecurityBasicAuthFilter.java:81)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.github.xiaoymin.swaggerbootstrapui.filter.ProductionSecurityFilter.doFilter(ProductionSecurityFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-10-25 11:09:42.878 [http-nio-8080-exec-8] ERROR druid.sql.Statement:149 - {conn-10003, pstmt-20052} execute error. SELECT COUNT(1) FROM demo
+java.sql.SQLSyntaxErrorException: ORA-00942: 表或视图不存在
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:445)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:879)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:450)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:192)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:207)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:884)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1167)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1289)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3584)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3628)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1493)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeQuery(FilterChainImpl.java:3188)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_executeQuery(FilterEventAdapter.java:465)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeQuery(FilterChainImpl.java:3185)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_executeQuery(WallFilter.java:648)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeQuery(FilterChainImpl.java:3185)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_executeQuery(FilterEventAdapter.java:465)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeQuery(FilterChainImpl.java:3185)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.executeQuery(PreparedStatementProxyImpl.java:181)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.executeQuery(DruidPooledPreparedStatement.java:227)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:56)
+	at com.sun.proxy.$Proxy298.executeQuery(Unknown Source)
+	at com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor.queryTotal(PaginationInterceptor.java:224)
+	at com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor.intercept(PaginationInterceptor.java:193)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy296.prepare(Unknown Source)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.prepareStatement(MybatisSimpleExecutor.java:94)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doQuery(MybatisSimpleExecutor.java:66)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at sun.reflect.GeneratedMethodAccessor201.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy295.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.GeneratedMethodAccessor248.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy151.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForIPage(MybatisMapperMethod.java:115)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:86)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:62)
+	at com.sun.proxy.$Proxy152.selectPage(Unknown Source)
+	at com.baomidou.mybatisplus.extension.service.impl.ServiceImpl.page(ServiceImpl.java:276)
+	at com.baomidou.mybatisplus.extension.service.impl.ServiceImpl$$FastClassBySpringCGLIB$$76535273.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at org.jeecg.modules.demo.test.service.impl.JeecgDemoServiceImpl$$EnhancerBySpringCGLIB$$5ca6a035.page(<generated>)
+	at com.baomidou.mybatisplus.extension.service.impl.ServiceImpl$$FastClassBySpringCGLIB$$76535273.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at org.jeecg.modules.demo.test.service.impl.JeecgDemoServiceImpl$$EnhancerBySpringCGLIB$$8de5506d.page(<generated>)
+	at org.jeecg.modules.demo.test.controller.JeecgDemoController.list(JeecgDemoController.java:107)
+	at org.jeecg.modules.demo.test.controller.JeecgDemoController$$FastClassBySpringCGLIB$$e868411d.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at org.jeecg.modules.system.aspect.PermissionDataAspect.arround(PermissionDataAspect.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:175)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at org.jeecg.modules.system.aspect.DictAspect.doAround(DictAspect.java:55)
+	at sun.reflect.GeneratedMethodAccessor253.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at org.jeecg.modules.demo.test.controller.JeecgDemoController$$EnhancerBySpringCGLIB$$9fc1fa57.list(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.github.xiaoymin.swaggerbootstrapui.filter.SecurityBasicAuthFilter.doFilter(SecurityBasicAuthFilter.java:81)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.github.xiaoymin.swaggerbootstrapui.filter.ProductionSecurityFilter.doFilter(ProductionSecurityFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-10-25 11:09:42.881 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : 正常
+2019-10-25 11:09:42.878 [http-nio-8080-exec-11] ERROR druid.sql.Statement:149 - {conn-10006, pstmt-20046} execute error. select realname as 'text',id as 'value' from sys_user where username!='admin' order by create_time
+java.sql.SQLSyntaxErrorException: ORA-00923: 未找到要求的 FROM 关键字
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:445)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:879)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:450)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:192)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:207)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:884)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1167)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1289)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3584)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3685)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1376)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:627)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497)
+	at sun.reflect.GeneratedMethodAccessor207.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy298.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at sun.reflect.GeneratedMethodAccessor212.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy296.query(Unknown Source)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doQuery(MybatisSimpleExecutor.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at sun.reflect.GeneratedMethodAccessor201.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy295.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.GeneratedMethodAccessor248.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy151.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForMany(MybatisMapperMethod.java:158)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:76)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:62)
+	at com.sun.proxy.$Proxy175.queryTableDictItemsByCodeAndFilter(Unknown Source)
+	at org.jeecg.modules.system.service.impl.SysDictServiceImpl.queryTableDictItemsByCodeAndFilter(SysDictServiceImpl.java:84)
+	at org.jeecg.modules.system.service.impl.SysDictServiceImpl$$FastClassBySpringCGLIB$$b9b72399.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at org.jeecg.modules.system.service.impl.SysDictServiceImpl$$EnhancerBySpringCGLIB$$8837a57b.queryTableDictItemsByCodeAndFilter(<generated>)
+	at org.jeecg.modules.system.service.impl.SysDictServiceImpl$$FastClassBySpringCGLIB$$b9b72399.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at org.jeecg.modules.system.service.impl.SysDictServiceImpl$$EnhancerBySpringCGLIB$$4df3269f.queryTableDictItemsByCodeAndFilter(<generated>)
+	at org.jeecg.modules.system.controller.SysDictController.getDictItems(SysDictController.java:147)
+	at org.jeecg.modules.system.controller.SysDictController$$FastClassBySpringCGLIB$$6132bc9b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at org.jeecg.modules.system.aspect.DictAspect.doAround(DictAspect.java:55)
+	at sun.reflect.GeneratedMethodAccessor253.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at org.jeecg.modules.system.controller.SysDictController$$EnhancerBySpringCGLIB$$73f8f560.getDictItems(<generated>)
+	at org.jeecg.modules.system.controller.SysDictController$$FastClassBySpringCGLIB$$6132bc9b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at org.jeecg.modules.system.controller.SysDictController$$EnhancerBySpringCGLIB$$b0505586.getDictItems(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.github.xiaoymin.swaggerbootstrapui.filter.SecurityBasicAuthFilter.doFilter(SecurityBasicAuthFilter.java:81)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.github.xiaoymin.swaggerbootstrapui.filter.ProductionSecurityFilter.doFilter(ProductionSecurityFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-10-25 11:09:42.890 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ status_dictText： 正常
+2019-10-25 11:09:42.893 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : null
+2019-10-25 11:09:42.895 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ zjlx_dictText： null
+2019-10-25 11:09:42.899 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:292 -  字典 key : 451202
+2019-10-25 11:09:42.905 [http-nio-8080-exec-8] ERROR o.jeecg.common.exception.JeecgBootExceptionHandler:53 - nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: Method queryTotal execution error of sql : 
+ SELECT COUNT(1) FROM demo 
+
+### The error may exist in org/jeecg/modules/demo/test/mapper/JeecgDemoMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### Cause: com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: Method queryTotal execution error of sql : 
+ SELECT COUNT(1) FROM demo 
+
+org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: Method queryTotal execution error of sql : 
+ SELECT COUNT(1) FROM demo 
+
+### The error may exist in org/jeecg/modules/demo/test/mapper/JeecgDemoMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### Cause: com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: Method queryTotal execution error of sql : 
+ SELECT COUNT(1) FROM demo 
+
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:77)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy151.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForIPage(MybatisMapperMethod.java:115)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:86)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:62)
+	at com.sun.proxy.$Proxy152.selectPage(Unknown Source)
+	at com.baomidou.mybatisplus.extension.service.impl.ServiceImpl.page(ServiceImpl.java:276)
+	at com.baomidou.mybatisplus.extension.service.impl.ServiceImpl$$FastClassBySpringCGLIB$$76535273.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at org.jeecg.modules.demo.test.service.impl.JeecgDemoServiceImpl$$EnhancerBySpringCGLIB$$5ca6a035.page(<generated>)
+	at com.baomidou.mybatisplus.extension.service.impl.ServiceImpl$$FastClassBySpringCGLIB$$76535273.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at org.jeecg.modules.demo.test.service.impl.JeecgDemoServiceImpl$$EnhancerBySpringCGLIB$$8de5506d.page(<generated>)
+	at org.jeecg.modules.demo.test.controller.JeecgDemoController.list(JeecgDemoController.java:107)
+	at org.jeecg.modules.demo.test.controller.JeecgDemoController$$FastClassBySpringCGLIB$$e868411d.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at org.jeecg.modules.system.aspect.PermissionDataAspect.arround(PermissionDataAspect.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:175)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at org.jeecg.modules.system.aspect.DictAspect.doAround(DictAspect.java:55)
+	at sun.reflect.GeneratedMethodAccessor253.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at org.jeecg.modules.demo.test.controller.JeecgDemoController$$EnhancerBySpringCGLIB$$9fc1fa57.list(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.github.xiaoymin.swaggerbootstrapui.filter.SecurityBasicAuthFilter.doFilter(SecurityBasicAuthFilter.java:81)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.github.xiaoymin.swaggerbootstrapui.filter.ProductionSecurityFilter.doFilter(ProductionSecurityFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: Method queryTotal execution error of sql : 
+ SELECT COUNT(1) FROM demo 
+
+### The error may exist in org/jeecg/modules/demo/test/mapper/JeecgDemoMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### Cause: com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: Method queryTotal execution error of sql : 
+ SELECT COUNT(1) FROM demo 
+
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:149)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.GeneratedMethodAccessor248.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 133 common frames omitted
+Caused by: com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: Method queryTotal execution error of sql : 
+ SELECT COUNT(1) FROM demo 
+
+	at com.baomidou.mybatisplus.core.toolkit.ExceptionUtils.mpe(ExceptionUtils.java:39)
+	at com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor.queryTotal(PaginationInterceptor.java:239)
+	at com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor.intercept(PaginationInterceptor.java:193)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy296.prepare(Unknown Source)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.prepareStatement(MybatisSimpleExecutor.java:94)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doQuery(MybatisSimpleExecutor.java:66)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at sun.reflect.GeneratedMethodAccessor201.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy295.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	... 138 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00942: 表或视图不存在
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:445)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:879)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:450)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:192)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:207)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:884)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1167)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1289)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3584)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3628)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1493)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeQuery(FilterChainImpl.java:3188)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_executeQuery(FilterEventAdapter.java:465)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeQuery(FilterChainImpl.java:3185)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_executeQuery(WallFilter.java:648)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeQuery(FilterChainImpl.java:3185)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_executeQuery(FilterEventAdapter.java:465)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeQuery(FilterChainImpl.java:3185)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.executeQuery(PreparedStatementProxyImpl.java:181)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.executeQuery(DruidPooledPreparedStatement.java:227)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:56)
+	at com.sun.proxy.$Proxy298.executeQuery(Unknown Source)
+	at com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor.queryTotal(PaginationInterceptor.java:224)
+	... 153 common frames omitted
+2019-10-25 11:09:42.911 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : 
+2019-10-25 11:09:42.924 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ divisionCode_dictText： 
+2019-10-25 11:09:42.967 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : null
+2019-10-25 11:09:42.971 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ sex_dictText： null
+2019-10-25 11:09:42.972 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:292 -  字典 key : 1
+2019-10-25 11:09:42.980 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : 正常
+2019-10-25 11:09:42.980 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ status_dictText： 正常
+2019-10-25 11:09:42.981 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : null
+2019-10-25 11:09:42.982 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ zjlx_dictText： null
+2019-10-25 11:09:42.982 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:292 -  字典 key : 451202
+2019-10-25 11:09:42.989 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : 
+2019-10-25 11:09:42.992 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ divisionCode_dictText： 
+2019-10-25 11:09:43.002 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : null
+2019-10-25 11:09:43.003 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ sex_dictText： null
+2019-10-25 11:09:43.005 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:292 -  字典 key : 1
+2019-10-25 11:09:43.012 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : 正常
+2019-10-25 11:09:43.013 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ status_dictText： 正常
+2019-10-25 11:09:43.016 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : null
+2019-10-25 11:09:43.016 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ zjlx_dictText： null
+2019-10-25 11:09:43.018 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:292 -  字典 key : 451202
+2019-10-25 11:09:43.021 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : 
+2019-10-25 11:09:43.026 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ divisionCode_dictText： 
+2019-10-25 11:09:43.050 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : null
+2019-10-25 11:09:43.051 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ sex_dictText： null
+2019-10-25 11:09:43.054 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:292 -  字典 key : 1
+2019-10-25 11:09:43.068 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : 正常
+2019-10-25 11:09:43.069 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ status_dictText： 正常
+2019-10-25 11:09:43.071 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : null
+2019-10-25 11:09:43.072 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ zjlx_dictText： null
+2019-10-25 11:09:43.073 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:292 -  字典 key : 451202
+2019-10-25 11:09:43.077 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : 
+2019-10-25 11:09:43.078 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ divisionCode_dictText： 
+2019-10-25 11:09:43.084 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:292 -  字典 key : 1
+2019-10-25 11:09:43.095 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : 男
+2019-10-25 11:09:43.096 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ sex_dictText： 男
+2019-10-25 11:09:43.097 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:292 -  字典 key : 1
+2019-10-25 11:09:43.100 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : 正常
+2019-10-25 11:09:43.101 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ status_dictText： 正常
+2019-10-25 11:09:43.102 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : null
+2019-10-25 11:09:43.103 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ zjlx_dictText： null
+2019-10-25 11:09:43.104 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:292 -  字典 key : 451202
+2019-10-25 11:09:43.107 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:154 -  字典Val : 
+2019-10-25 11:09:43.107 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:155 -  __翻译字典字段__ divisionCode_dictText： 
+2019-10-25 11:09:43.108 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时517ms
+2019-10-25 11:09:43.475 [http-nio-8080-exec-11] ERROR o.j.modules.system.controller.SysDictController:171 - 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: ORA-00923: 未找到要求的 FROM 关键字
+
+### The error may exist in file [F:\赣州\抵押平台相关代码和库\MortgageRPC\code\supermap-boot-master\supermap-boot\supermap-boot-base-common\target\classes\org\jeecg\modules\system\mapper\xml\SysDictMapper.xml]
+### The error may involve org.jeecg.modules.system.mapper.SysDictMapper.queryTableDictItemsByCodeAndFilter-Inline
+### The error occurred while setting parameters
+### SQL: select realname as 'text',id as 'value' from sys_user where username!='admin' order by create_time
+### Cause: java.sql.SQLSyntaxErrorException: ORA-00923: 未找到要求的 FROM 关键字
+
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: ORA-00923: 未找到要求的 FROM 关键字
+
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: ORA-00923: 未找到要求的 FROM 关键字
+
+### The error may exist in file [F:\赣州\抵押平台相关代码和库\MortgageRPC\code\supermap-boot-master\supermap-boot\supermap-boot-base-common\target\classes\org\jeecg\modules\system\mapper\xml\SysDictMapper.xml]
+### The error may involve org.jeecg.modules.system.mapper.SysDictMapper.queryTableDictItemsByCodeAndFilter-Inline
+### The error occurred while setting parameters
+### SQL: select realname as 'text',id as 'value' from sys_user where username!='admin' order by create_time
+### Cause: java.sql.SQLSyntaxErrorException: ORA-00923: 未找到要求的 FROM 关键字
+
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: ORA-00923: 未找到要求的 FROM 关键字
+
+	at org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:93)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy151.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForMany(MybatisMapperMethod.java:158)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:76)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:62)
+	at com.sun.proxy.$Proxy175.queryTableDictItemsByCodeAndFilter(Unknown Source)
+	at org.jeecg.modules.system.service.impl.SysDictServiceImpl.queryTableDictItemsByCodeAndFilter(SysDictServiceImpl.java:84)
+	at org.jeecg.modules.system.service.impl.SysDictServiceImpl$$FastClassBySpringCGLIB$$b9b72399.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at org.jeecg.modules.system.service.impl.SysDictServiceImpl$$EnhancerBySpringCGLIB$$8837a57b.queryTableDictItemsByCodeAndFilter(<generated>)
+	at org.jeecg.modules.system.service.impl.SysDictServiceImpl$$FastClassBySpringCGLIB$$b9b72399.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at org.jeecg.modules.system.service.impl.SysDictServiceImpl$$EnhancerBySpringCGLIB$$4df3269f.queryTableDictItemsByCodeAndFilter(<generated>)
+	at org.jeecg.modules.system.controller.SysDictController.getDictItems(SysDictController.java:147)
+	at org.jeecg.modules.system.controller.SysDictController$$FastClassBySpringCGLIB$$6132bc9b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at org.jeecg.modules.system.aspect.DictAspect.doAround(DictAspect.java:55)
+	at sun.reflect.GeneratedMethodAccessor253.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at org.jeecg.modules.system.controller.SysDictController$$EnhancerBySpringCGLIB$$73f8f560.getDictItems(<generated>)
+	at org.jeecg.modules.system.controller.SysDictController$$FastClassBySpringCGLIB$$6132bc9b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at org.jeecg.modules.system.controller.SysDictController$$EnhancerBySpringCGLIB$$b0505586.getDictItems(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.github.xiaoymin.swaggerbootstrapui.filter.SecurityBasicAuthFilter.doFilter(SecurityBasicAuthFilter.java:81)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.github.xiaoymin.swaggerbootstrapui.filter.ProductionSecurityFilter.doFilter(ProductionSecurityFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00923: 未找到要求的 FROM 关键字
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:445)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:879)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:450)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:192)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:207)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:884)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1167)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1289)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3584)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3685)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1376)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:627)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497)
+	at sun.reflect.GeneratedMethodAccessor207.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy298.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at sun.reflect.GeneratedMethodAccessor212.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy296.query(Unknown Source)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doQuery(MybatisSimpleExecutor.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at sun.reflect.GeneratedMethodAccessor201.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy295.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.GeneratedMethodAccessor248.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 127 common frames omitted
+2019-10-25 11:09:43.485 [http-nio-8080-exec-11] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：1769ms
+2019-10-25 11:09:43.487 [http-nio-8080-exec-11] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:09:43.490 [http-nio-8080-exec-9] ERROR o.j.modules.system.controller.SysDictController:171 - 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: ORA-00923: 未找到要求的 FROM 关键字
+
+### The error may exist in file [F:\赣州\抵押平台相关代码和库\MortgageRPC\code\supermap-boot-master\supermap-boot\supermap-boot-base-common\target\classes\org\jeecg\modules\system\mapper\xml\SysDictMapper.xml]
+### The error may involve org.jeecg.modules.system.mapper.SysDictMapper.queryTableDictItemsByCode-Inline
+### The error occurred while setting parameters
+### SQL: select realname as 'text',id as 'value' from sys_user
+### Cause: java.sql.SQLSyntaxErrorException: ORA-00923: 未找到要求的 FROM 关键字
+
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: ORA-00923: 未找到要求的 FROM 关键字
+
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: ORA-00923: 未找到要求的 FROM 关键字
+
+### The error may exist in file [F:\赣州\抵押平台相关代码和库\MortgageRPC\code\supermap-boot-master\supermap-boot\supermap-boot-base-common\target\classes\org\jeecg\modules\system\mapper\xml\SysDictMapper.xml]
+### The error may involve org.jeecg.modules.system.mapper.SysDictMapper.queryTableDictItemsByCode-Inline
+### The error occurred while setting parameters
+### SQL: select realname as 'text',id as 'value' from sys_user
+### Cause: java.sql.SQLSyntaxErrorException: ORA-00923: 未找到要求的 FROM 关键字
+
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: ORA-00923: 未找到要求的 FROM 关键字
+
+	at org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:93)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy151.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForMany(MybatisMapperMethod.java:158)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:76)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:62)
+	at com.sun.proxy.$Proxy175.queryTableDictItemsByCode(Unknown Source)
+	at org.jeecg.modules.system.service.impl.SysDictServiceImpl.queryTableDictItemsByCode(SysDictServiceImpl.java:78)
+	at org.jeecg.modules.system.service.impl.SysDictServiceImpl$$FastClassBySpringCGLIB$$b9b72399.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at org.jeecg.modules.system.service.impl.SysDictServiceImpl$$EnhancerBySpringCGLIB$$8837a57b.queryTableDictItemsByCode(<generated>)
+	at org.jeecg.modules.system.service.impl.SysDictServiceImpl$$FastClassBySpringCGLIB$$b9b72399.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at org.jeecg.modules.system.service.impl.SysDictServiceImpl$$EnhancerBySpringCGLIB$$4df3269f.queryTableDictItemsByCode(<generated>)
+	at org.jeecg.modules.system.controller.SysDictController.getDictItems(SysDictController.java:149)
+	at org.jeecg.modules.system.controller.SysDictController$$FastClassBySpringCGLIB$$6132bc9b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at org.jeecg.modules.system.aspect.DictAspect.doAround(DictAspect.java:55)
+	at sun.reflect.GeneratedMethodAccessor253.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at org.jeecg.modules.system.controller.SysDictController$$EnhancerBySpringCGLIB$$73f8f560.getDictItems(<generated>)
+	at org.jeecg.modules.system.controller.SysDictController$$FastClassBySpringCGLIB$$6132bc9b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at org.jeecg.modules.system.controller.SysDictController$$EnhancerBySpringCGLIB$$b0505586.getDictItems(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.github.xiaoymin.swaggerbootstrapui.filter.SecurityBasicAuthFilter.doFilter(SecurityBasicAuthFilter.java:81)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.github.xiaoymin.swaggerbootstrapui.filter.ProductionSecurityFilter.doFilter(ProductionSecurityFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00923: 未找到要求的 FROM 关键字
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:445)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:879)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:450)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:192)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:207)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:884)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1167)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1289)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3584)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3685)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1376)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:627)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497)
+	at sun.reflect.GeneratedMethodAccessor207.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy298.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at sun.reflect.GeneratedMethodAccessor212.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy296.query(Unknown Source)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doQuery(MybatisSimpleExecutor.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at sun.reflect.GeneratedMethodAccessor201.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy295.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.GeneratedMethodAccessor248.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 127 common frames omitted
+2019-10-25 11:09:43.510 [http-nio-8080-exec-9] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：1794ms
+2019-10-25 11:09:43.510 [http-nio-8080-exec-9] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:10:16.126 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:10:16.169 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：24ms
+2019-10-25 11:10:16.169 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:11:01.990 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:11:02.114 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：113ms
+2019-10-25 11:11:02.114 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:11:16.135 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:11:16.165 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：23ms
+2019-10-25 11:11:16.165 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:11:58.041 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:11:58.042 [http-nio-8080-exec-12] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:11:58.093 [http-nio-8080-exec-12] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：33ms
+2019-10-25 11:11:58.093 [http-nio-8080-exec-12] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:11:58.105 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：48ms
+2019-10-25 11:11:58.109 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:12:16.118 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:12:16.140 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：14ms
+2019-10-25 11:12:16.141 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:13:16.116 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:13:16.136 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：13ms
+2019-10-25 11:13:16.136 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:14:16.126 [http-nio-8080-exec-8] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:14:16.150 [http-nio-8080-exec-8] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：14ms
+2019-10-25 11:14:16.151 [http-nio-8080-exec-8] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:15:16.132 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:15:16.170 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：22ms
+2019-10-25 11:15:16.171 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:16:16.123 [http-nio-8080-exec-11] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:16:16.168 [http-nio-8080-exec-11] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：25ms
+2019-10-25 11:16:16.169 [http-nio-8080-exec-11] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:17:16.916 [http-nio-8080-exec-9] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:17:16.956 [http-nio-8080-exec-9] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：27ms
+2019-10-25 11:17:16.957 [http-nio-8080-exec-9] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:18:16.926 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:18:16.963 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：23ms
+2019-10-25 11:18:16.964 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:19:16.938 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:19:16.991 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：31ms
+2019-10-25 11:19:16.991 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:20:16.910 [http-nio-8080-exec-12] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:20:16.969 [http-nio-8080-exec-12] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：31ms
+2019-10-25 11:20:16.969 [http-nio-8080-exec-12] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:21:16.917 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:21:16.958 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：22ms
+2019-10-25 11:21:16.959 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:22:16.928 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:22:16.965 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：31ms
+2019-10-25 11:22:16.965 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:23:16.914 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:23:16.936 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：15ms
+2019-10-25 11:23:16.936 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:24:16.927 [http-nio-8080-exec-8] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:24:16.964 [http-nio-8080-exec-8] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：31ms
+2019-10-25 11:24:16.964 [http-nio-8080-exec-8] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:25:16.924 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:25:16.960 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：16ms
+2019-10-25 11:25:16.960 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:26:16.914 [http-nio-8080-exec-11] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:26:16.941 [http-nio-8080-exec-11] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：15ms
+2019-10-25 11:26:16.941 [http-nio-8080-exec-11] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:27:16.913 [http-nio-8080-exec-9] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:27:16.927 [http-nio-8080-exec-9] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：6ms
+2019-10-25 11:27:16.927 [http-nio-8080-exec-9] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:28:16.924 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:28:16.959 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：21ms
+2019-10-25 11:28:16.959 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:29:16.919 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:29:16.974 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：16ms
+2019-10-25 11:29:16.974 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:30:16.928 [http-nio-8080-exec-12] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:30:16.963 [http-nio-8080-exec-12] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：32ms
+2019-10-25 11:30:16.963 [http-nio-8080-exec-12] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:31:16.943 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:31:16.979 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：15ms
+2019-10-25 11:31:16.979 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:32:16.937 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:32:16.958 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：16ms
+2019-10-25 11:32:16.958 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:33:16.927 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:33:16.966 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：15ms
+2019-10-25 11:33:16.966 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:34:16.915 [http-nio-8080-exec-8] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:34:16.944 [http-nio-8080-exec-8] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：16ms
+2019-10-25 11:34:16.945 [http-nio-8080-exec-8] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:35:16.926 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:35:16.962 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：31ms
+2019-10-25 11:35:16.962 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:36:16.910 [http-nio-8080-exec-11] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:36:16.954 [http-nio-8080-exec-11] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：16ms
+2019-10-25 11:36:16.954 [http-nio-8080-exec-11] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:37:16.939 [http-nio-8080-exec-9] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:37:16.959 [http-nio-8080-exec-9] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：15ms
+2019-10-25 11:37:16.959 [http-nio-8080-exec-9] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:38:16.915 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:38:16.921 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：0ms
+2019-10-25 11:38:16.921 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:39:16.925 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:39:16.962 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：16ms
+2019-10-25 11:39:16.962 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:40:16.912 [http-nio-8080-exec-12] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:40:16.946 [http-nio-8080-exec-12] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：25ms
+2019-10-25 11:40:16.947 [http-nio-8080-exec-12] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:41:16.915 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:41:16.937 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：16ms
+2019-10-25 11:41:16.937 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:42:16.912 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:42:16.948 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：23ms
+2019-10-25 11:42:16.948 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:43:16.927 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:43:16.946 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：15ms
+2019-10-25 11:43:16.946 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:44:16.942 [http-nio-8080-exec-8] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:44:16.981 [http-nio-8080-exec-8] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：16ms
+2019-10-25 11:44:16.981 [http-nio-8080-exec-8] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:45:16.928 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:45:16.965 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：16ms
+2019-10-25 11:45:16.965 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:46:16.936 [http-nio-8080-exec-11] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:46:16.972 [http-nio-8080-exec-11] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：31ms
+2019-10-25 11:46:16.972 [http-nio-8080-exec-11] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:47:16.934 [http-nio-8080-exec-9] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:47:16.987 [http-nio-8080-exec-9] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：31ms
+2019-10-25 11:47:16.987 [http-nio-8080-exec-9] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:48:16.913 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:48:16.932 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：10ms
+2019-10-25 11:48:16.933 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:49:16.920 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:49:16.960 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：31ms
+2019-10-25 11:49:16.960 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:50:16.910 [http-nio-8080-exec-12] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:50:16.932 [http-nio-8080-exec-12] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：15ms
+2019-10-25 11:50:16.932 [http-nio-8080-exec-12] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:51:16.921 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:51:16.981 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：16ms
+2019-10-25 11:51:16.981 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:52:16.935 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:52:16.973 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：15ms
+2019-10-25 11:52:16.973 [http-nio-8080-exec-1] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:53:16.927 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:53:16.961 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：17ms
+2019-10-25 11:53:16.962 [http-nio-8080-exec-2] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:54:16.932 [http-nio-8080-exec-8] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:54:16.954 [http-nio-8080-exec-8] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：16ms
+2019-10-25 11:54:16.954 [http-nio-8080-exec-8] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:55:16.916 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:55:16.946 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：15ms
+2019-10-25 11:55:16.946 [http-nio-8080-exec-4] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:56:16.926 [http-nio-8080-exec-11] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:56:16.966 [http-nio-8080-exec-11] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：16ms
+2019-10-25 11:56:16.966 [http-nio-8080-exec-11] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:57:16.910 [http-nio-8080-exec-9] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:57:16.915 [http-nio-8080-exec-9] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：0ms
+2019-10-25 11:57:16.915 [http-nio-8080-exec-9] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:58:16.918 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:58:16.949 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：16ms
+2019-10-25 11:58:16.950 [http-nio-8080-exec-5] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 11:59:16.919 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 11:59:16.960 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：18ms
+2019-10-25 11:59:16.961 [http-nio-8080-exec-3] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 12:00:16.924 [http-nio-8080-exec-12] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 12:00:16.940 [http-nio-8080-exec-12] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：8ms
+2019-10-25 12:00:16.941 [http-nio-8080-exec-12] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms
+2019-10-25 12:01:16.924 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.shiro.authc.ShiroRealm:87 - ————身份认证————
+2019-10-25 12:01:16.945 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.system.aspect.DictAspect:57 - 获取JSON数据 耗时：16ms
+2019-10-25 12:01:16.945 [http-nio-8080-exec-10] DEBUG org.jeecg.modules.system.aspect.DictAspect:61 - 解析注入JSON数据  耗时0ms

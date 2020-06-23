@@ -1,0 +1,1353 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><ResultConfig>
+  
+  <nodeconfig name="节点配置">
+	  <JG JGDM="01" JGMC="法院">
+		<nodes>TDSYQ,JSYDSYQ,FDCQ,HYSYQ,GJZWSYQ,LQ,DYAQ,YGDJ,CFDJ</nodes>
+		<code codeXM="0" codeXML="0" codeZJH="0" double64code="0" name="是否加密xml、身份证号、姓名"/>
+		<needaccessory name="查询是否需要上传附件">0</needaccessory>
+		<needapprove name="查询是否需要审批">0</needapprove>
+		<unitcountconfig CFDJ="0" DYAQ="1" FDCQ="1" FDCQReduce="1" GJZWSYQ="0" HYSYQ="0" JSYDSYQ="1" LQ="0" TDSYQ="1" YGDJ="" name="是否统计权利总数"/>
+		<ifrequired BCXRXM="1" BDCDYH="0" FCID="0" FLWSBM="0" FLWSMC="0" GWZBH="0" GZZBH="1" QZHZMH="0" ZJHM="1" ZL="0" ZXAH="0" name="查询条件是否必填项"/>
+		<otherconfig name="查询结果是否显示共有人、历史产权、是否翻译常量等其他配置" showGYR="1" showLS="0" translateConst="1"/>
+		<validate unamepwd="1" gwzh="1" mac="0"  name="查询验证项"/>
+		<!-- 修改这里的表对应字段的配置需要同时修改xmlname表对应字段 -->
+	  <fieldconfig name="节点内字段配置">
+	   <TDSYQ name="土地所有权">
+		   <table name="BDCJCS_TDSYQ">
+				<fields name="字段">BDCDYH,QLLX,DJLX,DJJG,QSZT</fields>
+		   </table>
+		   <table name="BDCJCS_QLR">
+				<fields name="字段">QLRMC,BDCDYH,BDCQZH,ZJH</fields>
+		   </table>
+	   </TDSYQ>
+	   <JSYDSYQ name="建设用地使用权、宅基地使用权">
+		   <table name="BDCJCS_QLR">			
+				<fields name="字段">QLRMC,BDCDYH,BDCQZH,ZJH</fields>
+		   </table>
+		   <table name="BDCJCS_JSYDSYQ">			
+				<fields name="字段">BDCDYH,DJLX,DJYY,SYQMJ,BDCQZH,DBR,QSZT,ZXSJ</fields>
+		   </table>
+		   
+	   </JSYDSYQ>
+	   <FDCQ name="房地产权">
+		   <table name="BDCJCS_QLR">			
+				<fields name="字段">QLRMC,BDCDYH,BDCQZH,ZJH</fields>
+		   </table>
+		   <table name="BDCJCS_H">			
+			<fields name="字段">BDCDYH,ZL,FWYT1,YCJZMJ,SCJZMJ,FWXZ</fields>
+		</table>
+		   <table name="BDCJCS_FDCQ2">
+				<fields name="字段">BDCDYH,DJLX,TDSYQSSJ,TDSYJSSJ,GHYT,FWXZ,JZMJ,BDCQZH,DJSJ</fields>
+		   </table>
+	   </FDCQ>
+		<HYSYQ name="海域">
+		   <table name="BDCJCS_HYSYQ">
+				<fields name="字段">BDCDYH,QLLX,DJLX,DJYY,SYQMJ</fields>
+		   </table>
+		   <table name="BDCJCS_QLR">
+				<fields name="字段">GYFS,BDCQZH,QLMJ,QLRMC,ZJH</fields>
+		   </table>
+	   </HYSYQ>
+	   <GJZWSYQ name="构（建）筑物所有权">
+		   <table name="BDCJCS_GJZWSYQ">
+				<fields name="字段">BDCDYH,ZL,GJZWGHYT,GJZWMJ</fields>
+		   </table>
+		   <table name="BDCJCS_QLR">
+				<fields name="字段">GYFS,GYQK,BDCQZH,QLBL,QLMJ,QLRMC,ZJH</fields>
+		   </table>
+	   </GJZWSYQ>
+	   <LQ name="林权">
+		   <table name="BDCJCS_LQ">
+				<fields name="字段">BDCDYH,QLLX,FBF,SYQMJ,ZYSZ</fields>
+		   </table>
+		   <table name="BDCJCS_QLR">
+				<fields name="字段">BDCQZH,QLBL,QLMJ,QLRMC,ZJH</fields>
+		   </table>
+	   </LQ>
+	   <DYAQ name="抵押权">
+		   <table name="BDCJCS_QLR">
+				<fields name="字段">QLRMC,BDCDYH,BDCQZH,ZJH</fields>
+		   </table>
+		   <table name="BDCJCS_DYAQ">
+				<fields name="字段">BDCDYH,DYBDCLX,DYR,DYFS,DJLX,DJYY</fields>
+		   </table>
+		   <table name="BDCJCS_FDCQ2">
+				<fields name="字段">BDCDYH,DJLX,TDSYQSSJ,TDSYJSSJ,GHYT,FWXZ,JZMJ,BDCQZH,DJSJ</fields>
+		   </table>
+	   </DYAQ>
+	   <YGDJ name="预告登记">
+		   <table name="BDCJCS_QLR">
+				<fields name="字段">QLRMC,BDCDYH,BDCQZH,ZJH</fields>
+		   </table>
+		   <table name="BDCJCS_YGDJ">
+				<fields name="字段">YGDJZL,BDCDYH,FWXZ,GHYT,BDCDJZMH,QSZT</fields>
+		   </table>
+		   <table name="BDCJCS_FDCQ2">
+				<fields name="字段">BDCDYH,DJLX,TDSYQSSJ,TDSYJSSJ,GHYT,FWXZ,JZMJ,BDCQZH,DJSJ</fields>
+		   </table>
+	   </YGDJ>
+	   <CFDJ name="查封登记">
+		   <table name="BDCJCS_QLR">
+				<fields name="字段">QLRMC,BDCDYH,BDCQZH,ZJH</fields>
+		   </table>
+		   <table name="BDCJCS_CFDJ">
+				<fields name="字段">CFJG,CFLX,DJJG,QSZT,BDCDYH</fields>
+		   </table>
+		   <table name="BDCJCS_FDCQ2">
+				<fields name="字段">BDCDYH,DJLX,TDSYQSSJ,TDSYJSSJ,GHYT,FWXZ,JZMJ,BDCQZH,DJSJ</fields>
+		   </table>
+	   </CFDJ>
+	  </fieldconfig>
+	  </JG>
+	  <JG JGDM="02" JGMC="银行">
+		  <nodes>FDCQ,DYAQ,CFDJ,YYDJ,QLRLIST,JSYDSYQ,TDYTLIST</nodes>
+		  <code codeXM="0" codeXML="0" codeZJH="0" double64code="0" name="是否加密xml、身份证号、姓名"/>
+		  <needaccessory name="查询是否需要上传附件">0</needaccessory>
+		  <needapprove name="查询是否需要审批">0</needapprove>
+		  <unitcountconfig CFDJ="0" DYAQ="1" FDCQ="1" FDCQReduce="" GJZWSYQ="0" GYNYDSYQ="1" HYSYQ="0" JSYDSYQ="1"
+						   LQ="0" TDSYQ="1" YGDJ="" name="是否统计权利总数"/>
+		  <ifrequired BCXRXM="0" BDCDYH="0" FCID="0" FLWSBM="0" FLWSMC="0" GWZBH="0" GZZBH="1" QZHZMH="0" ZJHM="0"
+					  ZL="0" ZXAH="0" name="查询条件是否必填项"/>
+		  <otherconfig name="查询结果是否显示共有人、历史产权、是否翻译常量等其他配置" showGYR="0" showLS="0" translateConst="1"/>
+		  <validate gwzh="0" mac="0" name="查询验证项" unamepwd="0"/>
+		  <!-- 修改这里的表对应字段的配置需要同时修改xmlname表对应字段 -->
+		  <fieldconfig name="节点内字段配置">
+			  <TDSYQ name="土地所有权">
+				  <table name="BDCK.BDCS_SYQZD_XZ">
+					  <fields name="字段">BDCDYH,ZL,ZDMJ,MJDW,YT,QLXZ</fields>
+				  </table>
+				  <table name="BDCK.BDCS_QLR_XZ">
+					  <fields name="字段">BDCQZH</fields>
+				  </table>
+				  <table name="BDCK.BDCS_QL_XZ">
+					  <fields name="字段">DJJG</fields>
+				  </table>
+			  </TDSYQ>
+			  <GYNYDSYQ name="国有农用地使用权">
+				  <table name="BDCK.BDCS_QL_XZ">
+					  <fields name="字段">TO_CHAR(QLJSSJ,'YYYY-MM-DD') QLJSSJ,TO_CHAR(QLQSSJ,'YYYY-MM-DD') QLQSSJ,DJJG
+					  </fields>
+				  </table>
+				  <table name="BDCK.BDCS_QLR_XZ">
+					  <fields name="字段">QLRMC,ZJH,BDCQZH</fields>
+				  </table>
+				  <table name="BDCK.BDCS_NYD_XZ">
+					  <fields name="字段">BDCDYH,ZL,CBMJ,CBQSSJ,CBJSSJ,YT,QLXZ,QLLX
+					  </fields>
+				  </table>
+			  </GYNYDSYQ>
+
+			  <JSYDSYQ name="建设用地使用权、宅基地使用权">
+				  <table name="BDCK.BDCS_SHYQZD_XZ">
+					  <fields name="字段">ZD.QLXZ,ZD.BDCDYH,ZD.ZL,ZD.YT,ZD.SYQLX,ZD.PZYT,ZD.MJDW,ZD.ZDMJ,ZD.JZMJ</fields>
+				  </table>
+			  </JSYDSYQ>
+			  <TDYTLIST name="土地用途">
+				  <table name="BDCK.BDCS_TDYT_XZ">
+					  <fields name="字段">TDYT.TDYT,TDYT.TDYTMC,TO_CHAR(TDYT.QSRQ,'YYYY-MM-DD')
+						  QSRQ,TO_CHAR(TDYT.ZZRQ,'YYYY-MM-DD') ZZRQ
+					  </fields>
+				  </table>
+			  </TDYTLIST>
+			  <FDCQ name="房地产权">
+				  <table name="BDCK.BDCS_H_XZ">
+					  <fields name="字段">H.QLXZ,H.BDCDYH,H.ZL,H.FWYT1
+						  FWYT,H.FWJG,H.JGSJ,H.YCJZMJ,H.YCTNJZMJ,H.SCJZMJ,H.SCTNJZMJ,H.MJDW
+					  </fields>
+				  </table>
+			  </FDCQ>
+			  <QLRLIST name="权利人">
+				  <table name="BDCK.BDCS_QLR_XZ">
+					  <fields name="字段">QLR_XZ.BDCQZH,QLR_XZ.QLRMC,QLR_XZ.ZJH,QLR_XZ.ZJZL ZJLX,QLR_XZ.DH LXDH,QLR_XZ.DZ
+						  TXDZ,QLR_XZ.GYFS,QLR_XZ.QLRLX
+					  </fields>
+				  </table>
+			  </QLRLIST>
+			  <HYSYQ name="海域">
+				  <table name="BDCK.BDCS_ZH_XZ">
+					  <fields name="字段">BDCDYH,XMMC,ZL,YHLXA,YHLXB,HDMC,HDWZ,HDYT,SYQMJ,YHWZSM
+					  </fields>
+				  </table>
+				  <table name="BDCK.BDCS_QLR_XZ">
+					  <fields name="字段">GYFS,GYQK,BDCQZH,QLBL,QLMJ,QLRMC,ZJH</fields>
+				  </table>
+				  <table name="BDCK.BDCS_QL_XZ">
+					  <fields name="字段">TO_CHAR(QLJSSJ,'YYYY-MM-DD') QLJSSJ,TO_CHAR(QLQSSJ,'YYYY-MM-DD') QLQSSJ,DJJG
+					  </fields>
+				  </table>
+			  </HYSYQ>
+			  <GJZWSYQ name="构（建）筑物所有权">
+				  <table name="BDCK.BDCS_GZW_XZ">
+					  <fields name="字段">BDCDYH,ZL,GJZWGHYT,MJ,GJZWMJ</fields>
+				  </table>
+				  <table name="BDCK.BDCS_QLR_XZ">
+					  <fields name="字段">GYFS,GYQK,BDCQZH,QLBL,QLMJ,QLRMC,ZJH</fields>
+				  </table>
+				  <table name="BDCK.BDCS_QL_XZ">
+					  <fields name="字段">TO_CHAR(QLJSSJ,'YYYY-MM-DD') QLJSSJ,TO_CHAR(QLQSSJ,'YYYY-MM-DD') QLQSSJ,DJJG
+					  </fields>
+				  </table>
+			  </GJZWSYQ>
+			  <LQ name="林权">
+				  <table name="BDCK.BDCS_SLLM_XZ">
+					  <fields name="字段">BDCDYH,ZL,SYQMJ</fields>
+				  </table>
+				  <table name="BDCK.BDCS_QLR_XZ">
+					  <fields name="字段">BDCQZH,QLBL,QLMJ,QLRMC,ZJH</fields>
+				  </table>
+				  <table name="BDCK.BDCS_QL_XZ">
+					  <fields name="字段">TO_CHAR(QLJSSJ,'YYYY-MM-DD') QLJSSJ,TO_CHAR(QLQSSJ,'YYYY-MM-DD') QLQSSJ,DJJG
+					  </fields>
+				  </table>
+			  </LQ>
+			  <DYAQ name="抵押权">
+				  <table name="BDCK.BDCS_QLR_XZ">
+					  <fields name="字段">QLRMC DYQR,QLBL,QLMJ,DZ</fields>
+				  </table>
+				  <table name="BDCK.BDCS_QL_XZ">
+					  <fields name="字段">TO_CHAR(QL_XZ.QLQSSJ, 'YYYY-MM-DD') DYQLQSSJ,TO_CHAR(QL_XZ.QLJSSJ, 'YYYY-MM-DD') DYQLJSSJ</fields>
+				  </table>
+				  <table name="BDCK.BDCS_FSQL_XZ">
+					  <fields name="字段">FSQL_XZ.DYFS,FSQL_XZ.ZGZQSE,FSQL_XZ.BDBZZQSE,FSQL_XZ.DYR</fields>
+				  </table>
+			  </DYAQ>
+			  <YGDJ name="预告登记">
+				  <table name="BDCK.BDCS_QL_XZ">
+					  <fields name="字段">BDCQZH,DJJG</fields>
+				  </table>
+				  <table name="BDCK.BDCS_FSQL_XZ">
+					  <fields name="字段">YYSX,YGDJZL</fields>
+				  </table>
+			  </YGDJ>
+			  <CFDJ name="查封登记">
+				  <table name="BDCK.BDCS_QL_XZ">
+					  <fields name="字段">TO_CHAR(QLJSSJ,'YYYY-MM-DD') CFJSSJ</fields>
+				  </table>
+				  <table name="BDCK.BDCS_FSQL_XZ">
+					  <fields name="字段">CFJG,CFLX,CFWH,CFSJ CFQSSJ</fields>
+				  </table>
+			  </CFDJ>
+			  <YYDJ name="预告登记">
+				  <table name="BDCK.BDCS_QL_XZ">
+					  <fields name="字段">TO_CHAR(QLQSSJ,'YYYY-MM-DD') YYDJSJ</fields>
+				  </table>
+				  <table name="BDCK.BDCS_FSQL_XZ">
+					  <fields name="字段">YYSX YYDJYY</fields>
+				  </table>
+			  </YYDJ>
+		  </fieldconfig>
+	  </JG>
+	  <JG JGDM="03" JGMC="税务">
+		<nodes>TDSYQ,JSYDSYQ,FDCQ,HYSYQ,GJZWSYQ,LQ,DYAQ,YGDJ,CFDJ</nodes>
+		<code codeXM="1" codeXML="1" codeZJH="0" double64code="0" name="是否加密xml、身份证号、姓名"/>
+		<needaccessory name="查询是否需要上传附件">0</needaccessory>
+		<needapprove name="查询是否需要审批">0</needapprove>
+		<unitcountconfig CFDJ="1" DYAQ="1" FDCQ="0" FDCQReduce="1" GJZWSYQ="0" HYSYQ="1" JSYDSYQ="0" LQ="0" TDSYQ="0" YGDJ="1" name="是否统计权利总数"/>
+		<ifrequired BCXRXM="1" BDCDYH="0" FCID="0" FLWSBM="0" FLWSMC="0" GWZBH="0" GZZBH="1" QZHZMH="1" ZJHM="1" ZL="0" ZXAH="0" name="查询条件是否必填项"/>
+		<otherconfig name="查询结果是否显示共有人、历史产权、是否翻译常量等其他配置" showGYR="0" showLS="0" translateConst="1"/>
+		<validate unamepwd="1" gwzh="1" mac="0"  name="查询验证项"/>
+		<!-- 修改这里的表对应字段的配置需要同时修改xmlname表对应字段 -->
+		  <fieldconfig name="节点内字段配置">
+		   <TDSYQ name="土地所有权">
+			   
+			   
+			   
+		   <table name="BDCS_QL_XZ"><fields name="字段">DJJG</fields></table><table name="BDCS_QLR_XZ"><fields name="字段">BDCQZH</fields></table><table name="BDCS_SYQZD_XZ"><fields name="字段">BDCDYH,ZL,ZDMJ,MJDW,YT,QLXZ</fields></table></TDSYQ>
+		   <JSYDSYQ name="建设用地使用权、宅基地使用权">
+			   
+			   
+			   
+		   <table name="BDCS_QL_XZ"><fields name="字段">QLJSSJ,QLQSSJ,DJJG</fields></table><table name="BDCS_SHYQZD_XZ"><fields name="字段">BDCDYH,ZL,YT,ZDMJ,QLXZ</fields></table><table name="BDCS_QLR_XZ"><fields name="字段">BDCQZH,QLMJ</fields></table></JSYDSYQ>
+		   <FDCQ name="房地产权">
+			   <table name="BDCS_H_XZ">			
+					<fields name="字段">BDCDYH,ZL,SCJZMJ,SYMJ,SCFTJZMJ,GHYT,FWXZ,JGSJ,FWYT2,FWYT3</fields>
+			   </table>
+			<table name="BDCS_H_XZY">			
+				<fields name="字段">BDCDYH,ZL,SCJZMJ,SCFTJZMJ,GHYT,FWXZ,JGSJ,DYTDMJ</fields>
+			</table>
+			   <table name="BDCS_QLR_XZ">
+					<fields name="字段">BDCQZH</fields>
+			   </table>
+			   <table name="BDCS_QL_XZ">
+					<fields name="字段">DJJG</fields>
+			   </table>
+		   </FDCQ>
+			<HYSYQ name="海域">
+			   <table name="BDCS_ZH_XZ">
+					<fields name="字段">BDCDYH,XMMC,ZL,YHLXA,YHLXB,HDMC,HDWZ,HDYT,SYQMJ</fields>
+			   </table>
+			   <table name="BDCS_QLR_XZ">
+					<fields name="字段">GYFS,GYQK,BDCQZH,QLBL,QLMJ,QLRMC,ZJH</fields>
+			   </table>
+			   <table name="BDCS_QL_XZ">
+					<fields name="字段">QLJSSJ,QLQSSJ,DJJG</fields>
+			   </table>
+		   </HYSYQ>
+		   <GJZWSYQ name="构（建）筑物所有权">
+			   <table name="BDCS_GZW_XZ">
+					<fields name="字段">BDCDYH,ZL,GJZWGHYT,MJ</fields>
+			   </table>
+			   <table name="BDCS_QLR_XZ">
+					<fields name="字段">GYFS,GYQK,BDCQZH,QLBL,QLMJ,QLRMC,ZJH</fields>
+			   </table>
+			   <table name="BDCS_QL_XZ">
+					<fields name="字段">QLJSSJ,QLQSSJ,DJJG</fields>
+			   </table>
+		   </GJZWSYQ>
+		   <LQ name="林权">
+			   <table name="BDCS_SLLM_XZ">
+					<fields name="字段">BDCDYH,ZL,SYQMJ</fields>
+			   </table>
+			   <table name="BDCS_QLR_XZ">
+					<fields name="字段">BDCQZH,QLBL,QLMJ,QLRMC,ZJH</fields>
+			   </table>
+			   <table name="BDCS_QL_XZ">
+					<fields name="字段">QLJSSJ,QLQSSJ,DJJG</fields>
+			   </table>
+		   </LQ>
+		   <DYAQ name="抵押权">
+			   
+			   
+			   
+		   <table name="BDCS_H_XZY"><fields name="字段">BDCDYH,ZL</fields></table><table name="BDCS_QL_XZ"><fields name="字段">QLJSSJ,QLQSSJ,DJJG,BDCQZH</fields></table><table name="BDCS_H_XZ"><fields name="字段">BDCDYH,ZL</fields></table><table name="BDCS_FSQL_XZ"><fields name="字段">DYBDCLX,DYFS,DYSW,DYPGJZ,ZGZQSE</fields></table><table name="BDCS_QLR_XZ"><fields name="字段">QLRMC,QLBL,QLMJ,DZ</fields></table></DYAQ>
+		   <YGDJ name="预告登记">
+			   <table name="BDCS_QL_XZ">
+					<fields name="字段">BDCQZH,DJJG</fields>
+			   </table>
+			   <table name="BDCS_FSQL_XZ">
+					<fields name="字段">BDCDYH,YGDJZL,ZL,GHYT,JZMJ</fields>
+			   </table>
+		   </YGDJ>
+		   <CFDJ name="查封登记">
+			   
+			   
+			    
+		   <table name="BDCS_H_XZY"><fields name="字段">BDCDYH,ZL,GHYT,YCJZMJ</fields></table><table name="BDCS_QL_XZ"><fields name="字段">QLQSSJ,QLJSSJ,DJJG</fields></table><table name="BDCS_H_XZ"><fields name="字段">BDCDYH,ZL,GHYT,SCJZMJ</fields></table><table name="BDCS_FSQL_XZ"><fields name="字段">CFJG,CFLX,CFWH,CFSJ</fields></table></CFDJ>
+		  </fieldconfig>
+	  </JG>
+	  <JG JGDM="04" JGMC="公安">
+		<nodes>TDSYQ,JSYDSYQ,FDCQ,HYSYQ,GJZWSYQ,LQ,DYAQ,YGDJ,CFDJ</nodes>
+		<code codeXM="0" codeXML="1" codeZJH="0" double64code="0" name="是否加密xml、身份证号、姓名"/>
+		<needaccessory name="查询是否需要上传附件">0</needaccessory>
+		<needapprove name="查询是否需要审批">0</needapprove>
+		<unitcountconfig CFDJ="0" DYAQ="0" FDCQ="0" FDCQReduce="1" GJZWSYQ="0" HYSYQ="1" JSYDSYQ="0" LQ="0" TDSYQ="0" YGDJ="0" name="是否统计权利总数"/>
+		<ifrequired BCXRXM="1" BDCDYH="0" FCID="0" FLWSBM="0" FLWSMC="0" GWZBH="0" GZZBH="1" QZHZMH="1" ZJHM="1" ZL="0" ZXAH="0" name="查询条件是否必填项"/>
+		<otherconfig name="查询结果是否显示共有人、历史产权、是否翻译常量等其他配置" showGYR="0" showLS="0" translateConst="1"/>
+		<validate unamepwd="1" gwzh="1" mac="0"  name="查询验证项"/>
+		<!-- 修改这里的表对应字段的配置需要同时修改xmlname表对应字段 -->
+		  <fieldconfig name="节点内字段配置">
+		   <TDSYQ name="土地所有权">
+			   
+			   
+			   
+		   <table name="BDCS_QL_XZ"><fields name="字段">DJJG</fields></table><table name="BDCS_QLR_XZ"><fields name="字段">BDCQZH</fields></table><table name="BDCS_SYQZD_XZ"><fields name="字段">BDCDYH,ZL,ZDMJ,MJDW,YT,QLXZ</fields></table></TDSYQ>
+		   <JSYDSYQ name="建设用地使用权、宅基地使用权">
+			   
+			   
+			   
+		   <table name="BDCS_QL_XZ"><fields name="字段">QLJSSJ,QLQSSJ,DJJG</fields></table><table name="BDCS_SHYQZD_XZ"><fields name="字段">BDCDYH,ZL,YT,ZDMJ,QLXZ</fields></table><table name="BDCS_QLR_XZ"><fields name="字段">BDCQZH,QLMJ</fields></table></JSYDSYQ>
+		   <FDCQ name="房地产权">
+			   <table name="BDCS_H_XZ">			
+					<fields name="字段">BDCDYH,ZL,SCJZMJ,SYMJ,SCFTJZMJ,GHYT,FWXZ,JGSJ,FWYT2,FWYT3</fields>
+			   </table>
+			   <table name="BDCS_H_XZY">			
+			<fields name="字段">BDCDYH,ZL,SCJZMJ,SCFTJZMJ,GHYT,FWXZ,JGSJ,DYTDMJ</fields>
+			</table>
+			   <table name="BDCS_QLR_XZ">
+					<fields name="字段">BDCQZH</fields>
+			   </table>
+			   <table name="BDCS_QL_XZ">
+					<fields name="字段">DJJG</fields>
+			   </table>
+		   </FDCQ>
+			<HYSYQ name="海域">
+			   <table name="BDCS_ZH_XZ">
+					<fields name="字段">BDCDYH,XMMC,ZL,YHLXA,YHLXB,HDMC,HDWZ,HDYT,SYQMJ</fields>
+			   </table>
+			   <table name="BDCS_QLR_XZ">
+					<fields name="字段">GYFS,GYQK,BDCQZH,QLBL,QLMJ,QLRMC,ZJH</fields>
+			   </table>
+			   <table name="BDCS_QL_XZ">
+					<fields name="字段">QLJSSJ,QLQSSJ,DJJG</fields>
+			   </table>
+		   </HYSYQ>
+		   <GJZWSYQ name="构（建）筑物所有权">
+			   <table name="BDCS_GZW_XZ">
+					<fields name="字段">BDCDYH,ZL,GJZWGHYT,MJ</fields>
+			   </table>
+			   <table name="BDCS_QLR_XZ">
+					<fields name="字段">GYFS,GYQK,BDCQZH,QLBL,QLMJ,QLRMC,ZJH</fields>
+			   </table>
+			   <table name="BDCS_QL_XZ">
+					<fields name="字段">QLJSSJ,QLQSSJ,DJJG</fields>
+			   </table>
+		   </GJZWSYQ>
+		   <LQ name="林权">
+			   <table name="BDCS_SLLM_XZ">
+					<fields name="字段">BDCDYH,ZL,SYQMJ</fields>
+			   </table>
+			   <table name="BDCS_QLR_XZ">
+					<fields name="字段">BDCQZH,QLBL,QLMJ,QLRMC,ZJH</fields>
+			   </table>
+			   <table name="BDCS_QL_XZ">
+					<fields name="字段">QLJSSJ,QLQSSJ,DJJG</fields>
+			   </table>
+		   </LQ>
+		   <DYAQ name="抵押权">
+			   
+			   
+			   
+			    
+		   <table name="BDCS_H_XZY"><fields name="字段">BDCDYH,ZL</fields></table><table name="BDCS_QL_XZ"><fields name="字段">QLJSSJ,QLQSSJ,DJJG,BDCQZH</fields></table><table name="BDCS_H_XZ"><fields name="字段">BDCDYH,ZL</fields></table><table name="BDCS_FSQL_XZ"><fields name="字段">DYBDCLX,DYFS,DYSW,DYPGJZ,ZGZQSE</fields></table><table name="BDCS_QLR_XZ"><fields name="字段">QLRMC,QLBL,QLMJ,DZ</fields></table></DYAQ>
+		   <YGDJ name="预告登记">
+			   <table name="BDCS_QL_XZ">
+					<fields name="字段">BDCQZH,DJJG</fields>
+			   </table>
+			   <table name="BDCS_FSQL_XZ">
+					<fields name="字段">BDCDYH,YGDJZL,ZL,GHYT,JZMJ</fields>
+			   </table>
+		   </YGDJ>
+		   <CFDJ name="查封登记">
+			   
+			   
+			    
+		   <table name="BDCS_H_XZY"><fields name="字段">BDCDYH,ZL,GHYT,YCJZMJ</fields></table><table name="BDCS_QL_XZ"><fields name="字段">QLQSSJ,QLJSSJ,DJJG</fields></table><table name="BDCS_H_XZ"><fields name="字段">BDCDYH,ZL,GHYT,SCJZMJ</fields></table><table name="BDCS_FSQL_XZ"><fields name="字段">CFJG,CFLX,CFWH,CFSJ</fields></table></CFDJ>
+		  </fieldconfig>
+	  </JG>
+	  <JG JGDM="05" JGMC="民政">
+		<nodes>TDSYQ,JSYDSYQ,FDCQ,HYSYQ,GJZWSYQ,LQ,DYAQ,YGDJ,CFDJ</nodes>
+		<code codeXM="0" codeXML="1" codeZJH="0" double64code="0" name="是否加密xml、身份证号、姓名"/>
+		<needaccessory name="查询是否需要上传附件">0</needaccessory>
+		<needapprove name="查询是否需要审批">0</needapprove>
+		<unitcountconfig CFDJ="0" DYAQ="0" FDCQ="0" FDCQReduce="1" GJZWSYQ="0" HYSYQ="1" JSYDSYQ="0" LQ="0" TDSYQ="0" YGDJ="0" name="是否统计权利总数"/>
+		<ifrequired BCXRXM="1" BDCDYH="0" FCID="0" FLWSBM="0" FLWSMC="0" GWZBH="0" GZZBH="1" QZHZMH="1" ZJHM="1" ZL="0" ZXAH="0" name="查询条件是否必填项"/>
+		<otherconfig name="查询结果是否显示共有人、历史产权、是否翻译常量等其他配置" showGYR="0" showLS="0" translateConst="1"/>
+		<validate unamepwd="1" gwzh="1" mac="0"  name="查询验证项"/>
+		<!-- 修改这里的表对应字段的配置需要同时修改xmlname表对应字段 -->
+		  <fieldconfig name="节点内字段配置">
+		   <TDSYQ name="土地所有权">
+			   
+			   
+			   
+		   <table name="BDCS_QL_XZ"><fields name="字段">DJJG</fields></table><table name="BDCS_QLR_XZ"><fields name="字段">BDCQZH</fields></table><table name="BDCS_SYQZD_XZ"><fields name="字段">BDCDYH,ZL,ZDMJ,MJDW,YT,QLXZ</fields></table></TDSYQ>
+		   <JSYDSYQ name="建设用地使用权、宅基地使用权">
+			   
+			   
+			   
+		   <table name="BDCS_QL_XZ"><fields name="字段">QLJSSJ,QLQSSJ,DJJG</fields></table><table name="BDCS_SHYQZD_XZ"><fields name="字段">BDCDYH,ZL,YT,ZDMJ,QLXZ</fields></table><table name="BDCS_QLR_XZ"><fields name="字段">BDCQZH,QLMJ</fields></table></JSYDSYQ>
+		   <FDCQ name="房地产权">
+			   <table name="BDCS_H_XZ">			
+					<fields name="字段">BDCDYH,ZL,SCJZMJ,SYMJ,SCFTJZMJ,GHYT,FWXZ,JGSJ,FWYT2,FWYT3</fields>
+			   </table>
+			   <table name="BDCS_H_XZY">			
+			<fields name="字段">BDCDYH,ZL,SCJZMJ,SCFTJZMJ,GHYT,FWXZ,JGSJ,DYTDMJ</fields>
+			</table>
+			   <table name="BDCS_QLR_XZ">
+					<fields name="字段">BDCQZH</fields>
+			   </table>
+			   <table name="BDCS_QL_XZ">
+					<fields name="字段">DJJG</fields>
+			   </table>
+		   </FDCQ>
+			<HYSYQ name="海域">
+			   <table name="BDCS_ZH_XZ">
+					<fields name="字段">BDCDYH,XMMC,ZL,YHLXA,YHLXB,HDMC,HDWZ,HDYT,SYQMJ</fields>
+			   </table>
+			   <table name="BDCS_QLR_XZ">
+					<fields name="字段">GYFS,GYQK,BDCQZH,QLBL,QLMJ,QLRMC,ZJH</fields>
+			   </table>
+			   <table name="BDCS_QL_XZ">
+					<fields name="字段">QLJSSJ,QLQSSJ,DJJG</fields>
+			   </table>
+		   </HYSYQ>
+		   <GJZWSYQ name="构（建）筑物所有权">
+			   <table name="BDCS_GZW_XZ">
+					<fields name="字段">BDCDYH,ZL,GJZWGHYT,MJ</fields>
+			   </table>
+			   <table name="BDCS_QLR_XZ">
+					<fields name="字段">GYFS,GYQK,BDCQZH,QLBL,QLMJ,QLRMC,ZJH</fields>
+			   </table>
+			   <table name="BDCS_QL_XZ">
+					<fields name="字段">QLJSSJ,QLQSSJ,DJJG</fields>
+			   </table>
+		   </GJZWSYQ>
+		   <LQ name="林权">
+			   <table name="BDCS_SLLM_XZ">
+					<fields name="字段">BDCDYH,ZL,SYQMJ</fields>
+			   </table>
+			   <table name="BDCS_QLR_XZ">
+					<fields name="字段">BDCQZH,QLBL,QLMJ,QLRMC,ZJH</fields>
+			   </table>
+			   <table name="BDCS_QL_XZ">
+					<fields name="字段">QLJSSJ,QLQSSJ,DJJG</fields>
+			   </table>
+		   </LQ>
+		   <DYAQ name="抵押权">
+			   
+			   
+			   
+		   <table name="BDCS_H_XZY"><fields name="字段">BDCDYH,ZL</fields></table><table name="BDCS_QL_XZ"><fields name="字段">QLJSSJ,QLQSSJ,DJJG,BDCQZH</fields></table><table name="BDCS_H_XZ"><fields name="字段">BDCDYH,ZL</fields></table><table name="BDCS_FSQL_XZ"><fields name="字段">DYBDCLX,DYFS,DYSW,DYPGJZ,ZGZQSE</fields></table><table name="BDCS_QLR_XZ"><fields name="字段">QLRMC,QLBL,QLMJ,DZ</fields></table></DYAQ>
+		   <YGDJ name="预告登记">
+			   <table name="BDCS_QL_XZ">
+					<fields name="字段">BDCQZH,DJJG</fields>
+			   </table>
+			   <table name="BDCS_FSQL_XZ">
+					<fields name="字段">BDCDYH,YGDJZL,ZL,GHYT,JZMJ</fields>
+			   </table>
+		   </YGDJ>
+		   <CFDJ name="查封登记">
+			   
+			   
+		      
+		   <table name="BDCS_H_XZY"><fields name="字段">BDCDYH,ZL,GHYT,YCJZMJ</fields></table><table name="BDCS_QL_XZ"><fields name="字段">QLQSSJ,QLJSSJ,DJJG</fields></table><table name="BDCS_H_XZ"><fields name="字段">BDCDYH,ZL,GHYT,SCJZMJ</fields></table><table name="BDCS_FSQL_XZ"><fields name="字段">CFJG,CFLX,CFWH,CFSJ</fields></table></CFDJ>
+		  </fieldconfig>
+	  </JG>
+	  <JG JGDM="06" JGMC="审计">
+		<nodes>TDSYQ,JSYDSYQ,FDCQ,HYSYQ,GJZWSYQ,LQ,DYAQ,YGDJ,CFDJ</nodes>
+		<code codeXM="0" codeXML="1" codeZJH="0" double64code="0" name="是否加密xml、身份证号、姓名"/>
+		<needaccessory name="查询是否需要上传附件">0</needaccessory>
+		<needapprove name="查询是否需要审批">0</needapprove>
+		<unitcountconfig CFDJ="0" DYAQ="0" FDCQ="0" FDCQReduce="1" GJZWSYQ="0" HYSYQ="1" JSYDSYQ="0" LQ="0" TDSYQ="0" YGDJ="0" name="是否统计权利总数"/>
+		<ifrequired BCXRXM="1" BDCDYH="0" FCID="0" FLWSBM="0" FLWSMC="0" GWZBH="0" GZZBH="1" QZHZMH="1" ZJHM="1" ZL="0" ZXAH="0" name="查询条件是否必填项"/>
+		<otherconfig name="查询结果是否显示共有人、历史产权、是否翻译常量等其他配置" showGYR="0" showLS="0" translateConst="1"/>
+		<validate unamepwd="1" gwzh="1" mac="0"  name="查询验证项"/>
+		<!-- 修改这里的表对应字段的配置需要同时修改xmlname表对应字段 -->
+		  <fieldconfig name="节点内字段配置">
+		   <TDSYQ name="土地所有权">
+			   
+			   
+			   
+		   <table name="BDCS_QL_XZ"><fields name="字段">DJJG</fields></table><table name="BDCS_QLR_XZ"><fields name="字段">BDCQZH</fields></table><table name="BDCS_SYQZD_XZ"><fields name="字段">BDCDYH,ZL,ZDMJ,MJDW,YT,QLXZ</fields></table></TDSYQ>
+		   <JSYDSYQ name="建设用地使用权、宅基地使用权">
+			   
+			   
+			   
+		   <table name="BDCS_QL_XZ"><fields name="字段">QLJSSJ,QLQSSJ,DJJG</fields></table><table name="BDCS_SHYQZD_XZ"><fields name="字段">BDCDYH,ZL,YT,ZDMJ,QLXZ</fields></table><table name="BDCS_QLR_XZ"><fields name="字段">BDCQZH,QLMJ</fields></table></JSYDSYQ>
+		   <FDCQ name="房地产权">
+			   <table name="BDCS_H_XZ">			
+					<fields name="字段">BDCDYH,ZL,SCJZMJ,SYMJ,SCFTJZMJ,GHYT,FWXZ,JGSJ,FWYT2,FWYT3</fields>
+			   </table>
+			   <table name="BDCS_H_XZY">			
+			<fields name="字段">BDCDYH,ZL,SCJZMJ,SCFTJZMJ,GHYT,FWXZ,JGSJ,DYTDMJ</fields>
+			</table>
+			   <table name="BDCS_QLR_XZ">
+					<fields name="字段">BDCQZH</fields>
+			   </table>
+			   <table name="BDCS_QL_XZ">
+					<fields name="字段">DJJG</fields>
+			   </table>
+		   </FDCQ>
+			<HYSYQ name="海域">
+			   <table name="BDCS_ZH_XZ">
+					<fields name="字段">BDCDYH,XMMC,ZL,YHLXA,YHLXB,HDMC,HDWZ,HDYT,SYQMJ</fields>
+			   </table>
+			   <table name="BDCS_QLR_XZ">
+					<fields name="字段">GYFS,GYQK,BDCQZH,QLBL,QLMJ,QLRMC,ZJH</fields>
+			   </table>
+			   <table name="BDCS_QL_XZ">
+					<fields name="字段">QLJSSJ,QLQSSJ,DJJG</fields>
+			   </table>
+		   </HYSYQ>
+		   <GJZWSYQ name="构（建）筑物所有权">
+			   <table name="BDCS_GZW_XZ">
+					<fields name="字段">BDCDYH,ZL,GJZWGHYT,MJ</fields>
+			   </table>
+			   <table name="BDCS_QLR_XZ">
+					<fields name="字段">GYFS,GYQK,BDCQZH,QLBL,QLMJ,QLRMC,ZJH</fields>
+			   </table>
+			   <table name="BDCS_QL_XZ">
+					<fields name="字段">QLJSSJ,QLQSSJ,DJJG</fields>
+			   </table>
+		   </GJZWSYQ>
+		   <LQ name="林权">
+			   <table name="BDCS_SLLM_XZ">
+					<fields name="字段">BDCDYH,ZL,SYQMJ</fields>
+			   </table>
+			   <table name="BDCS_QLR_XZ">
+					<fields name="字段">BDCQZH,QLBL,QLMJ,QLRMC,ZJH</fields>
+			   </table>
+			   <table name="BDCS_QL_XZ">
+					<fields name="字段">QLJSSJ,QLQSSJ,DJJG</fields>
+			   </table>
+		   </LQ>
+		   <DYAQ name="抵押权">
+			   
+			   
+			   
+		   <table name="BDCS_H_XZY"><fields name="字段">BDCDYH,ZL</fields></table><table name="BDCS_QL_XZ"><fields name="字段">QLJSSJ,QLQSSJ,DJJG,BDCQZH</fields></table><table name="BDCS_H_XZ"><fields name="字段">BDCDYH,ZL</fields></table><table name="BDCS_FSQL_XZ"><fields name="字段">DYBDCLX,DYFS,DYSW,DYPGJZ,ZGZQSE</fields></table><table name="BDCS_QLR_XZ"><fields name="字段">QLRMC,QLBL,QLMJ,DZ</fields></table></DYAQ>
+		   <YGDJ name="预告登记">
+			   <table name="BDCS_QL_XZ">
+					<fields name="字段">BDCQZH,DJJG</fields>
+			   </table>
+			   <table name="BDCS_FSQL_XZ">
+					<fields name="字段">BDCDYH,YGDJZL,ZL,GHYT,JZMJ</fields>
+			   </table>
+		   </YGDJ>
+		   <CFDJ name="查封登记">
+			   
+			   
+		      
+		   <table name="BDCS_H_XZY"><fields name="字段">BDCDYH,ZL,GHYT,YCJZMJ</fields></table><table name="BDCS_QL_XZ"><fields name="字段">QLQSSJ,QLJSSJ,DJJG</fields></table><table name="BDCS_H_XZ"><fields name="字段">BDCDYH,ZL,GHYT,SCJZMJ</fields></table><table name="BDCS_FSQL_XZ"><fields name="字段">CFJG,CFLX,CFWH,CFSJ</fields></table></CFDJ>
+		  </fieldconfig>
+	  </JG>
+	  <JG JGDM="07" JGMC="教育">
+		<nodes>FDCQ</nodes>
+		<code codeXM="0" codeXML="1" codeZJH="0" double64code="0" name="是否加密xml、身份证号、姓名"/>
+		<needaccessory name="查询是否需要上传附件">0</needaccessory>
+		<needapprove name="查询是否需要审批">0</needapprove>
+		<unitcountconfig CFDJ="0" DYAQ="0" FDCQ="0" FDCQReduce="1" GJZWSYQ="0" HYSYQ="1" JSYDSYQ="0" LQ="0" TDSYQ="0" YGDJ="0" name="是否统计权利总数"/>
+		<ifrequired BCXRXM="1" BDCDYH="0" FCID="0" FLWSBM="0" FLWSMC="0" GWZBH="0" GZZBH="1" QZHZMH="1" ZJHM="1" ZL="0" ZXAH="0" name="查询条件是否必填项"/>
+		<otherconfig name="查询结果是否显示共有人、历史产权、是否翻译常量等其他配置" showGYR="0" showLS="0" translateConst="1"/>
+		<validate unamepwd="1" gwzh="1" mac="0"  name="查询验证项"/>
+		<!-- 修改这里的表对应字段的配置需要同时修改xmlname表对应字段 -->
+	  <fieldconfig name="节点内字段配置">
+	   <TDSYQ name="土地所有权">
+		   
+		   
+		   
+	   <table name="BDCS_QL_XZ"><fields name="字段">DJJG</fields></table><table name="BDCS_QLR_XZ"><fields name="字段">BDCQZH</fields></table><table name="BDCS_SYQZD_XZ"><fields name="字段">BDCDYH,ZL,ZDMJ,MJDW,YT,QLXZ</fields></table></TDSYQ>
+	   <JSYDSYQ name="建设用地使用权、宅基地使用权">
+		   
+		   
+		   
+	   <table name="BDCS_QL_XZ"><fields name="字段">QLJSSJ,QLQSSJ,DJJG</fields></table><table name="BDCS_SHYQZD_XZ"><fields name="字段">BDCDYH,ZL,YT,ZDMJ,QLXZ</fields></table><table name="BDCS_QLR_XZ"><fields name="字段">BDCQZH,QLMJ</fields></table></JSYDSYQ>
+	   <FDCQ name="房地产权">
+		   <table name="BDCS_H_XZ">			
+				<fields name="字段">BDCDYH,ZL,SCJZMJ,SYMJ,SCFTJZMJ,GHYT,FWXZ,JGSJ,FWYT2,FWYT3</fields>
+		   </table>
+		   <table name="BDCS_H_XZY">			
+			<fields name="字段">BDCDYH,ZL,SCJZMJ,SCFTJZMJ,GHYT,FWXZ,JGSJ,DYTDMJ</fields>
+			</table>
+		   <table name="BDCS_QLR_XZ">
+				<fields name="字段">BDCQZH</fields>
+		   </table>
+		   <table name="BDCS_QL_XZ">
+				<fields name="字段">DJJG</fields>
+		   </table>
+	   </FDCQ>
+		<HYSYQ name="海域">
+		   <table name="BDCS_ZH_XZ">
+				<fields name="字段">BDCDYH,XMMC,ZL,YHLXA,YHLXB,HDMC,HDWZ,HDYT,SYQMJ</fields>
+		   </table>
+		   <table name="BDCS_QLR_XZ">
+				<fields name="字段">GYFS,GYQK,BDCQZH,QLBL,QLMJ,QLRMC,ZJH</fields>
+		   </table>
+		   <table name="BDCS_QL_XZ">
+				<fields name="字段">QLJSSJ,QLQSSJ,DJJG</fields>
+		   </table>
+	   </HYSYQ>
+	   <GJZWSYQ name="构（建）筑物所有权">
+		   <table name="BDCS_GZW_XZ">
+				<fields name="字段">BDCDYH,ZL,GJZWGHYT,MJ</fields>
+		   </table>
+		   <table name="BDCS_QLR_XZ">
+				<fields name="字段">GYFS,GYQK,BDCQZH,QLBL,QLMJ,QLRMC,ZJH</fields>
+		   </table>
+		   <table name="BDCS_QL_XZ">
+				<fields name="字段">QLJSSJ,QLQSSJ,DJJG</fields>
+		   </table>
+	   </GJZWSYQ>
+	   <LQ name="林权">
+		   <table name="BDCS_SLLM_XZ">
+				<fields name="字段">BDCDYH,ZL,SYQMJ</fields>
+		   </table>
+		   <table name="BDCS_QLR_XZ">
+				<fields name="字段">BDCQZH,QLBL,QLMJ,QLRMC,ZJH</fields>
+		   </table>
+		   <table name="BDCS_QL_XZ">
+				<fields name="字段">QLJSSJ,QLQSSJ,DJJG</fields>
+		   </table>
+	   </LQ>
+	   <DYAQ name="抵押权">
+		   
+		   
+		   
+	   <table name="BDCS_H_XZY"><fields name="字段">BDCDYH,ZL</fields></table><table name="BDCS_QL_XZ"><fields name="字段">QLJSSJ,QLQSSJ,DJJG,BDCQZH</fields></table><table name="BDCS_H_XZ"><fields name="字段">BDCDYH,ZL</fields></table><table name="BDCS_FSQL_XZ"><fields name="字段">DYBDCLX,DYFS,DYSW,DYPGJZ,ZGZQSE</fields></table><table name="BDCS_QLR_XZ"><fields name="字段">QLRMC,QLBL,QLMJ,DZ</fields></table></DYAQ>
+	   <YGDJ name="预告登记">
+		   <table name="BDCS_QL_XZ">
+				<fields name="字段">BDCQZH,DJJG</fields>
+		   </table>
+		   <table name="BDCS_FSQL_XZ">
+				<fields name="字段">BDCDYH,YGDJZL,ZL,GHYT,JZMJ</fields>
+		   </table>
+	   </YGDJ>
+	   <CFDJ name="查封登记">
+		   
+		   
+	      
+	   <table name="BDCS_H_XZY"><fields name="字段">BDCDYH,ZL,GHYT,YCJZMJ</fields></table><table name="BDCS_QL_XZ"><fields name="字段">QLQSSJ,QLJSSJ,DJJG</fields></table><table name="BDCS_H_XZ"><fields name="字段">BDCDYH,ZL,GHYT,SCJZMJ</fields></table><table name="BDCS_FSQL_XZ"><fields name="字段">CFJG,CFLX,CFWH,CFSJ</fields></table></CFDJ>
+	  </fieldconfig>
+	  </JG>
+	  <JG JGDM="08" JGMC="统计">
+		<nodes>TDSYQ,JSYDSYQ,FDCQ,HYSYQ,GJZWSYQ,LQ,DYAQ,YGDJ,CFDJ</nodes>
+		<code codeXM="0" codeXML="1" codeZJH="0" double64code="0" name="是否加密xml、身份证号、姓名"/>
+		<needaccessory name="查询是否需要上传附件">0</needaccessory>
+		<needapprove name="查询是否需要审批">0</needapprove>
+		<unitcountconfig CFDJ="0" DYAQ="0" FDCQ="0" FDCQReduce="1" GJZWSYQ="0" HYSYQ="1" JSYDSYQ="0" LQ="0" TDSYQ="0" YGDJ="0" name="是否统计权利总数"/>
+		<ifrequired BCXRXM="1" BDCDYH="0" FCID="0" FLWSBM="0" FLWSMC="0" GWZBH="0" GZZBH="1" QZHZMH="1" ZJHM="1" ZL="0" ZXAH="0" name="查询条件是否必填项"/>
+		<otherconfig name="查询结果是否显示共有人、历史产权、是否翻译常量等其他配置" showGYR="0" showLS="0" translateConst="1"/>
+		<validate unamepwd="1" gwzh="1" mac="0"  name="查询验证项"/>
+		<!-- 修改这里的表对应字段的配置需要同时修改xmlname表对应字段 -->
+	  <fieldconfig name="节点内字段配置">
+	   <TDSYQ name="土地所有权">
+		   
+		   
+		   
+	   <table name="BDCS_QL_XZ"><fields name="字段">DJJG</fields></table><table name="BDCS_QLR_XZ"><fields name="字段">BDCQZH</fields></table><table name="BDCS_SYQZD_XZ"><fields name="字段">BDCDYH,ZL,ZDMJ,MJDW,YT,QLXZ</fields></table></TDSYQ>
+	   <JSYDSYQ name="建设用地使用权、宅基地使用权">
+		   
+		   
+		   
+	   <table name="BDCS_QL_XZ"><fields name="字段">QLJSSJ,QLQSSJ,DJJG</fields></table><table name="BDCS_SHYQZD_XZ"><fields name="字段">BDCDYH,ZL,YT,ZDMJ,QLXZ</fields></table><table name="BDCS_QLR_XZ"><fields name="字段">BDCQZH,QLMJ</fields></table></JSYDSYQ>
+	   <FDCQ name="房地产权">
+		   <table name="BDCS_H_XZ">			
+				<fields name="字段">BDCDYH,ZL,SCJZMJ,SYMJ,SCFTJZMJ,GHYT,FWXZ,JGSJ,FWYT2,FWYT3</fields>
+		   </table>
+		   <table name="BDCS_H_XZY">			
+			<fields name="字段">BDCDYH,ZL,SCJZMJ,SCFTJZMJ,GHYT,FWXZ,JGSJ,DYTDMJ</fields>
+		</table>
+		   <table name="BDCS_QLR_XZ">
+				<fields name="字段">BDCQZH</fields>
+		   </table>
+		   <table name="BDCS_QL_XZ">
+				<fields name="字段">DJJG</fields>
+		   </table>
+	   </FDCQ>
+		<HYSYQ name="海域">
+		   <table name="BDCS_ZH_XZ">
+				<fields name="字段">BDCDYH,XMMC,ZL,YHLXA,YHLXB,HDMC,HDWZ,HDYT,SYQMJ</fields>
+		   </table>
+		   <table name="BDCS_QLR_XZ">
+				<fields name="字段">GYFS,GYQK,BDCQZH,QLBL,QLMJ,QLRMC,ZJH</fields>
+		   </table>
+		   <table name="BDCS_QL_XZ">
+				<fields name="字段">QLJSSJ,QLQSSJ,DJJG</fields>
+		   </table>
+	   </HYSYQ>
+	   <GJZWSYQ name="构（建）筑物所有权">
+		   <table name="BDCS_GZW_XZ">
+				<fields name="字段">BDCDYH,ZL,GJZWGHYT,MJ</fields>
+		   </table>
+		   <table name="BDCS_QLR_XZ">
+				<fields name="字段">GYFS,GYQK,BDCQZH,QLBL,QLMJ,QLRMC,ZJH</fields>
+		   </table>
+		   <table name="BDCS_QL_XZ">
+				<fields name="字段">QLJSSJ,QLQSSJ,DJJG</fields>
+		   </table>
+	   </GJZWSYQ>
+	   <LQ name="林权">
+		   <table name="BDCS_SLLM_XZ">
+				<fields name="字段">BDCDYH,ZL,SYQMJ</fields>
+		   </table>
+		   <table name="BDCS_QLR_XZ">
+				<fields name="字段">BDCQZH,QLBL,QLMJ,QLRMC,ZJH</fields>
+		   </table>
+		   <table name="BDCS_QL_XZ">
+				<fields name="字段">QLJSSJ,QLQSSJ,DJJG</fields>
+		   </table>
+	   </LQ>
+	   <DYAQ name="抵押权">
+		   
+		   
+		   
+	   <table name="BDCS_H_XZY"><fields name="字段">BDCDYH,ZL</fields></table><table name="BDCS_QL_XZ"><fields name="字段">QLJSSJ,QLQSSJ,DJJG,BDCQZH</fields></table><table name="BDCS_H_XZ"><fields name="字段">BDCDYH,ZL</fields></table><table name="BDCS_FSQL_XZ"><fields name="字段">DYBDCLX,DYFS,DYSW,DYPGJZ,ZGZQSE</fields></table><table name="BDCS_QLR_XZ"><fields name="字段">QLRMC,QLBL,QLMJ,DZ</fields></table></DYAQ>
+	   <YGDJ name="预告登记">
+		   <table name="BDCS_QL_XZ">
+				<fields name="字段">BDCQZH,DJJG</fields>
+		   </table>
+		   <table name="BDCS_FSQL_XZ">
+				<fields name="字段">BDCDYH,YGDJZL,ZL,GHYT,JZMJ</fields>
+		   </table>
+	   </YGDJ>
+	   <CFDJ name="查封登记">
+		   
+		   
+	      
+	   <table name="BDCS_H_XZY"><fields name="字段">BDCDYH,ZL,GHYT,YCJZMJ</fields></table><table name="BDCS_QL_XZ"><fields name="字段">QLQSSJ,QLJSSJ,DJJG</fields></table><table name="BDCS_H_XZ"><fields name="字段">BDCDYH,ZL,GHYT,SCJZMJ</fields></table><table name="BDCS_FSQL_XZ"><fields name="字段">CFJG,CFLX,CFWH,CFSJ</fields></table></CFDJ>
+	  </fieldconfig>
+	  </JG>
+	  <JG JGDM="09" JGMC="不动产">
+		<nodes>FDCQ,DYAQ,YGDJ,CFDJ</nodes>
+		<code codeXM="0" codeXML="0" codeZJH="0" double64code="0" name="是否加密xml、身份证号、姓名"/>
+		<needaccessory name="查询是否需要上传附件">0</needaccessory>
+		<needapprove name="查询是否需要审批">0</needapprove>
+		<unitcountconfig CFDJ="0" DYAQ="1" FDCQ="1" FDCQReduce="1" GJZWSYQ="0" HYSYQ="0" JSYDSYQ="1" LQ="0" TDSYQ="1" YGDJ="" name="是否统计权利总数"/>
+		<ifrequired BCXRXM="1" BDCDYH="0" FCID="0" FLWSBM="0" FLWSMC="0" GWZBH="0" GZZBH="1" QZHZMH="0" ZJHM="1" ZL="0" ZXAH="0" name="查询条件是否必填项"/>
+		<otherconfig name="查询结果是否显示共有人、历史产权、是否翻译常量等其他配置" showGYR="1" showLS="0" translateConst="1"/>
+		<validate unamepwd="1" gwzh="1" mac="0"  name="查询验证项"/>
+		<!-- 修改这里的表对应字段的配置需要同时修改xmlname表对应字段 -->
+	  <fieldconfig name="节点内字段配置">
+	   <TDSYQ name="土地所有权">
+		   <table name="BDCJCS_TDSYQ">
+				<fields name="字段">SFZYT,TDYT,TDYTMC,QSRQ</fields>
+		   </table>
+		   <table name="BDCJCS_QLR">
+				<fields name="字段">QLRMC,BDCDYH,BDCQZH,ZJH</fields>
+		   </table>
+	   </TDSYQ>
+	   <JSYDSYQ name="建设用地使用权、宅基地使用权">
+		   <table name="BDCJCS_QLR">			
+				<fields name="字段">QLRMC,BDCDYH,BDCQZH,ZJH</fields>
+		   </table>
+		   <table name="BDCJCS_JSYDSYQ">			
+				<fields name="字段">BDCDYH,DJLX,DJYY,SYQMJ,BDCQZH,DBR,QSZT,ZXSJ</fields>
+		   </table>
+		   
+	   </JSYDSYQ>
+	   <FDCQ name="房地产权">
+		   <table name="BDCJCS_QLR">			
+				<fields name="字段">QLRMC,BDCDYH,BDCQZH,ZJH</fields>
+		   </table>
+		   <table name="BDCJCS_H">			
+			<fields name="字段">BDCDYH,ZL,FWYT1,YCJZMJ,SCJZMJ,FWXZ</fields>
+		</table>
+		   <table name="BDCJCS_FDCQ2">
+				<fields name="字段">QSZT</fields>
+		   </table>
+	   </FDCQ>
+		<HYSYQ name="海域">
+		   <table name="BDCJCS_HYSYQ">
+				<fields name="字段">BDCDYH,QLLX,DJLX,DJYY,SYQMJ</fields>
+		   </table>
+		   <table name="BDCJCS_QLR">
+				<fields name="字段">GYFS,BDCQZH,QLMJ,QLRMC,ZJH</fields>
+		   </table>
+	   </HYSYQ>
+	   <GJZWSYQ name="构（建）筑物所有权">
+		   <table name="BDCJCS_GJZWSYQ">
+				<fields name="字段">BDCDYH,ZL,GJZWGHYT,GJZWMJ</fields>
+		   </table>
+		   <table name="BDCJCS_QLR">
+				<fields name="字段">GYFS,GYQK,BDCQZH,QLBL,QLMJ,QLRMC,ZJH</fields>
+		   </table>
+	   </GJZWSYQ>
+	   <LQ name="林权">
+		   <table name="BDCJCS_LQ">
+				<fields name="字段">BDCDYH,QLLX,FBF,SYQMJ,ZYSZ</fields>
+		   </table>
+		   <table name="BDCJCS_QLR">
+				<fields name="字段">BDCQZH,QLBL,QLMJ,QLRMC,ZJH</fields>
+		   </table>
+	   </LQ>
+	   <DYAQ name="抵押权">
+		   <table name="BDCJCS_QLR">
+				<fields name="字段">QLRMC,BDCDYH,BDCQZH,ZJH</fields>
+		   </table>
+		   <table name="BDCJCS_DYAQ">
+				<fields name="字段">BDCDYH,DYBDCLX,DYR,DYFS,DJLX,DJYY</fields>
+		   </table>
+		   <table name="BDCJCS_FDCQ2">
+				<fields name="字段">BDCDYH,DJLX,TDSYQSSJ,TDSYJSSJ,GHYT,FWXZ,JZMJ,BDCQZH,DJSJ</fields>
+		   </table>
+	   </DYAQ>
+	   <YGDJ name="预告登记">
+		   <table name="BDCJCS_QLR">
+				<fields name="字段">QLRMC,BDCDYH,BDCQZH,ZJH</fields>
+		   </table>
+		   <table name="BDCJCS_YGDJ">
+				<fields name="字段">YGDJZL,BDCDYH,FWXZ,GHYT,BDCDJZMH,QSZT</fields>
+		   </table>
+		   <table name="BDCJCS_FDCQ2">
+				<fields name="字段">BDCDYH,DJLX,TDSYQSSJ,TDSYJSSJ,GHYT,FWXZ,JZMJ,BDCQZH,DJSJ</fields>
+		   </table>
+	   </YGDJ>
+	   <CFDJ name="查封登记">
+		   <table name="BDCJCS_QLR">
+				<fields name="字段">QLRMC,BDCDYH,BDCQZH,ZJH</fields>
+		   </table>
+		   <table name="BDCJCS_CFDJ">
+				<fields name="字段">CFJG,CFLX,DJJG,QSZT,BDCDYH</fields>
+		   </table>
+		   <table name="BDCJCS_FDCQ2">
+				<fields name="字段">BDCDYH,DJLX,TDSYQSSJ,TDSYJSSJ,GHYT,FWXZ,JZMJ,BDCQZH,DJSJ</fields>
+		   </table>
+	   </CFDJ>
+	  </fieldconfig>
+	  </JG>
+  	  <JG JGDM="10" JGMC="公积金">
+		<nodes>TDSYQ,JSYDSYQ,FDCQ,HYSYQ,GJZWSYQ,LQ,DYAQ,YGDJ,CFDJ</nodes>
+		<code codeXM="1" codeXML="0" codeZJH="1" double64code="0" name="是否加密xml、身份证号、姓名"/>
+		<needaccessory name="查询是否需要上传附件">0</needaccessory>
+		<needapprove name="查询是否需要审批">0</needapprove>
+		<unitcountconfig CFDJ="0" DYAQ="1" FDCQ="1" FDCQReduce="1" GJZWSYQ="0" HYSYQ="0" JSYDSYQ="1" LQ="0" TDSYQ="1" YGDJ="" name="是否统计权利总数"/>
+		<ifrequired BCXRXM="1" BDCDYH="0" FCID="0" FLWSBM="0" FLWSMC="0" GWZBH="0" GZZBH="1" QZHZMH="1" ZJHM="1" ZL="0" ZXAH="0" name="查询条件是否必填项"/>
+		<otherconfig name="查询结果是否显示共有人、历史产权、是否翻译常量等其他配置" showGYR="0" showLS="0" translateConst="1"/>
+		<validate unamepwd="1" gwzh="1" mac="0"  name="查询验证项"/>
+		<!-- 修改这里的表对应字段的配置需要同时修改xmlname表对应字段 -->
+	  <fieldconfig name="节点内字段配置">
+	   <TDSYQ name="土地所有权">
+		   
+		   
+		   
+	   <table name="BDCS_QL_XZ"><fields name="字段">DJJG</fields></table><table name="BDCS_QLR_XZ"><fields name="字段">BDCQZH</fields></table><table name="BDCS_SYQZD_XZ"><fields name="字段">BDCDYH,ZL,ZDMJ,MJDW,YT,QLXZ</fields></table></TDSYQ>
+	   <JSYDSYQ name="建设用地使用权、宅基地使用权">
+		   
+		   
+		   
+	   <table name="BDCS_QL_XZ"><fields name="字段">QLJSSJ,QLQSSJ,DJJG</fields></table><table name="BDCS_SHYQZD_XZ"><fields name="字段">BDCDYH,ZL,YT,ZDMJ,QLXZ</fields></table><table name="BDCS_QLR_XZ"><fields name="字段">BDCQZH,QLMJ</fields></table></JSYDSYQ>
+	   <FDCQ name="房地产权">
+		   <table name="BDCS_H_XZ">			
+				<fields name="字段">BDCDYH,ZL,SCJZMJ,SYMJ,SCFTJZMJ,GHYT,FWXZ,JGSJ,FWYT2,FWYT3</fields>
+		   </table>
+		   <table name="BDCS_H_XZY">			
+			<fields name="字段">BDCDYH,ZL,SCJZMJ,SCFTJZMJ,GHYT,FWXZ,JGSJ,DYTDMJ</fields>
+	   </table>
+		   <table name="BDCS_QLR_XZ">
+				<fields name="字段">BDCQZH</fields>
+		   </table>
+		   <table name="BDCS_QL_XZ">
+				<fields name="字段">DJJG</fields>
+		   </table>
+	   </FDCQ>
+		<HYSYQ name="海域">
+		   <table name="BDCS_ZH_XZ">
+				<fields name="字段">BDCDYH,XMMC,ZL,YHLXA,YHLXB,HDMC,HDWZ,HDYT,SYQMJ</fields>
+		   </table>
+		   <table name="BDCS_QLR_XZ">
+				<fields name="字段">GYFS,GYQK,BDCQZH,QLBL,QLMJ,QLRMC,ZJH</fields>
+		   </table>
+		   <table name="BDCS_QL_XZ">
+				<fields name="字段">QLJSSJ,QLQSSJ,DJJG</fields>
+		   </table>
+	   </HYSYQ>
+	   <GJZWSYQ name="构（建）筑物所有权">
+		   <table name="BDCS_GZW_XZ">
+				<fields name="字段">BDCDYH,ZL,GJZWGHYT,MJ</fields>
+		   </table>
+		   <table name="BDCS_QLR_XZ">
+				<fields name="字段">GYFS,GYQK,BDCQZH,QLBL,QLMJ,QLRMC,ZJH</fields>
+		   </table>
+		   <table name="BDCS_QL_XZ">
+				<fields name="字段">QLJSSJ,QLQSSJ,DJJG</fields>
+		   </table>
+	   </GJZWSYQ>
+	   <LQ name="林权">
+		   <table name="BDCS_SLLM_XZ">
+				<fields name="字段">BDCDYH,ZL,SYQMJ</fields>
+		   </table>
+		   <table name="BDCS_QLR_XZ">
+				<fields name="字段">BDCQZH,QLBL,QLMJ,QLRMC,ZJH</fields>
+		   </table>
+		   <table name="BDCS_QL_XZ">
+				<fields name="字段">QLJSSJ,QLQSSJ,DJJG</fields>
+		   </table>
+	   </LQ>
+	   <DYAQ name="抵押权">
+		   
+		   
+		    
+		   
+		   
+	   <table name="BDCS_H_XZY"><fields name="字段">BDCDYH,ZL</fields></table><table name="BDCS_QL_XZ"><fields name="字段">QLJSSJ,QLQSSJ,DJJG,BDCQZH</fields></table><table name="BDCS_H_XZ"><fields name="字段">BDCDYH,ZL</fields></table><table name="BDCS_FSQL_XZ"><fields name="字段">DYBDCLX,DYFS,DYSW,DYPGJZ,ZGZQSE</fields></table><table name="BDCS_QLR_XZ"><fields name="字段">QLRMC,QLBL,QLMJ,DZ</fields></table></DYAQ>
+	   <YGDJ name="预告登记">
+		   <table name="BDCS_QL_XZ">
+				<fields name="字段">BDCQZH,DJJG</fields>
+		   </table>
+		   <table name="BDCS_FSQL_XZ">
+				<fields name="字段">BDCDYH,YGDJZL,ZL,GHYT,JZMJ</fields>
+		   </table>
+		  <table name="BDCS_H_XZ">
+				<fields name="字段">BDCDYH,YGDJZL,ZL,GHYT,SCJZMJ</fields>
+		   </table>
+		   <table name="BDCS_H_XZY">
+				<fields name="字段">BDCDYH,YGDJZL,ZL,GHYT,YCJZMJ</fields>
+		   </table>
+	   </YGDJ>
+	   <CFDJ name="查封登记">
+		   
+		   
+		    
+		   
+	   <table name="BDCS_H_XZY"><fields name="字段">BDCDYH,ZL,GHYT,YCJZMJ</fields></table><table name="BDCS_QL_XZ"><fields name="字段">QLQSSJ,QLJSSJ,DJJG</fields></table><table name="BDCS_H_XZ"><fields name="字段">BDCDYH,ZL,GHYT,SCJZMJ</fields></table><table name="BDCS_FSQL_XZ"><fields name="字段">CFJG,CFLX,CFWH,CFSJ</fields></table></CFDJ>
+	  </fieldconfig>
+	  </JG>
+	  	  <JG JGDM="11" JGMC="房地产开发商">
+		<nodes>TDSYQ,JSYDSYQ,FDCQ,HYSYQ,GJZWSYQ,LQ,DYAQ,YGDJ,CFDJ</nodes>
+		<code codeXM="1" codeXML="0" codeZJH="1" double64code="0" name="是否加密xml、身份证号、姓名"/>
+		<needaccessory name="查询是否需要上传附件">0</needaccessory>
+		<needapprove name="查询是否需要审批">0</needapprove>
+		<unitcountconfig CFDJ="0" DYAQ="1" FDCQ="1" FDCQReduce="1" GJZWSYQ="0" HYSYQ="0" JSYDSYQ="1" LQ="0" TDSYQ="1" YGDJ="" name="是否统计权利总数"/>
+		<ifrequired BCXRXM="1" BDCDYH="0" FCID="0" FLWSBM="0" FLWSMC="0" GWZBH="0" GZZBH="1" QZHZMH="1" ZJHM="1" ZL="0" ZXAH="0" name="查询条件是否必填项"/>
+		<otherconfig name="查询结果是否显示共有人、历史产权、是否翻译常量等其他配置" showGYR="0" showLS="0" translateConst="1"/>
+		<validate unamepwd="1" gwzh="1" mac="0"  name="查询验证项"/>
+		<!-- 修改这里的表对应字段的配置需要同时修改xmlname表对应字段 -->
+	  <fieldconfig name="节点内字段配置">
+	   <TDSYQ name="土地所有权">
+		   
+		   
+		   
+	   <table name="BDCS_QL_XZ"><fields name="字段">DJJG</fields></table><table name="BDCS_QLR_XZ"><fields name="字段">BDCQZH</fields></table><table name="BDCS_SYQZD_XZ"><fields name="字段">BDCDYH,ZL,ZDMJ,MJDW,YT,QLXZ</fields></table></TDSYQ>
+	   <JSYDSYQ name="建设用地使用权、宅基地使用权">
+		   
+		   
+		   
+	   <table name="BDCS_QL_XZ"><fields name="字段">QLJSSJ,QLQSSJ,DJJG</fields></table><table name="BDCS_SHYQZD_XZ"><fields name="字段">BDCDYH,ZL,YT,ZDMJ,QLXZ</fields></table><table name="BDCS_QLR_XZ"><fields name="字段">BDCQZH,QLMJ</fields></table></JSYDSYQ>
+	   <FDCQ name="房地产权">
+		   <table name="BDCS_H_XZ">			
+				<fields name="字段">BDCDYH,ZL,SCJZMJ,SYMJ,SCFTJZMJ,GHYT,FWXZ,JGSJ,FWYT2,FWYT3</fields>
+		   </table>
+		   <table name="BDCS_H_XZY">			
+			<fields name="字段">BDCDYH,ZL,SCJZMJ,SCFTJZMJ,GHYT,FWXZ,JGSJ,DYTDMJ</fields>
+	   </table>
+		   <table name="BDCS_QLR_XZ">
+				<fields name="字段">BDCQZH</fields>
+		   </table>
+		   <table name="BDCS_QL_XZ">
+				<fields name="字段">DJJG</fields>
+		   </table>
+	   </FDCQ>
+		<HYSYQ name="海域">
+		   <table name="BDCS_ZH_XZ">
+				<fields name="字段">BDCDYH,XMMC,ZL,YHLXA,YHLXB,HDMC,HDWZ,HDYT,SYQMJ</fields>
+		   </table>
+		   <table name="BDCS_QLR_XZ">
+				<fields name="字段">GYFS,GYQK,BDCQZH,QLBL,QLMJ,QLRMC,ZJH</fields>
+		   </table>
+		   <table name="BDCS_QL_XZ">
+				<fields name="字段">QLJSSJ,QLQSSJ,DJJG</fields>
+		   </table>
+	   </HYSYQ>
+	   <GJZWSYQ name="构（建）筑物所有权">
+		   <table name="BDCS_GZW_XZ">
+				<fields name="字段">BDCDYH,ZL,GJZWGHYT,MJ</fields>
+		   </table>
+		   <table name="BDCS_QLR_XZ">
+				<fields name="字段">GYFS,GYQK,BDCQZH,QLBL,QLMJ,QLRMC,ZJH</fields>
+		   </table>
+		   <table name="BDCS_QL_XZ">
+				<fields name="字段">QLJSSJ,QLQSSJ,DJJG</fields>
+		   </table>
+	   </GJZWSYQ>
+	   <LQ name="林权">
+		   <table name="BDCS_SLLM_XZ">
+				<fields name="字段">BDCDYH,ZL,SYQMJ</fields>
+		   </table>
+		   <table name="BDCS_QLR_XZ">
+				<fields name="字段">BDCQZH,QLBL,QLMJ,QLRMC,ZJH</fields>
+		   </table>
+		   <table name="BDCS_QL_XZ">
+				<fields name="字段">QLJSSJ,QLQSSJ,DJJG</fields>
+		   </table>
+	   </LQ>
+	   <DYAQ name="抵押权">
+		   
+		   
+		    
+		   
+		   
+	   <table name="BDCS_H_XZY"><fields name="字段">BDCDYH,ZL</fields></table><table name="BDCS_QL_XZ"><fields name="字段">QLJSSJ,QLQSSJ,DJJG,BDCQZH</fields></table><table name="BDCS_H_XZ"><fields name="字段">BDCDYH,ZL</fields></table><table name="BDCS_FSQL_XZ"><fields name="字段">DYBDCLX,DYFS,DYSW,DYPGJZ,ZGZQSE</fields></table><table name="BDCS_QLR_XZ"><fields name="字段">QLRMC,QLBL,QLMJ,DZ</fields></table></DYAQ>
+	   <YGDJ name="预告登记">
+		   <table name="BDCS_QL_XZ">
+				<fields name="字段">BDCQZH,DJJG</fields>
+		   </table>
+		   <table name="BDCS_FSQL_XZ">
+				<fields name="字段">BDCDYH,YGDJZL,ZL,GHYT,JZMJ</fields>
+		   </table>
+		  <table name="BDCS_H_XZ">
+				<fields name="字段">BDCDYH,YGDJZL,ZL,GHYT,SCJZMJ</fields>
+		   </table>
+		   <table name="BDCS_H_XZY">
+				<fields name="字段">BDCDYH,YGDJZL,ZL,GHYT,YCJZMJ</fields>
+		   </table>
+	   </YGDJ>
+	   <CFDJ name="查封登记">
+		   
+		   
+		    
+		   
+	   <table name="BDCS_H_XZY"><fields name="字段">BDCDYH,ZL,GHYT,YCJZMJ</fields></table><table name="BDCS_QL_XZ"><fields name="字段">QLQSSJ,QLJSSJ,DJJG</fields></table><table name="BDCS_H_XZ"><fields name="字段">BDCDYH,ZL,GHYT,SCJZMJ</fields></table><table name="BDCS_FSQL_XZ"><fields name="字段">CFJG,CFLX,CFWH,CFSJ</fields></table></CFDJ>
+	  </fieldconfig>
+	  </JG>
+
+	  <JG JGDM="99" JGMC="抵押平台">
+	 		<!-- 这里配置需要查询的节点 -->
+			<nodes>FDCQ,DYAQ,CFDJ,YYDJ,QLRLIST,JSYDSYQ</nodes>
+			<code codeXM="0" codeXML="0" codeZJH="0" double64code="0" name="是否加密xml、身份证号、姓名"/>
+			<needaccessory name="查询是否需要上传附件">0</needaccessory>
+			<needapprove name="查询是否需要审批">0</needapprove>
+			<unitcountconfig CFDJ="0" DYAQ="1" FDCQ="1" FDCQReduce="" GJZWSYQ="0" GYNYDSYQ="1" HYSYQ="0" JSYDSYQ="1" LQ="0" TDSYQ="1" YGDJ="" name="是否统计权利总数"/>
+			<ifrequired BCXRXM="0" BDCDYH="0" FCID="0" FLWSBM="0" FLWSMC="0" GWZBH="0" GZZBH="1" QZHZMH="0" ZJHM="0" ZL="0" ZXAH="0" name="查询条件是否必填项"/>
+			<otherconfig name="查询结果是否显示共有人、历史产权、是否翻译常量等其他配置" showGYR="0" showLS="0" translateConst="1"/>
+			<validate gwzh="0" mac="0" name="查询验证项" unamepwd="0"/>
+			<!-- 修改这里的表对应字段的配置需要同时修改xmlname表对应字段 -->
+			<fieldconfig name="节点内字段配置">
+				<TDSYQ name="土地所有权">
+					<table name="BDCK.BDCS_SYQZD_XZ">
+						<fields name="字段">BDCDYH,ZL,ZDMJ,MJDW,YT,QLXZ</fields>
+					</table>
+					<table name="BDCK.BDCS_QLR_XZ">
+						<fields name="字段">BDCQZH</fields>
+					</table>
+					<table name="BDCK.BDCS_QL_XZ">
+						<fields name="字段">DJJG</fields>
+					</table>
+				</TDSYQ>
+				<GYNYDSYQ name="国有农用地使用权">
+					<table name="BDCK.BDCS_QL_XZ">
+						<fields name="字段">TO_CHAR(QLJSSJ, 'YYYY-MM-DD') QLJSSJ,TO_CHAR(QLQSSJ, 'YYYY-MM-DD') QLQSSJ,DJJG</fields>
+					</table>
+					<table name="BDCK.BDCS_QLR_XZ">
+						<fields name="字段">QLRMC,ZJH,BDCQZH</fields>
+					</table>
+					<table name="BDCK.BDCS_NYD_XZ">
+						<fields name="字段">BDCDYH,ZL,CBMJ,CBQSSJ,CBJSSJ,YT,QLXZ,QLLX
+						</fields>
+					</table>
+				</GYNYDSYQ>
+
+				<JSYDSYQ name="建设用地使用权、宅基地使用权">
+					<table name="BDCK.BDCS_SHYQZD_XZ">
+						<fields name="字段">QLXZ,BDCDYH,ZL,YT,SYQLX,PZYT,MJDW,ZDMJ,JZMJ</fields>
+					</table>
+					<!--<table name="BDCK.BDCS_QLR_XZ">
+						<fields name="字段">QLMJ,BDCQZH</fields>
+					</table>
+					<table name="BDCK.BDCS_QL_XZ">
+						<fields name="字段">TO_CHAR(QLJSSJ, 'YYYY-MM-DD') QLJSSJ,TO_CHAR(QLQSSJ, 'YYYY-MM-DD') QLQSSJ,DJJG</fields>
+					</table>
+					<table name="BDCK.BDCS_TDYT_XZ">
+						<fields name="字段">TDYT</fields>
+					</table>-->
+				</JSYDSYQ>
+				<FDCQ name="房地产权">
+					<table name="BDCK.BDCS_H_XZ">
+						<fields name="字段">BDCDYLX,QLXZ,BDCDYH,ZL,FWYT1,FWJG,JGSJ,YCJZMJ,YCTNJZMJ,SCJZMJ,SCTNJZMJ,MJDW</fields>
+					</table>
+					<table name="BDCK.BDCS_H_XZY">
+						<fields name="字段">BDCDYLX,QLXZ,BDCDYH,ZL,FWYT1,FWJG,JGSJ,YCJZMJ,YCTNJZMJ,SCJZMJ,SCTNJZMJ,MJDW</fields>
+					</table>
+				</FDCQ>
+				<QLRLIST name="权利人">
+					<table name="BDCK.BDCS_QLR_XZ">
+						<fields name="字段">BDCQZH,QLRMC,ZJH,ZJZL,DH,DZ,GYFS</fields>
+					</table>
+				</QLRLIST>
+				<HYSYQ name="海域">
+					<table name="BDCK.BDCS_ZH_XZ">
+						<fields name="字段">BDCDYH,XMMC,ZL,YHLXA,YHLXB,HDMC,HDWZ,HDYT,SYQMJ,YHWZSM
+						</fields>
+					</table>
+					<table name="BDCK.BDCS_QLR_XZ">
+						<fields name="字段">GYFS,GYQK,BDCQZH,QLBL,QLMJ,QLRMC,ZJH</fields>
+					</table>
+					<table name="BDCK.BDCS_QL_XZ">
+						<fields name="字段">TO_CHAR(QLJSSJ, 'YYYY-MM-DD') QLJSSJ,TO_CHAR(QLQSSJ, 'YYYY-MM-DD') QLQSSJ,DJJG</fields>
+					</table>
+				</HYSYQ>
+				<GJZWSYQ name="构（建）筑物所有权">
+					<table name="BDCK.BDCS_GZW_XZ">
+						<fields name="字段">BDCDYH,ZL,GJZWGHYT,MJ,GJZWMJ</fields>
+					</table>
+					<table name="BDCK.BDCS_QLR_XZ">
+						<fields name="字段">GYFS,GYQK,BDCQZH,QLBL,QLMJ,QLRMC,ZJH</fields>
+					</table>
+					<table name="BDCK.BDCS_QL_XZ">
+						<fields name="字段">TO_CHAR(QLJSSJ, 'YYYY-MM-DD') QLJSSJ,TO_CHAR(QLQSSJ, 'YYYY-MM-DD') QLQSSJ,DJJG</fields>
+					</table>
+				</GJZWSYQ>
+				<LQ name="林权">
+					<table name="BDCK.BDCS_SLLM_XZ">
+						<fields name="字段">BDCDYH,ZL,SYQMJ</fields>
+					</table>
+					<table name="BDCK.BDCS_QLR_XZ">
+						<fields name="字段">BDCQZH,QLBL,QLMJ,QLRMC,ZJH</fields>
+					</table>
+					<table name="BDCK.BDCS_QL_XZ">
+						<fields name="字段">TO_CHAR(QLJSSJ, 'YYYY-MM-DD') QLJSSJ,TO_CHAR(QLQSSJ, 'YYYY-MM-DD') QLQSSJ,DJJG</fields>
+					</table>
+				</LQ>
+				<DYAQ name="抵押权">
+					<table name="BDCK.BDCS_QLR_XZ">
+						<fields name="字段">QLRMC,QLBL,QLMJ,DZ</fields>
+					</table>
+					<table name="BDCK.BDCS_QL_XZ">
+						<fields name="字段">TO_CHAR(QLJSSJ, 'YYYY-MM-DD') QLJSSJ,TO_CHAR(QLQSSJ, 'YYYY-MM-DD') QLQSSJ,DJJG</fields>
+					</table>
+					<table name="BDCK.BDCS_FSQL_XZ">
+						<fields name="字段">DYBDCLX,DYFS,DYSW,DYPGJZ,ZGZQSE,BDBZZQSE,DYR</fields>
+					</table>
+				</DYAQ>
+				<YGDJ name="预告登记">
+					<table name="BDCK.BDCS_QL_XZ">
+						<fields name="字段">BDCQZH,DJJG</fields>
+					</table>
+					<table name="BDCK.BDCS_FSQL_XZ">
+						<fields name="字段">YYSX,YGDJZL</fields>
+					</table>
+				</YGDJ>
+				<CFDJ name="查封登记">
+					<table name="BDCK.BDCS_QL_XZ">
+						<fields name="字段">TO_CHAR(QLJSSJ, 'YYYY-MM-DD') QLJSSJ,TO_CHAR(QLQSSJ, 'YYYY-MM-DD') QLQSSJ,DJJG</fields>
+					</table>
+					<table name="BDCK.BDCS_FSQL_XZ">
+						<fields name="字段">CFJG,CFLX,CFWH,CFSJ,LHSX</fields>
+					</table>
+				</CFDJ>
+			   <YYDJ name="预告登记">
+					<table name="BDCK.BDCS_QL_XZ">
+						<fields name="字段">TO_CHAR(QLJSSJ,'YYYY-MM-DD') QLJSSJ,TO_CHAR(QLQSSJ,'YYYY-MM-DD') QLQSSJ,DJJG</fields>
+					</table>
+					<table name="BDCK.BDCS_FSQL_XZ">
+						<fields name="字段">YYSX</fields>
+					</table>
+			   </YYDJ>
+			</fieldconfig>
+		</JG>
+	  <!--返回字段支持使用别名，字段配置节点空格分开，目前抵押平台在用-->
+	  <JG JGDM="90" JGMC="抵押平台">
+		  <!-- 这里配置需要查询的节点 -->
+		  <nodes>FDCQ,DYAQ,CFDJ,YYDJ,QLRLIST,JSYDSYQ,TDYTLIST</nodes>
+		  <code codeXM="0" codeXML="0" codeZJH="0" double64code="0" name="是否加密xml、身份证号、姓名"/>
+		  <needaccessory name="查询是否需要上传附件">0</needaccessory>
+		  <needapprove name="查询是否需要审批">0</needapprove>
+		  <unitcountconfig CFDJ="0" DYAQ="1" FDCQ="1" FDCQReduce="" GJZWSYQ="0" GYNYDSYQ="1" HYSYQ="0" JSYDSYQ="1"
+						   LQ="0" TDSYQ="1" YGDJ="" name="是否统计权利总数"/>
+		  <ifrequired BCXRXM="0" BDCDYH="0" FCID="0" FLWSBM="0" FLWSMC="0" GWZBH="0" GZZBH="1" QZHZMH="0" ZJHM="0"
+					  ZL="0" ZXAH="0" name="查询条件是否必填项"/>
+		  <otherconfig name="查询结果是否显示共有人、历史产权、是否翻译常量等其他配置" showGYR="0" showLS="0" translateConst="1"/>
+		  <validate gwzh="0" mac="0" name="查询验证项" unamepwd="0"/>
+		  <!-- 修改这里的表对应字段的配置需要同时修改xmlname表对应字段 -->
+		  <fieldconfig name="节点内字段配置">
+			  <TDSYQ name="土地所有权">
+				  <table name="BDCK.BDCS_SYQZD_XZ">
+					  <fields name="字段">BDCDYH,ZL,ZDMJ,MJDW,YT,QLXZ</fields>
+				  </table>
+				  <table name="BDCK.BDCS_QLR_XZ">
+					  <fields name="字段">BDCQZH</fields>
+				  </table>
+				  <table name="BDCK.BDCS_QL_XZ">
+					  <fields name="字段">DJJG</fields>
+				  </table>
+			  </TDSYQ>
+			  <GYNYDSYQ name="国有农用地使用权">
+				  <table name="BDCK.BDCS_QL_XZ">
+					  <fields name="字段">TO_CHAR(QLJSSJ,'YYYY-MM-DD') QLJSSJ,TO_CHAR(QLQSSJ,'YYYY-MM-DD') QLQSSJ,DJJG
+					  </fields>
+				  </table>
+				  <table name="BDCK.BDCS_QLR_XZ">
+					  <fields name="字段">QLRMC,ZJH,BDCQZH</fields>
+				  </table>
+				  <table name="BDCK.BDCS_NYD_XZ">
+					  <fields name="字段">BDCDYH,ZL,CBMJ,CBQSSJ,CBJSSJ,YT,QLXZ,QLLX
+					  </fields>
+				  </table>
+			  </GYNYDSYQ>
+
+			  <JSYDSYQ name="建设用地使用权、宅基地使用权">
+				  <table name="BDCK.BDCS_SHYQZD_XZ">
+					  <fields name="字段">ZD.QLXZ,ZD.BDCDYH,ZD.ZL,ZD.YT,ZD.SYQLX,ZD.PZYT,ZD.MJDW,ZD.ZDMJ,ZD.JZMJ</fields>
+				  </table>
+				  <!--<table name="BDCK.BDCS_QLR_XZ">
+                      <fields name="字段">QLR.QLMJ,QLR.BDCQZH</fields>
+                  </table>
+                  <table name="BDCK.BDCS_QL_XZ">
+                      <fields name="字段">TO_CHAR(QL.QLJSSJ,'YYYY-MM-DD') QLJSSJ,TO_CHAR(QL.QLQSSJ,'YYYY-MM-DD') QLQSSJ,QL.DJJG</fields>
+                  </table>
+                  <table name="BDCK.BDCS_TDYT_XZ">
+                      <fields name="字段">TDYT.TDYT</fields>
+                  </table>-->
+			  </JSYDSYQ>
+			  <TDYTLIST name="土地用途">
+				  <table name="BDCK.BDCS_TDYT_XZ">
+					  <fields name="字段">TDYT.TDYT,TDYT.TDYTMC,TO_CHAR(TDYT.QSRQ,'YYYY-MM-DD')
+						  QSRQ,TO_CHAR(TDYT.ZZRQ,'YYYY-MM-DD') ZZRQ
+					  </fields>
+				  </table>
+			  </TDYTLIST>
+			  <FDCQ name="房地产权">
+				  <table name="BDCK.BDCS_H_XZ">
+					  <fields name="字段">H.QLXZ,H.BDCDYH,H.ZL,H.GHYT
+						  FWYT,H.FWJG,H.JGSJ,H.YCJZMJ,H.YCTNJZMJ,H.SCJZMJ,H.SCTNJZMJ,H.MJDW,H.FH,H.FWBM,H.FWTDYT,H.SZC,H.ZCS,H.FWXZ,H.FWCB,H.FTTDMJ,H.ZDMJ
+					  </fields>
+				  </table>
+			  </FDCQ>
+			  <QLRLIST name="权利人">
+				  <table name="BDCK.BDCS_QLR_XZ">
+					  <fields name="字段">QLR_XZ.BDCQZH,QLR_XZ.QLRMC,QLR_XZ.ZJH,QLR_XZ.ZJZL ZJLX,QLR_XZ.DH LXDH,QLR_XZ.DZ
+						  TXDZ,QLR_XZ.GYFS,QLR_XZ.QLRLX
+					  </fields>
+				  </table>
+			  </QLRLIST>
+			  <HYSYQ name="海域">
+				  <table name="BDCK.BDCS_ZH_XZ">
+					  <fields name="字段">BDCDYH,XMMC,ZL,YHLXA,YHLXB,HDMC,HDWZ,HDYT,SYQMJ,YHWZSM
+					  </fields>
+				  </table>
+				  <table name="BDCK.BDCS_QLR_XZ">
+					  <fields name="字段">GYFS,GYQK,BDCQZH,QLBL,QLMJ,QLRMC,ZJH</fields>
+				  </table>
+				  <table name="BDCK.BDCS_QL_XZ">
+					  <fields name="字段">TO_CHAR(QLJSSJ,'YYYY-MM-DD') QLJSSJ,TO_CHAR(QLQSSJ,'YYYY-MM-DD') QLQSSJ,DJJG
+					  </fields>
+				  </table>
+			  </HYSYQ>
+			  <GJZWSYQ name="构（建）筑物所有权">
+				  <table name="BDCK.BDCS_GZW_XZ">
+					  <fields name="字段">BDCDYH,ZL,GJZWGHYT,MJ,GJZWMJ</fields>
+				  </table>
+				  <table name="BDCK.BDCS_QLR_XZ">
+					  <fields name="字段">GYFS,GYQK,BDCQZH,QLBL,QLMJ,QLRMC,ZJH</fields>
+				  </table>
+				  <table name="BDCK.BDCS_QL_XZ">
+					  <fields name="字段">TO_CHAR(QLJSSJ,'YYYY-MM-DD') QLJSSJ,TO_CHAR(QLQSSJ,'YYYY-MM-DD') QLQSSJ,DJJG
+					  </fields>
+				  </table>
+			  </GJZWSYQ>
+			  <LQ name="林权">
+				  <table name="BDCK.BDCS_SLLM_XZ">
+					  <fields name="字段">BDCDYH,ZL,SYQMJ</fields>
+				  </table>
+				  <table name="BDCK.BDCS_QLR_XZ">
+					  <fields name="字段">BDCQZH,QLBL,QLMJ,QLRMC,ZJH</fields>
+				  </table>
+				  <table name="BDCK.BDCS_QL_XZ">
+					  <fields name="字段">TO_CHAR(QLJSSJ,'YYYY-MM-DD') QLJSSJ,TO_CHAR(QLQSSJ,'YYYY-MM-DD') QLQSSJ,DJJG
+					  </fields>
+				  </table>
+			  </LQ>
+			  <DYAQ name="抵押权">
+				  <table name="BDCK.BDCS_QLR_XZ">
+					  <fields name="字段">QLR_XZ.QLRMC DYQR,QLR_XZ.ZJH,QLR_XZ.ZJZL ZJLX,QLR_XZ.QLBL,QLR_XZ.QLMJ,QLR_XZ.DZ
+						  TXDZ,QLR_XZ.DH LXDH,QLR_XZ.BDCQZH,QLR_XZ.GYFS,QLR_XZ.QLRLX
+					  </fields>
+				  </table>
+				  <table name="BDCK.BDCS_QL_XZ">
+					  <fields name="字段">TO_CHAR(QL_XZ.QLQSSJ, 'YYYY-MM-DD') DYQLQSSJ,TO_CHAR(QL_XZ.QLJSSJ, 'YYYY-MM-DD')
+						  DYQLJSSJ,QL_XZ.DJJG,QL_XZ.CZFS,QL_XZ.DJYY,QL_XZ.FJ
+					  </fields>
+				  </table>
+				  <table name="BDCK.BDCS_FSQL_XZ">
+					  <fields name="字段">
+						  FSQL_XZ.DYFS,FSQL_XZ.ZGZQSE,FSQL_XZ.BDBZZQSE,FSQL_XZ.DYR,FSQL_XZ.ZQDW,FSQL_XZ.TDPGJZ,FSQL_XZ.DYPGJZ,FSQL_XZ.ZWR,FSQL_XZ.ZGZQQDSS,FSQL_XZ.DYWLX,FSQL_XZ.ZJJZWZL,FSQL_XZ.ZJJZWDYFW,FSQL_XZ.ZXDYYY,FSQL_XZ.ZXFJ
+					  </fields>
+				  </table>
+			  </DYAQ>
+			  <YGDJ name="预告登记">
+				  <table name="BDCK.BDCS_QL_XZ">
+					  <fields name="字段">BDCQZH,DJJG</fields>
+				  </table>
+				  <table name="BDCK.BDCS_FSQL_XZ">
+					  <fields name="字段">YYSX,YGDJZL</fields>
+				  </table>
+			  </YGDJ>
+			  <CFDJ name="查封登记">
+				  <table name="BDCK.BDCS_QL_XZ">
+					  <fields name="字段">TO_CHAR(QLJSSJ,'YYYY-MM-DD') CFJSSJ</fields>
+				  </table>
+				  <table name="BDCK.BDCS_FSQL_XZ">
+					  <fields name="字段">CFJG,CFLX,CFWH,CFSJ CFQSSJ</fields>
+				  </table>
+			  </CFDJ>
+			  <YYDJ name="预告登记">
+				  <table name="BDCK.BDCS_QL_XZ">
+					  <fields name="字段">TO_CHAR(QLQSSJ,'YYYY-MM-DD') YYDJSJ</fields>
+				  </table>
+				  <table name="BDCK.BDCS_FSQL_XZ">
+					  <fields name="字段">YYSX YYDJYY</fields>
+				  </table>
+			  </YYDJ>
+		  </fieldconfig>
+	  </JG>
+  </nodeconfig>
+
+</ResultConfig>

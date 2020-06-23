@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.jeecg.modules.mapper.StatisticsMapper">
+
+    <!-- 部门业务抵押金额统计 -->
+    <select id="countdyje" parameterType="java.util.HashMap" resultType="java.util.Map">
+        select sum(ql.dyje) as dyje from bdc_ql ql
+        left join
+        wfi_proinst po on ql.proinst_id = po.proinst_id
+        where
+        exists ( select 1 from sys_user_depart ud
+        where po.user_id = ud.user_id and ud.dep_id in ( select dep_id from sys_user_depart where user_id= '${param.userid}') )
+        <if  test="param.stime !=null ">
+           and po.PROINST_START > to_date('${param.stime}','yyyy-mm-dd hh24:mi:ss')
+        </if>
+        <if  test="param.etime !=null ">
+           and po.PROINST_START &lt; to_date('${param.etime}','yyyy-mm-dd hh24:mi:ss')
+        </if>
+    </select>
+    
+     <!-- 个人业务抵押金额统计 -->
+    <select id="personalCountDYJE" parameterType="java.util.HashMap" resultType="java.util.Map">
+        select sum(ql.dyje) as dyje from bdc_ql ql
+        left join
+        wfi_proinst po on ql.proinst_id = po.proinst_id
+        where
+        exists ( SELECT 1 FROM sys_user us where us.id= '${param.userid}' AND po.user_id = us.id)
+        <if  test="param.stime !=null ">
+           and po.PROINST_START > to_date('${param.stime}','yyyy-mm-dd hh24:mi:ss')
+        </if>
+        <if  test="param.etime !=null ">
+           and po.PROINST_START &lt; to_date('${param.etime}','yyyy-mm-dd hh24:mi:ss')
+        </if>
+    </select>
+
+    <!-- 获取部门每月的抵押金额 -->
+    <select id="monthdyje" parameterType="java.util.HashMap" resultType="java.util.Map">
+       select * from (
+       select to_char(ql.CREATE_TIME,'yyyy-mm') as mtime,sum(ql.dyje) as mdyje  from bdc_ql ql
+        left join
+        wfi_proinst po on ql.proinst_id = po.proinst_id
+        where exists ( select 1 from sys_user_depart ud
+        where po.user_id = ud.user_id and ud.dep_id in
+        ( select dep_id from sys_user_depart where user_id= '${param.userid}') )
+
+        <if  test="param.time !=null ">
+            and ql.CREATE_TIME  >= to_date('${param.time}','yyyy-mm-dd hh24:mi:ss')
+        </if>
+
+        <if  test="param.stime !=null ">
+            and ql.CREATE_TIME  >= to_date('${param.stime}','yyyy-mm-dd hh24:mi:ss')
+        </if>
+
+        <if  test="param.etime !=null ">
+            and ql.CREATE_TIME  &lt;= to_date('${param.etime}','yyyy-mm-dd hh24:mi:ss')
+        </if>
+
+        <if  test="param.divisioncode !=null ">
+            and po.division_code = '${param.divisioncode}'
+        </if>
+
+        group by to_char(ql.CREATE_TIME,'yyyy-mm') ) a order by a.mtime asc
+    </select>
+    
+    <!-- 获取个人每月的抵押金额 -->
+    <select id="personalMonthdyje" parameterType="java.util.HashMap" resultType="java.util.Map">
+       select * from (
+       select to_char(ql.CREATE_TIME,'yyyy-mm') as mtime,sum(ql.dyje) as mdyje  from bdc_ql ql
+        left join
+        wfi_proinst po on ql.proinst_id = po.proinst_id
+        where exists ( SELECT 1 FROM sys_user us where us.id= '${param.userid}' AND po.user_id = us.id  )
+
+        <if  test="param.time !=null ">
+            and ql.CREATE_TIME  >= to_date('${param.time}','yyyy-mm-dd hh24:mi:ss')
+        </if>
+
+        <if  test="param.stime !=null ">
+            and ql.CREATE_TIME  >= to_date('${param.stime}','yyyy-mm-dd hh24:mi:ss')
+        </if>
+
+        <if  test="param.etime !=null ">
+            and ql.CREATE_TIME  &lt;= to_date('${param.etime}','yyyy-mm-dd hh24:mi:ss')
+        </if>
+
+        <if  test="param.divisioncode !=null ">
+            and po.division_code = '${param.divisioncode}'
+        </if>
+
+        group by to_char(ql.CREATE_TIME,'yyyy-mm') ) a order by a.mtime asc
+    </select>
+
+
+    <!-- 部门登记类型统计  -->
+    <select id="countProjectName" parameterType="java.util.HashMap" resultType="java.util.Map">
+        select * from (
+		select po.prodef_name,count(*) as total from wfi_proinst po where
+	    exists ( select 1 from sys_user_depart ud
+        where po.user_id = ud.user_id and ud.dep_id in ( select dep_id from sys_user_depart where user_id= '${param.userid}') ) group by PRODEF_NAME
+        ) a order by a.total desc
+	</select>
+	
+	 <!-- 个人登记类型统计  -->
+    <select id="personalCountProjectName" parameterType="java.util.HashMap" resultType="java.util.Map">
+        select * from (
+		select po.prodef_name,count(*) as total from wfi_proinst po where
+	    exists ( SELECT 1 FROM sys_user us where us.id= '${param.userid}' AND po.user_id = us.id ) group by PRODEF_NAME
+        ) a order by a.total desc
+	</select>
+
+
+
+    <!-- 部门业务统计 -->
+    <select id="countProject" parameterType="java.util.HashMap" resultType="java.util.Map">
+		select count(*) as total from wfi_proinst po where
+	    exists ( select 1 from sys_user_depart ud
+        where po.user_id = ud.user_id and ud.dep_id in ( select dep_id from sys_user_depart where user_id= '${param.userid}') )
+        <if  test="param.stime !=null ">
+            and po.PROINST_START > to_date('${param.stime}','yyyy-mm-dd hh24:mi:ss')
+        </if>
+        <if  test="param.etime !=null ">
+            and po.PROINST_START &lt; to_date('${param.etime}','yyyy-mm-dd hh24:mi:ss')
+        </if>
+        <if test="param.shzt != null">
+            and po.shzt = '${param.shzt}'
+        </if>
+	</select>
+	
+	 <!-- 个人业务统计 -->
+    <select id="personalCountProject" parameterType="java.util.HashMap" resultType="java.util.Map">
+		select count(*) as total from wfi_proinst po where
+	    exists (SELECT 1 FROM sys_user us where us.id= '${param.userid}' AND po.user_id = us.id  )
+        <if  test="param.stime !=null ">
+            and po.PROINST_START > to_date('${param.stime}','yyyy-mm-dd hh24:mi:ss')
+        </if>
+        <if  test="param.etime !=null ">
+            and po.PROINST_START &lt; to_date('${param.etime}','yyyy-mm-dd hh24:mi:ss')
+        </if>
+        <if test="param.shzt != null">
+            and po.shzt = '${param.shzt}'
+        </if>
+	</select>
+
+
+    <!-- 部门业务月统计 -->
+    <select id="monthProject" parameterType="java.util.HashMap" resultType="java.util.Map">
+           select * from (
+            select to_char(po.PROINST_START,'yyyy-mm') as mtime,count(*) as total  from wfi_proinst po
+            where exists ( select 1 from sys_user_depart ud
+            where po.user_id = ud.user_id and ud.dep_id in
+            ( select dep_id from sys_user_depart where user_id= '${param.userid}') )
+            and po.PROINST_START >= to_date('${param.time}','yyyy-mm-dd')
+            group by to_char(po.PROINST_START,'yyyy-mm') ) a order by a.mtime asc
+	</select>
+	
+	 <!-- 个人业务月统计 -->
+    <select id="personalMonthproject" parameterType="java.util.HashMap" resultType="java.util.Map">
+           select * from (
+            select to_char(po.PROINST_START,'yyyy-mm') as mtime,count(*) as total  from wfi_proinst po
+            where exists ( SELECT 1 FROM sys_user us where us.id= '${param.userid}' AND po.user_id = us.id)
+            and po.PROINST_START >= to_date('${param.time}','yyyy-mm-dd')
+            group by to_char(po.PROINST_START,'yyyy-mm') ) a order by a.mtime asc
+	</select>
+
+
+    <!-- 部门登记类型金额统计  -->
+    <select id="countMonthMortgageAmount" parameterType="java.util.HashMap" resultType="java.util.Map">
+	   select * from (
+	    select sum(ql.dyje) as dyje,po.prodef_name from bdc_ql ql
+        left join
+        wfi_proinst po on ql.proinst_id = po.proinst_id where
+	    exists ( select 1 from sys_user_depart ud
+        where po.user_id = ud.user_id and ud.dep_id in ( select dep_id from sys_user_depart where user_id= '${param.userid}') ) group by po.PRODEF_NAME
+        ) a order by a.dyje desc
+	</select>
+	
+	 <!-- 个人登记类型金额统计  -->
+    <select id="personalCountMonthMortgageAmount" parameterType="java.util.HashMap" resultType="java.util.Map">
+	   select * from (
+	    select sum(ql.dyje) as dyje,po.prodef_name from bdc_ql ql
+        left join
+        wfi_proinst po on ql.proinst_id = po.proinst_id where
+	    exists ( SELECT 1 FROM sys_user us where us.id= '${param.userid}' AND po.user_id = us.id ) group by po.PRODEF_NAME
+        ) a order by a.dyje desc
+	</select>
+
+
+    <!-- 部门登记类型金额统计  -->
+    <select id="countProportion" parameterType="java.util.HashMap" resultType="java.util.Map">
+	   select s.P from (
+            SELECT po.shzt,ratio_to_report(count(1)) over() as  "P" from wfi_proinst po where
+            exists ( select 1 from sys_user_depart ud
+            where po.user_id = ud.user_id and ud.dep_id in ( select dep_id from sys_user_depart where user_id= '${param.userid}') )
+
+            <if  test="param.stime !=null ">
+                and po.PROINST_START > to_date('${param.stime}','yyyy-mm-dd hh24:mi:ss')
+            </if>
+            <if  test="param.etime !=null ">
+                and po.PROINST_START &lt; to_date('${param.etime}','yyyy-mm-dd hh24:mi:ss')
+            </if>
+
+            GROUP BY po.shzt
+        ) s where s.shzt ='20'
+	</select>
+	
+	<!-- 个人登记类型金额统计  -->
+    <select id="personalSHZTProportion" parameterType="java.util.HashMap" resultType="java.util.Map">
+	   select s.P from (
+            SELECT po.shzt,ratio_to_report(count(1)) over() as  "P" from wfi_proinst po where
+            exists ( SELECT 1 FROM sys_user us where us.id= '${param.userid}' AND po.user_id = us.id )
+
+            <if  test="param.stime !=null ">
+                and po.PROINST_START > to_date('${param.stime}','yyyy-mm-dd hh24:mi:ss')
+            </if>
+            <if  test="param.etime !=null ">
+                and po.PROINST_START &lt; to_date('${param.etime}','yyyy-mm-dd hh24:mi:ss')
+            </if>
+
+            GROUP BY po.shzt
+        ) s where s.shzt ='20'
+	</select>
+
+
+    <!-- 业务台账统计-总数 -->
+    <select id="queryDataCount" parameterType="java.util.HashMap" resultType="java.util.Map">
+
+        select count(*) as "TOTAL" from
+        wfi_proinst po left join
+        (select prolsh as sqrlsh,listagg(to_char(sqrxm), ',') within
+        group(order by sqrxm) as "NAME" from bdc_sqr
+        group by prolsh) sqr on po.prolsh = sqr.sqrlsh
+        where 1 = 1
+        <if  test="param.divisioncode !=null ">
+            and po.DIVISION_CODE = '${param.divisioncode}'
+        </if>
+
+        <if  test="param.cityname !=null ">
+            and instr(po.DIVISION_CODE, '${param.cityname}') > 0
+        </if>
+
+        <if  test="param.projectname !=null ">
+            and po.project_name like '%${param.projectname}%'
+        </if>
+
+        <if  test="param.lclxname !=null ">
+            and po.PRODEF_ID in ( select prodef_id from wfi_prodef where PRODEFCLASS_ID = '${param.lclxname}')
+        </if>
+
+        <if  test="param.starttime !=null ">
+            and po.proinst_start >= to_date('${param.starttime}','yyyy-mm-dd hh24:mi:ss')
+        </if>
+
+        <if  test="param.endtime !=null ">
+            and po.proinst_start &lt; to_date('${param.endtime}','yyyy-mm-dd hh24:mi:ss')
+        </if>
+
+        <if  test="param.shztname !=null ">
+            and po.shzt = '${param.shztname}'
+        </if>
+
+    </select>
+
+
+    <!-- 业务台账统计-分页 -->
+    <select id="queryData" parameterType="java.util.HashMap" resultType="java.util.Map">
+        WITH NQL AS (
+
+        select
+        po.PROLSH,
+        po.PROJECT_NAME,
+        po.DIVISION_CODE as DIVISION_CODE_ISTRANS,
+        po.PROINST_START,
+        sqr.NAME from
+        wfi_proinst po left join
+        (select prolsh as sqrlsh,listagg(to_char(sqrxm), ',') within
+        group(order by sqrxm) as "NAME" from bdc_sqr
+        group by prolsh) sqr on po.prolsh = sqr.sqrlsh
+        where 1 = 1
+        <if test="param.divisioncode !=null ">
+            and po.DIVISION_CODE = '${param.divisioncode}'
+        </if>
+
+        <if test="param.cityname !=null ">
+            and instr(po.DIVISION_CODE, '${param.cityname}') > 0
+        </if>
+
+        <if test="param.projectname !=null ">
+            and po.project_name like '%${param.projectname}%'
+        </if>
+
+        <if test="param.lclxname !=null ">
+
+            and po.PRODEF_ID in ( select prodef_id from wfi_prodef where PRODEFCLASS_ID = '${param.lclxname}')
+
+        </if>
+
+        <if test="param.starttime !=null ">
+            and po.proinst_start >= to_date('${param.starttime}','yyyy-mm-dd hh24:mi:ss')
+        </if>
+
+        <if test="param.endtime !=null ">
+            and po.proinst_start &lt; to_date('${param.endtime}','yyyy-mm-dd hh24:mi:ss')
+        </if>
+
+        <if test="param.shztname !=null ">
+            and po.shzt = '${param.shztname}'
+        </if>
+         order by po.proinst_start desc
+
+        ),QL AS ( SELECT NQL.*, COUNT (1) OVER () TR FROM NQL )
+        SELECT * FROM ( SELECT QL.*, ROWNUM RN FROM QL WHERE ROWNUM  &lt;= ${param.bsize} ) WHERE RN >= ${param.bnr}
+
+    </select>
+    <!-- 获取在办和已办的抵押金额百分比 -->
+    <select id="projectMortgageAmount" parameterType="java.util.HashMap" resultType="java.util.Map">
+
+        select sum(ql.dyje) as dyje,'在办' as "S" from bdc_ql ql
+        left join
+        wfi_proinst po on ql.proinst_id = po.proinst_id where
+        exists ( select 1 from sys_user_depart ud
+        where po.user_id = ud.user_id and ud.dep_id in ( select dep_id from sys_user_depart where user_id= '${param.userid}') )
+        and po.shzt != 30
+        <if  test="param.stime !=null ">
+            and po.PROINST_START > to_date('${param.stime}','yyyy-mm-dd hh24:mi:ss')
+        </if>
+        <if  test="param.etime !=null ">
+            and po.PROINST_START &lt; to_date('${param.etime}','yyyy-mm-dd hh24:mi:ss')
+        </if>
+        <if  test="param.divisioncode !=null ">
+            and po.division_code = '${param.divisioncode}'
+        </if>
+        union all
+        select sum(ql.dyje) as dyje,'已办' as "S" from bdc_ql ql
+        left join
+        wfi_proinst po on ql.proinst_id = po.proinst_id where
+        exists ( select 1 from sys_user_depart ud
+        where po.user_id = ud.user_id and ud.dep_id in ( select dep_id from sys_user_depart where user_id= '${param.userid}') )
+        and po.shzt = 30
+        <if  test="param.stime !=null ">
+            and po.PROINST_START > to_date('${param.stime}','yyyy-mm-dd hh24:mi:ss')
+        </if>
+        <if  test="param.etime !=null ">
+            and po.PROINST_START &lt; to_date('${param.etime}','yyyy-mm-dd hh24:mi:ss')
+        </if>
+        <if  test="param.divisioncode !=null ">
+            and po.division_code = '${param.divisioncode}'
+        </if>
+    </select>
+    
+     <!-- 获取个人在办和已办的抵押金额百分比 -->
+    <select id="personalProjectMortgageAmount" parameterType="java.util.HashMap" resultType="java.util.Map">
+
+        select sum(ql.dyje) as dyje,'在办' as "S" from bdc_ql ql
+        left join
+        wfi_proinst po on ql.proinst_id = po.proinst_id where
+        exists ( SELECT 1 FROM sys_user us where us.id= '${param.userid}' AND po.user_id = us.id )
+        and po.shzt != 30
+        <if  test="param.stime !=null ">
+            and po.PROINST_START > to_date('${param.stime}','yyyy-mm-dd hh24:mi:ss')
+        </if>
+        <if  test="param.etime !=null ">
+            and po.PROINST_START &lt; to_date('${param.etime}','yyyy-mm-dd hh24:mi:ss')
+        </if>
+        <if  test="param.divisioncode !=null ">
+            and po.division_code = '${param.divisioncode}'
+        </if>
+        union all
+        select sum(ql.dyje) as dyje,'已办' as "S" from bdc_ql ql
+        left join
+        wfi_proinst po on ql.proinst_id = po.proinst_id where
+        exists ( SELECT 1 FROM sys_user us where us.id= '${param.userid}' AND po.user_id = us.id )
+        and po.shzt = 30
+        <if  test="param.stime !=null ">
+            and po.PROINST_START > to_date('${param.stime}','yyyy-mm-dd hh24:mi:ss')
+        </if>
+        <if  test="param.etime !=null ">
+            and po.PROINST_START &lt; to_date('${param.etime}','yyyy-mm-dd hh24:mi:ss')
+        </if>
+        <if  test="param.divisioncode !=null ">
+            and po.division_code = '${param.divisioncode}'
+        </if>
+    </select>
+    <!-- 获取区域抵押金额百分比 -->
+    <select id="areaMortgageAmount" parameterType="java.util.HashMap" resultType="java.util.Map">
+
+        select sum(ql.dyje) as dyje,po.division_code as DIVISION_CODE_ISTRANS  from bdc_ql ql
+        left join wfi_proinst po on ql.proinst_id = po.proinst_id where
+        exists ( select 1 from sys_user_depart ud
+        where po.user_id = ud.user_id and ud.dep_id in ( select dep_id from sys_user_depart where user_id= '${param.userid}') )
+        <if  test="param.stime !=null ">
+            and po.PROINST_START > to_date('${param.stime}','yyyy-mm-dd hh24:mi:ss')
+        </if>
+        <if  test="param.etime !=null ">
+            and po.PROINST_START &lt; to_date('${param.etime}','yyyy-mm-dd hh24:mi:ss')
+        </if>
+        <if  test="param.divisioncode !=null ">
+            and po.division_code = '${param.divisioncode}'
+        </if>
+        group by po.division_code
+
+    </select>
+
+</mapper>

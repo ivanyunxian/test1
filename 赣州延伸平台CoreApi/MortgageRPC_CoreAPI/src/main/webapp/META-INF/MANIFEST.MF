@@ -1,0 +1,4 @@
+Manifest-Version: 4.0.4
+Class-Path: 
+Database-Version: 561
+Implementation-Version: 4.0.0.18129

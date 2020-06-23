@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.jeecg.modules.mapper.Bdc_shyqzdMapper">
+	<select id="queryByEnterpriseId" parameterType="String" resultType="org.jeecg.modules.mortgagerpc.entity.Bdc_shyqzd">
+		SELECT *
+		FROM bdc_shyqzd
+		WHERE ENTERPRISEID = #{enterpriseId, jdbcType=VARCHAR}
+		AND STATUS = '1'
+	</select>
+</mapper>

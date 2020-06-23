@@ -1,0 +1,373 @@
+.webuploader-container {
+	position: relative;
+}
+.webuploader-element-invisible {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px,1px,1px,1px);
+}
+.webuploader-pick {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	background-color: transparent;
+	border-color: transparent;
+	padding: 0px 0px;
+	color: #fff;
+	text-align: center;
+	border-radius: 0px;
+	overflow: hidden;
+}
+.webuploader-pick-hover {
+	background: #286090;
+}
+
+.webuploader-pick-disable {
+	opacity: 0.6;
+	pointer-events:none;
+}
+br {
+	display: inline;
+	line-height: 11px;
+}
+
+.fm_div {
+	margin-top: 30px;
+	padding-left: 0px;
+	width: 100%;
+	heith: 100%;
+	border: solid 1px #d5d5d5;
+}
+
+.fm_font {
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 35px;
+	word-spacing: 1px;
+	letter-spacing: 1px;
+}
+
+.fm_QRCODE {
+	width: 100%;
+	height:60px;
+	padding: 20px 0px 0px 0px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 28px;
+}
+
+.fm_declare {
+	text-indent: 25px;
+	padding: 10px 15px 0px 45px;
+}
+
+.fm_register_div {
+	/*padding:60px 0px 0px 540px;*/
+	padding: 10px 55px 0px 0px;
+	text-align: right;
+}
+
+.fm_register {
+	
+}
+
+.fm_year_div {
+	padding: 0px 0px 0px -10px;
+	word-spacing: -3px;
+	letter-spacing: 0px;
+}
+
+
+.fm_bottom_div {
+	/* 	width:100%; */
+	padding: 20px 65px 0px 65px;
+	margin: auto;
+	text-align: center;
+}
+
+.fm_bottom_declare {
+	margin: auto;
+	text-align: center;
+}
+
+.fm_bottom_num {
+	padding: 5px 0px 10px 10px;
+	word-spacing: -18px;
+}
+
+
+
+
+.print_zs_div {
+	padding-left: 0px;
+}
+
+.print_zs {
+	width: 100%;
+	text-align: center;
+	margin: auto;
+	height: 100%
+}
+
+.print_zs td {
+	height: 35px;
+}
+
+.qlqtzk_title {
+	vertical-align: middle;
+	height: 176px;
+}
+
+.qlqtzk_content {
+	vertical-align: middle;
+}
+
+/*������ʽ*/
+.print_content {
+	font-family: "Microsoft YaHei", ΢���ź�, "MicrosoftJhengHei", ����ϸ��, STHeiti,
+		MingLiu;
+	font-weight: bold;
+	text-align: left;
+	width: 70%;
+	word-wrap: break-word;
+	vertical-align: middle;
+}
+/*������ʽ*/
+.print_title {
+	font-size: 15px;
+	font-family: "����", "����_GB2312";
+	text-align: center;
+	width: 28%;
+}
+
+.header_font {
+	font-size: 18px;
+	font-weight: normal;
+	word-spacing: 3px;
+	letter-spacing: 3px;
+	font-family: "����", "����_GB2312";
+}
+/*ͷ��ͨ����ʽ*/
+.print_header {
+	width: 100%;
+	text-align: center;
+	margin: auto;
+	padding: 20px 0px 30px 0px;
+}
+/*�����������ʽ*/
+.print_city {
+	text-align: center;
+	display: -moz-inline-box; /*֧�� span���ÿ��*/
+	display: inline-block;
+	width: 120px;
+	border-bottom: 1px solid black;
+}
+/*ʡ���������ʽ*/
+.print_state {
+	text-align: center;
+	display: -moz-inline-box; /*֧�� span���ÿ��*/
+	display: inline-block;
+	width: 30px;
+	border-bottom: 1px solid black;
+}
+/*������ڼ����������ʽ*/
+.print_num {
+	text-align: center;
+	display: -moz-inline-box; /*֧�� span���ÿ��*/
+	display: inline-block;
+	width: 120px;
+}
+/*����������ʽ*/
+.print_year {
+	text-align: center;;
+	display: -moz-inline-box; /*֧�� span���ÿ��*/
+	display: inline-block;
+	width: 60px;
+}
+
+
+/*����*/
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+/*4Kֽ���� ����ӡʱ����Ϊ�沿����*/
+.A4 {
+	width: 90%;
+	heitht: 100%;
+}
+
+/*��ӡʱ����ʽ �����ɺ�����Ϊ��λ*/
+@media print {
+	/*4Kֽ����*/
+	.A4 {
+		width: 210mm;
+		heitht: 297mm;
+	}
+	/*����ӡ*/
+	.noprint {
+		visibility: hidden;
+	}
+	span {
+		visibility: visible;
+		padding-left: 2mm;
+		font-weight:normal;
+	}
+	/*����Ϊ�����ӡ��ʽ*/
+	.fm_div {
+		padding-left: 5mm;
+		border-width: 0px;
+	}
+	/*����*/
+	.fm_font {
+		font-size: 5mm;
+		font-weight: normal;
+		line-height: 10mm;
+		word-spacing: 1mm;
+		letter-spacing: 1mm;
+		font-family: "����", "����_GB2312";
+	}
+	/*��ά��*/
+	.fm_QRCODE {
+		width: 100%;
+		height: 14mm;
+		font-weight: bold;
+		word-spacing: 10px;
+		letter-spacing: 8px;
+		font-size: 9mm;
+	}
+	/*����*/
+	.fm_declare {
+		text-indent: 12mm;
+		padding: 20mm 15mm 0mm 0mm;
+		font-size:5mm;
+	}
+	
+	/*�Ǽ�div*/
+	.fm_register_div {
+		/*padding:48mm 0mm 0mm 120mm;*/
+		padding: 4Omm 40mm 30mm 0mm;
+		text-align: right;
+	}
+	/*�Ǽ�*/
+	.fm_register {
+		
+	}
+	/*����ǩ��*/
+	.fm_year_div {
+		padding-left: 0mm;
+	}
+	/*�ײ�DIV*/
+	.fm_bottom_div {
+		padding-top:10mm;
+		text-align: center;
+		margin:auto;
+	}
+	/*�ײ�����*/
+	.fm_bottom_declare {
+		padding: 0mm 0mm 0mm 0mm;
+	}
+	/*�ײ����*/
+	.fm_bottom_num {
+		padding: 0mm 0mm 0mm 18mm;
+		margin: auto; text-align : center;
+		word-spacing: -10mm;
+		text-align: center;
+	}
+
+	/*����Ϊ֤����Ϣ��ӡ��ʽ*/
+	/*֤��ҳ��DIV*/
+.print_zs_div {
+	padding-left: 0px;
+}
+	/*֤����Ϣ��TABLE*/
+	.print_zs {
+		width: 100%;
+		text-align: center;
+		margin: auto;
+		height: 100%;
+	}
+	.print_zs td {
+		height: 18mm;
+	}
+	/*������ʽ*/
+	.print_content {
+		background: #fff;
+		text-align: left;
+		vertical-align: middle;
+		font-family: "Microsoft YaHei", ΢���ź�, "MicrosoftJhengHei", ����ϸ��, STHeiti,
+			MingLiu;
+		width: 70%;
+		word-wrap: break-word;
+	}
+	/*������ʽ*/
+	.print_title {
+		background: #fff;
+		text-align: center;
+		font-family: "����", "����_GB2312";
+		width: 25%;
+	}
+	/*Ȩ������״����ʽ*/
+	.qlqtzk_title {
+		vertical-align: middle;
+		height: 48mm;
+	}
+	.qlqtzk_content {
+		vertical-align: middle;
+	}
+	.header_font {
+		font-size: 4mm;
+		font-weight: normal;
+		word-spacing: 0.5mm;
+		letter-spacing: 1mm;
+		font-family: "����", "����_GB2312";
+	}
+	/*ͷ��ͨ����ʽ*/
+	.print_header {
+		width: 100%;
+		text-align: left;
+		margin: auto;
+		padding: 2mm 0mm 4mm 0mm;
+	}
+	/*�����������ʽ*/
+	.print_city {
+		text-align: center;
+		border-bottom: 1pt solid black;
+		display: -moz-inline-box; /*֧�� span���ÿ��*/
+		display: inline-block;
+		width: 30mm;
+	}
+	/*ʡ���������ʽ*/
+	.print_state {
+		text-align: center;
+		border-bottom: 1pt solid black;
+		display: -moz-inline-box; /*֧�� span���ÿ��*/
+		display: inline-block;
+		width: 10mm;
+	}
+	/*������ڼ����������ʽ*/
+	.print_num {
+		letter-spacing: 1mm;
+		text-align: right;
+		display: -moz-inline-box; /*֧�� span���ÿ��*/
+		display: inline-block;
+		width: 20mm;
+	}
+	/*����������ʽ*/
+	.print_year {
+		text-align: center;
+		display: -moz-inline-box; /*֧�� span���ÿ��*/
+		display: inline-block;
+		width: 25mm;
+	}
+	br {
+		display: inline;
+		line-height: 5mm;
+	}
+}
+/*�ȸ��������ȥ��ҳ��ҳ��*/
+@page {
+	margin-top: -10;
+	margin-bottom: -10;
+	size: auto;
+}
